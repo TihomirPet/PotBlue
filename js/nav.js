@@ -1,14 +1,15 @@
-function el(css) {
-  return document.querySelector(css);
-}
+document.addEventListener('DOMContentLoaded', () => {
+  // Navigation dynamisch laden
+  const navigation = document.querySelector('.nav-holder');
+  if (navigation) {
+    fetch('/sections/navbar.html')
+      .then((res) => res.text())
+      .then((data) => {
+        navigation.innerHTML = data;
 
-let nav = el('.nav-holder');
-// const nav = document.querySelector('.nav-holder');
-
-fetch('./navbar.html')
-  .then((res) => res.text())
-  .then((data) => {
-    nav.innerHTML = data;
-    //   nav.insertAdjacentHTML('beforeend', data);
-  });
-// console.log(nav);
+        // Event auslösen, damit andere Skripte darauf reagieren können
+        document.dispatchEvent(new Event('navLoaded'));
+      })
+      .catch((err) => console.error('Fehler beim Laden der Navigation:', err));
+  }
+});

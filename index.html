@@ -22,40 +22,70 @@
     />
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="/css/navigation.css" />
+    <link rel="stylesheet" href="/css/profile.css" />
+    <link rel="stylesheet" href="/css/header.css" />
   </head>
   <body>
-       <div class="container-fluid nav-holder"></div>
-    <div class="container-fluid p-0">
-     
-      <!-- Canvas für Rauschen & Raster -->
-      <canvas id="noiseCanvas"></canvas>
+    <!-- https://pot-blue.vercel.app/ -->
 
-      <!-- Text über dem Canvas -->
-      <div
-        class="text-overlay container-fluid  d-flex align-items-center justify-content-center p-0"
-      >
-        <div class="row w-100">
-          <div class="col-1"></div>
-          <div class="col-6">
-            <h1 class="title">tihomir petrov</h1>
-            <h2 class="title-second mt-5">Design, das verbindet.</h2>
-            <p class="text w-50 mt-3">
-              Ich kreiere intuitive UX/UI-Erlebnisse, die Nutzer inspirieren und
-              Marken zum Leben erwecken.
-            </p>
-            <a
-              class="btn btn-contact-header mt-5 d-flex justify-content-between align-items-center"
-              href="#"
-              role="button"
-              >Entdecke meine Projekte
-              <!-- <i class="bi bi-arrow-right-circle header-icon"></i> -->
-              <i class="bi bi-arrow-right-circle-fill header-icon"></i>
-          </a>
+    <!-- Nav -->
+    <div class="container-fluid nav-holder"></div>
+    <section>
+      <div class="container-fluid p-0">
+        <!-- Canvas -->
+        <canvas id="noiseCanvas"></canvas>
+        <!-- Video -->
+        <div class="header-video-holder">
+          <video class="header-video" muted autoplay loop>
+            <source src="/videos/5091624.mp4" />
+          </video>
+        </div>
+        <!-- Text -->
+        <div
+          class="text-overlay container-fluid d-flex align-items-center justify-content-center p-0"
+        >
+          <div class="row w-100">
+            <div class="col-1"></div>
+            <!-- <Col title  start-->
+            <div class="col-6">
+              <h1 class="title">tihomir petrov</h1>
+              <h2 class="title-second mt-5">Design, das verbindet.</h2>
+              <p class="text w-50 mt-3">
+                Ich kreiere intuitive UX/UI-Erlebnisse, die Nutzer inspirieren
+                und Marken zum Leben erwecken.
+              </p>
+              <a
+                class="btn btn-contact-header mt-5 d-flex justify-content-between align-items-center"
+                href="#"
+                role="button"
+                >Entdecke meine Projekte
+
+                <i class="bi bi-arrow-right-circle-fill header-icon"></i>
+              </a>
+            </div>
+            <!-- <Col title  end-->
+            <div class="col-5"></div>
           </div>
-          <div class="col-5"></div>
         </div>
       </div>
-    </div>
+    </section>
+    <section>
+      <div
+        class="container-fluid profile border border-danger d-flex align-items-center justify-content-center"
+      >
+        <div class="row    profile-holder  gap-4 p-4 ">
+          <div class="col-4 profile-img"></div>
+          <div class="col  profile-text p-5">
+            <h2>
+              "Hi, ich bin [Dein Name], UX/UI-Designer mit einer Leidenschaft
+              für intuitive Nutzererlebnisse und modernes Design. Mein Fokus
+              liegt auf der Entwicklung von nutzerzentrierten Lösungen, die
+              nicht nur gut aussehen, sondern auch herausragend funktionieren."
+            </h2>
+          </div>
+        </div>
+      </div>
+    </section>
 
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"

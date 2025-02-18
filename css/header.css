@@ -1,0 +1,173 @@
+body {
+  font-family: 'Plus Jakarta Sans', serif;
+}
+
+.image {
+  position: relative;
+  border: 1px solid red;
+  height: 100vh;
+  /* background: url(images/backstage_B.jpg) center no-repeat; */
+  background-color: #121bfc;
+  background-size: cover;
+}
+:root {
+  --cursorX: 50vw;
+  --cursorY: 30vh;
+}
+
+/* .torch{
+height:50vh;
+  background:url(images/backstage_B.jpg) center no-repeat;
+  background-size:cover;  
+
+  clip-path:circle(90px at 20px 20px);
+
+} */
+
+/* .image::before{
+
+    content: '';
+    width: 100%;
+    height: 100%;
+
+    position: absolute;
+   background: radial-gradient(circle 30vw at var( --cursorX) var( --cursorY), rgba(0,0,0,0) 0%, rgba(0,0,0,0) 40%, rgba(0,0,0,0.8)  95%);
+   z-index: 20;
+   
+} */
+
+.container {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  /* background-color: #121bfc; */
+  /* overflow: hidden; */
+
+}
+
+canvas {
+  position: absolute;
+  padding: 0;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 3;
+
+  background: #121bfc;
+  background: radial-gradient(
+    circle,
+    rgba(18, 27, 252, 0.9) 0%,
+    rgb(0, 3, 94) 100%
+  );
+  /* background-color: #FDFBEC; */
+}
+
+.text-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  color: rgb(253, 251, 236);
+  z-index: 4; /* Höher als das Canvas */
+
+  /* text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.8); */
+}
+.title {
+  font-size: 8.986rem;
+  letter-spacing: -0.05em;
+  font-weight: 800;
+}
+.title-second {
+  font-size: 3.4rem;
+  letter-spacing: -0.04em;
+  font-weight: 800;
+}
+.text {
+  font-size: 1.44rem;
+  /* letter-spacing: -0.05em; */
+  font-weight: 600;
+}
+
+.btn-contact-header {
+  --bs-btn-color: var(--text-white-color) !important;
+  --bs-btn-bg: var(--second-bg-color) !important;
+  --bs-btn-border-color: rgb(253, 251, 236) !important;
+  --bs-btn-hover-color: rgb(18, 27, 252) !important;
+  --bs-btn-hover-bg: rgb(253, 251, 236) !important;
+  --bs-btn-hover-border-color: #0a58ca;
+  --bs-btn-focus-shadow-rgb: 49, 132, 253;
+  --bs-btn-active-color: var(--text-white-color) !important;
+  --bs-btn-active-bg: var(--text-white-color) !important;
+  --bs-btn-active-border-color: #0a53be;
+  --bs-btn-active-shadow: inset 0 3px 5px var(--second-bg-color) !important;
+  --bs-btn-disabled-color: #fff;
+  --bs-btn-disabled-bg: var(--second-bg-color) !important;
+  --bs-btn-disabled-border-color: var(--second-bg-color) !important;
+}
+.btn {
+  --bs-btn-padding-x: 1rem;
+  --bs-btn-padding-y: 0.3rem;
+  --bs-btn-font-family: 'Plus Jakarta Sans', serif;
+  --bs-btn-font-size: 1.1rem !important;
+  --bs-btn-font-weight: 700;
+  --bs-btn-line-height: 1.5;
+  --bs-btn-color: rgb(253, 251, 236) !important;
+  --bs-btn-bg: rgb(18, 27, 252, 0.4) !important;
+  --bs-btn-border-width: var(--bs-border-width);
+  --bs-btn-border-color: transparent;
+  --bs-btn-border-radius: var(--bs-border-radius);
+  --bs-btn-hover-border-color: transparent;
+  --bs-btn-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.15),
+    0 1px 1px rgba(0, 0, 0, 0.075);
+  --bs-btn-disabled-opacity: 0.65;
+  --bs-btn-focus-box-shadow: 0 0 0 0.25rem
+    rgba(var(--bs-btn-focus-shadow-rgb), 0.5);
+  display: inline-block;
+  padding: var(--bs-btn-padding-y) var(--bs-btn-padding-x);
+  font-family: var(--bs-btn-font-family);
+  font-size: var(--bs-btn-font-size);
+  font-weight: var(--bs-btn-font-weight);
+  line-height: var(--bs-btn-line-height);
+  color: var(--bs-btn-color);
+  text-align: center;
+  text-decoration: none;
+  vertical-align: middle;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+  border: var(--bs-btn-border-width) solid var(--bs-btn-border-color);
+  border-radius: 50px !important;
+  background-color: var(--bs-btn-bg);
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
+    border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+
+  width: clamp(20rem, 20em, 10vw) !important;
+}
+.btn:hover {
+  color: var(--bs-btn-hover-color);
+  background-color: var(--bs-btn-hover-bg);
+  border-color: var(--bs-btn-hover-border-color);
+}
+.header-icon {
+  color: rgb(253, 251, 236) bfc;
+  font-size: 1.4rem;
+}
+.header-video-holder {
+  position: absolute;
+  top: 0;
+  z-index: 2;
+  /* opacity: 0.9; */
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+}
+.header-video {
+  position: relative;
+
+  /* opacity: 0.9; */
+  height: auto;
+  width: 100%;
+}
