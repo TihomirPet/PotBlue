@@ -33,7 +33,9 @@
     <section>
       <div class="container-fluid p-0">
         <!-- Canvas -->
-        <canvas id="noiseCanvas"></canvas>
+        <!-- <canvas id="noiseCanvas" ></canvas> -->
+        <canvas class="noiseCanvas" id="blue"></canvas>
+
         <!-- Video -->
         <div class="header-video-holder">
           <video class="header-video" muted autoplay loop>
@@ -71,12 +73,13 @@
     </section>
     <section>
       <div
-        class="container-fluid profile border border-danger d-flex align-items-center justify-content-center"
+        class="container-fluid profile d-flex align-items-center justify-content-center"
       >
-        <div class="row    profile-holder  gap-4 p-4 ">
+        <canvas class="noiseCanvas" id="bright"></canvas>
+        <div class="row profile-holder gap-4 p-4">
           <div class="col-4 profile-img"></div>
-          <div class="col  profile-text p-5">
-            <h2>
+          <div class="col profile-text-holder p-5">
+            <h2  class=" profile-text  mt-5">
               "Hi, ich bin [Dein Name], UX/UI-Designer mit einer Leidenschaft
               für intuitive Nutzererlebnisse und modernes Design. Mein Fokus
               liegt auf der Entwicklung von nutzerzentrierten Lösungen, die

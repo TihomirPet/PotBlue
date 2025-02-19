@@ -2,7 +2,7 @@
   position: relative;
   height: 100vh;
   width: 100vw;
-  background-color: #fdfbec;
+  background-color: var(--second-bg-color);
 }
 .profile-img {
   background-image: url(/images/Petrov_TihomirSB.jpg);
@@ -15,13 +15,21 @@
   height: 55vh;
 }
 .profile-holder {
-
+  position: absolute;
+  z-index: 4;
   width: 60vw;
-  border: 1px solid rgb(15,35,0,1);
-   border-radius: 0.9vw;
+  border: 1px solid rgb(15, 35, 0, 1);
+  border-radius: 0.9vw;
+  background-color: rgb(252, 252, 252);
+}
+.profile-text-holder {
+  border: 1px solid var(--main-bg-color);
+  color: var(--main-bg-color);
+  border-radius: 0.9vw;
+  background-color: var(--second-bg-color);
  
 }
 .profile-text {
-  border: 1px solid rgb(18, 27, 252);
-  border-radius: 0.9vw;
+font-weight: 700 !important;
+ 
 }

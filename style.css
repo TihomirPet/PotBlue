@@ -1,3 +1,9 @@
-section{
+:root {
+  --main-bg-color: rgb(18, 27, 252);
+  --second-bg-color: rgb(253, 251, 236);
+  --text-white-color: #fdf7f8;
+}
+
+section {
   height: 100vh;
 }
