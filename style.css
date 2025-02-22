@@ -19,8 +19,15 @@ section {
 .letter-space-04 {
   letter-spacing: -0.04em;
 }
+.letter-space-05 {
+  letter-spacing: -0.05em;
+}
+
+.font-h1{
+  font-size:8.918rem;
+}
 .font-h2{
-  font-size: 2.488rem;
+  font-size: 5.161rem;
 }
 .font-h3{
   font-size: 2.074rem;

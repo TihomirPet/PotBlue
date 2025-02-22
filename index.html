@@ -24,6 +24,7 @@
     <link rel="stylesheet" href="/css/navigation.css" />
     <link rel="stylesheet" href="/css/profile.css" />
     <link rel="stylesheet" href="/css/header.css" />
+    <link rel="stylesheet" href="/css/projects.css" />
   </head>
   <body>
     <!-- https://pot-blue.vercel.app/ -->
@@ -50,7 +51,7 @@
             <div class="col-1"></div>
             <!-- <Col title  start-->
             <div class="col-6">
-              <h1 class="title">tihomir petrov</h1>
+              <h1 class="title font-h1">tihomir petrov</h1>
               <h2 class="title-second mt-5">Design, das verbindet.</h2>
               <p class="text w-50 mt-3">
                 Ich kreiere intuitive UX/UI-Erlebnisse, die Nutzer inspirieren
@@ -80,8 +81,8 @@
           <div class="col-5 profile-img"></div>
           <!-- Col between -->
           <div class="profile-between d-flex flex-column p-0 gap-3">
-            <div class=" profile-between-top "></div>
-            <div class=" profile-between-bottom "></div>
+            <div class="profile-between-top"></div>
+            <div class="profile-between-bottom"></div>
           </div>
           <!-- Col between end-->
           <div class="col profile-text-holder p-0">
@@ -89,10 +90,10 @@
             <div class="container-fluid d-flex flex-column p-0 d-grid gap-3">
               <!-- Col one -->
               <div class="col profile-text-one">
-                <h2 class="profile-text ps-5  extra-bold font-h2 p-5">
+                <h3 class="profile-text ps-5 extra-bold font-h3 p-5">
                   Hi, ich bin
-                  <span class="letter-space-04 font-h2">tihomir petrov</span>
-                </h2>
+                  <span class="letter-space-04 font-h3">tihomir petrov</span>
+                </h3>
               </div>
               <!-- Col two-->
               <div class="col profile-text-two p-4 ps-5 pe-5">
@@ -112,6 +113,121 @@
             </div>
             <!-- Container text  end-->
           </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="container-fluid projects Light pb-5 pt-5" id="projects">
+      <div class="row pt-5 d-flex align-items-center justify-content-center">
+        <div
+          class="col-12 projects-one d-flex align-items-start justify-content-center pb-5"
+        >
+          <h2
+            class="projects-title d-none d-md-block extra-bold letter-space-05 font-h1"
+          >
+            Meine Werke
+          </h2>
+        </div>
+        <div class="col-12 col-md-11 projects-two">
+          <div class="row">
+            <!--============== img  two -->
+            <div class="col-12 col-md-12 projects-img-one">
+              <!-- <button id="button2">Button 1</button> -->
+              <a
+                href="project-one.html#two"
+                class="img-hover pb-xl-3"
+                id="button4"
+              >
+                <div class="img-hover-zoom">
+                  <img
+                    width="100%"
+                    src="/images/School.jpg"
+                    alt="This zooms-in really well and smooth"
+                  />
+                </div>
+
+                <div class="img-overlay-content"></div>
+              </a>
+            </div>
+            <!--============== img  two end-->
+            <!--============== img  one -->
+            <div class="col-12 col-md-12 projects-img-one">
+              <!-- <button id="button1">Button 1</button> -->
+              <a
+                href="project-one.html#one"
+                class="img-hover pb-xl-3"
+                id="button1"
+              >
+                <div class="img-hover-zoom">
+                  <img
+                    width="100%"
+                    src="/images/HeaderA.jpg"
+                    alt="This zooms-in really well and smooth"
+                  />
+                </div>
+
+                <div class="img-overlay-content"></div>
+              </a>
+            </div>
+
+            <!--============== img  one end-->
+            <!-- #### -->
+            <!--============== img  two -->
+            <div class="col-12 col-md-12 projects-img-one">
+              <!-- <button id="button2">Button 1</button> -->
+              <a
+                href="project-one.html#two"
+                class="img-hover pb-xl-3"
+                id="button2"
+              >
+                <div class="img-hover-zoom">
+                  <img
+                    width="100%"
+                    src="/images/Frame 1.jpg "
+                    alt="This zooms-in really well and smooth"
+                  />
+                </div>
+                <div class="img-overlay-content"></div>
+              </a>
+            </div>
+            <!--============== img  two end-->
+          </div>
+          <div class="row">
+            <!--============== img  one -->
+            <div class="col-12 col-md-12 projects-img-one">
+              <!-- <button id="button1">Button 1</button> -->
+              <a
+                href="project-one.html#one"
+                class="img-hover pb-xl-3"
+                id="button3"
+              >
+                <div class="img-hover-zoom">
+                  <img
+                    width="100%"
+                    src="/images/Hero_Nous.jpg"
+                    alt="This zooms-in really well and smooth"
+                  />
+                </div>
+                <div class="img-overlay-content"></div>
+              </a>
+            </div>
+            <!--============== img  one end-->
+            <!-- #### -->
+          </div>
+        </div>
+        <!-- <div class="col-2 projects-three d-none d-md-block"></div> -->
+      </div>
+    </div>
+    <section>
+      <div
+        class="container-fluid software d-flex align-items-center justify-content-center"
+      >
+        <canvas class="noiseCanvas" id="bright"></canvas>
+        <div class="row profile-holder p-4 d-flex">
+          <div class="col-5 profile-img"></div>
+         
+      
+       
         </div>
       </div>
     </section>
