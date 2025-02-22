@@ -76,15 +76,41 @@
         class="container-fluid profile d-flex align-items-center justify-content-center"
       >
         <canvas class="noiseCanvas" id="bright"></canvas>
-        <div class="row profile-holder gap-4 p-4">
-          <div class="col-4 profile-img"></div>
-          <div class="col profile-text-holder p-5">
-            <h2  class=" profile-text  mt-5">
-              "Hi, ich bin [Dein Name], UX/UI-Designer mit einer Leidenschaft
-              für intuitive Nutzererlebnisse und modernes Design. Mein Fokus
-              liegt auf der Entwicklung von nutzerzentrierten Lösungen, die
-              nicht nur gut aussehen, sondern auch herausragend funktionieren."
-            </h2>
+        <div class="row profile-holder p-4 d-flex">
+          <div class="col-5 profile-img"></div>
+          <!-- Col between -->
+          <div class="profile-between d-flex flex-column p-0 gap-3">
+            <div class=" profile-between-top "></div>
+            <div class=" profile-between-bottom "></div>
+          </div>
+          <!-- Col between end-->
+          <div class="col profile-text-holder p-0">
+            <!-- Container text  -->
+            <div class="container-fluid d-flex flex-column p-0 d-grid gap-3">
+              <!-- Col one -->
+              <div class="col profile-text-one">
+                <h2 class="profile-text ps-5  extra-bold font-h2 p-5">
+                  Hi, ich bin
+                  <span class="letter-space-04 font-h2">tihomir petrov</span>
+                </h2>
+              </div>
+              <!-- Col two-->
+              <div class="col profile-text-two p-4 ps-5 pe-5">
+                <p class="font-h5 bold">
+                  UX/UI-Designer mit einer Leidenschaft für intuitive
+                  Nutzererlebnisse und modernes Design.
+                </p>
+              </div>
+              <!-- Col three-->
+              <div class="col profile-text-three p-5">
+                <p class="font-h5 bold">
+                  Mein Fokus liegt auf der Entwicklung von nutzerzentrierten
+                  Lösungen, die nicht nur gut aussehen, sondern auch
+                  herausragend funktionieren.
+                </p>
+              </div>
+            </div>
+            <!-- Container text  end-->
           </div>
         </div>
       </div>
