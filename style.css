@@ -1,14 +1,26 @@
 :root {
   --main-bg-color: rgb(18, 27, 252);
-  --second-bg-color: rgb(253, 251, 236);
+  --second-bg-color: #fdfbec;
   --text-white-color: #ffffff;
   --text-black-color: #040900;
 }
 
+
+/* ========== Colors ========= */
+.main-color{ color:rgb(18, 27, 252)}
+.second-color{ color:rgb(253, 251, 236)}
+
 section {
   height: 100vh;
 }
-
+/* ========== Letter-space ========= */
+.letter-space-04 {
+  letter-spacing: -0.04em;
+}
+.letter-space-05 {
+  letter-spacing: -0.05em;
+}
+/* ========== Fonts ========= */
 .bold {
   font-weight: 700;
 }
@@ -16,13 +28,8 @@ section {
   font-weight: 800;
 }
 
-.letter-space-04 {
-  letter-spacing: -0.04em;
-}
-.letter-space-05 {
-  letter-spacing: -0.05em;
-}
 
+/* ========== Fonts-size ========= */
 .font-h1{
   font-size:8.918rem;
 }

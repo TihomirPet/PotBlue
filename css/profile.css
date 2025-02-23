@@ -18,9 +18,9 @@
   position: absolute;
   z-index: 4;
   width: 55vw;
-  border: 1px solid rgb(15, 35, 0, 1);
+  /* border: 1px solid rgb(15, 35, 0, 1); */
   border-radius: 0.9vw;
-  background-color: rgb(252, 252, 252);
+  background-color:var(--second-bg-color);
 }
 .profile-text-holder {
   /* border: 1px solid var(--main-bg-color); */
@@ -42,14 +42,14 @@
   width: 100%;
   border-bottom-left-radius: 0.3vw;
   border-bottom-right-radius: 0.3vw;
-  background-color: rgb(252, 252, 252);
+  background-color: var(--second-bg-color);
 }
 .profile-between-bottom {
   border-top-left-radius: 0.3vw;
   border-top-right-radius: 0.3vw;
   height: 94%;
   width: 100%;
-  background-color: rgb(252, 252, 252);
+  background-color: var(--second-bg-color);
 }
 .profile-text-one {
   /* background: rgb(4, 9, 0);
