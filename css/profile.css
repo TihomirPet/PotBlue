@@ -12,15 +12,17 @@
   background-position: center;
   border-radius: 0.9vw;
 
-  height: 60.vh;
+  height: 60vh;
 }
 .profile-holder {
   position: absolute;
   z-index: 4;
   width: 55vw;
-  /* border: 1px solid rgb(15, 35, 0, 1); */
+  /* border: 1px solid rgb(18, 27, 252); */
   border-radius: 0.9vw;
-  background-color:var(--second-bg-color);
+  background-color: var(--second-bg-color);
+  /* -webkit-box-shadow: 1px 1px 0px 1px rgba(18, 27, 252, 0.97);
+  box-shadow: 1px 1px 0px 1px rgba(18, 27, 252, 0.97); */
 }
 .profile-text-holder {
   /* border: 1px solid var(--main-bg-color); */
@@ -60,8 +62,12 @@
     rgba(4, 9, 0, 1) 100%
   ); */
 
-background: rgb(18,27,252);
-background: radial-gradient(circle, rgba(18,27,252,1) 0%, rgba(4,9,0,1) 100%);
+  background: rgb(18, 27, 252);
+  background: radial-gradient(
+    circle,
+    rgba(18, 27, 252, 1) 0%,
+    rgba(4, 9, 0, 1) 100%
+  );
   border-radius: 0.9vw;
   color: var(--text-white-color);
   /* border: 1px solid var(--main-bg-color); */

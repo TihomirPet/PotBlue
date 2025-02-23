@@ -30,7 +30,6 @@
    
 } */
 
-
 .projects-contact-two {
   /* border-bottom: 1px solid rgb(10, 10, 13, 0.3); */
   height: auto;
@@ -79,8 +78,8 @@
 .img-hover img {
   position: relative;
   transition: transform 0.5s ease;
-    border-radius: 0.9vw;
-    border: 1px solid rgb(253, 251, 236,0.3);
+  border-radius: 0.9vw;
+  border: 1px solid rgb(253, 251, 236, 0.3);
 }
 
 /* [3] Finally, transforming the image when container gets hovered */
@@ -88,7 +87,7 @@
   position: relative;
   transform: scale(0.9);
   filter: grayscale(0%);
-    border-radius: 0.9vw;
+  border-radius: 0.9vw;
 }
 .img-hover:hover .img-overlay-content {
   width: 90vw;
@@ -107,16 +106,11 @@
   opacity: 0;
   transform: scale(0.9);
   filter: grayscale(0%);
-
 }
 
 .projects-title {
-
   color: #ffffff;
- 
-
 }
-
 
 /* X-Large devices (large desktops, less than 1400px) */
 @media (max-width: 1399.98px) {
@@ -164,12 +158,7 @@
     height: 9vh;
   }
   .projects-title {
-   
-   
- 
     color: #ffffff;
-  
- 
   }
 }
 /* Small devices (landscape phones, less than 768px) */
@@ -202,21 +191,21 @@
     overflow: hidden; /* [1.2] Hide the overflowing of child elements */
   }
   .img-overlay-content {
-  width: 90.9vw;
-  height: 0vh;
-  background-color: hsl(0, 0%, 0%, 0.3);
-  color: #080808;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  overflow: hidden;
-  position: absolute;
-  z-index: 6;
-  transition: 0.6s;
-  top: 0%;
-  left: 0%;
-  opacity: 1.7;
-}
+    width: 90.9vw;
+    height: 0vh;
+    background-color: hsl(0, 0%, 0%, 0.3);
+    color: #080808;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    position: absolute;
+    z-index: 6;
+    transition: 0.6s;
+    top: 0%;
+    left: 0%;
+    opacity: 1.7;
+  }
 }
 
 /* // XX-Large devices (larger desktops) */
