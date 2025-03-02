@@ -3,13 +3,13 @@
   height: 100vh;
   width: 100vw;
   background-color: var(--second-bg-color);
-  border: 1px solid blueviolet;
+  /* border: 1px solid blueviolet; */
 }
 #profile{
   position: relative;
     height: 100vh;
  
-    border: 1px solid rgb(0, 255, 98);
+    /* border: 1px solid rgb(0, 255, 98); */
 }
 .profile-img {
   background-image: url(/images/Petrov_TihomirSB.jpg);

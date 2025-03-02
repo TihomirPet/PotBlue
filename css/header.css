@@ -80,7 +80,7 @@ height:50vh;
   height: 100%;
   color: var(--second-bg-color);
   z-index: 4; /* Höher als das Canvas */
-border: 1px solid red;
+/* border: 1px solid red; */
   /* text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.8); */
 }
 .title {
@@ -90,12 +90,13 @@ border: 1px solid red;
 }
 .title-second {
   font-size: 3.4rem;
-  font-size: clamp(1.44rem, 0.7583rem + 3.4087vw, 3.4rem);
+  font-size: clamp(1.9rem, 0.7583rem + 3.4087vw, 3.4rem);
   letter-spacing: -0.04em;
   font-weight: 800;
 }
 .text {
   /* font-size: 1.44rem; */
+  width: 90%;
   font-size:  clamp(1.2rem, 0.896rem + 1.52vw, 2.074rem);
   /* letter-spacing: -0.05em; */
   font-weight: 600;
@@ -197,6 +198,20 @@ border: 1px solid red;
 @media (max-width: 767.98px) {
   #head{
     height: 100vh;
+}
+
+
+.header-video {
+  position: relative;
+
+  opacity: 0.9;
+
+  height: 100%;
+
+  width: auto;
+
+  left: -110vw;
+
 }
 #blue {
   position: absolute;

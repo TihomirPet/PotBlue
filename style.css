@@ -34,7 +34,7 @@
 /* ========== Fonts-size ========= */
 .font-h1 {
   /* font-size:8.918rem; */
-  font-size: clamp(2.0738rem, -0.3068rem + 11.9029vw, 8.918rem);
+  font-size: clamp(3.4rem, -0.3068rem + 11.9029vw, 8.918rem);
 }
 .font-h2 {
   /* font-size: 5.161rem; */
