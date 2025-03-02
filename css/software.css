@@ -1,3 +1,6 @@
+#software {
+  height: 100vh;
+}
 .software {
   position: relative;
   height: 100vh;
@@ -5,7 +8,7 @@
   background-color: var(--second-bg-color);
 }
 .software-holder {
-  position: absolute;
+  position: relative;
   z-index: 4;
   width: 70vw;
   /* border: 1px solid rgb(15, 35, 0, 1); */
@@ -27,4 +30,32 @@
   border-radius: 50%;
   border: 1px solid var(--main-bg-color);
   background-color: #ffffff;
+}
+/* // `xxl` applies to x-large devices (large desktops, less than 1400px) */
+@media (max-width: 1399.98px) {
+}
+
+/* // `xl` applies to large devices (desktops, less than 1200px) */
+@media (max-width: 1199.98px) {
+}
+/* // `lg` applies to medium devices (tablets, less than 992px) */
+@media (max-width: 991.98px) {
+
+}
+/* // `md` applies to small devices (landscape phones, less than 768px) */
+@media (max-width: 767.98px) {
+#software {
+  height:auto;
+}
+.software {
+  position: relative;
+  height: auto;
+  width: 100vw;
+  background-color: var(--second-bg-color);
+}
+}
+/* // `sm` applies to x-small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+
+
 }

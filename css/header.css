@@ -1,7 +1,15 @@
 body {
   font-family: 'Plus Jakarta Sans', serif;
 }
-
+#head{
+    height: 100vh;
+}
+.header-holder{
+    position: relative;
+  height: 100vh;
+  width: 100vw;
+  border: 1px solid green;
+}
 .image {
   position: relative;
 
@@ -62,23 +70,7 @@ height:50vh;
   );
   /* background-color: #FDFBEC; */
 }
-#bright {
-  position: absolute;
-  padding: 0;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: 3;
 
-  background:  var(--second-bg-color);
-  background: radial-gradient(
-    circle,
-    rgb(253, 251, 237,0.6),
-   rgb(253, 251, 236,0.2)
-  );
-  
-}
 
 .text-overlay {
   position: absolute;
@@ -88,7 +80,7 @@ height:50vh;
   height: 100%;
   color: var(--second-bg-color);
   z-index: 4; /* Höher als das Canvas */
-
+border: 1px solid red;
   /* text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.8); */
 }
 .title {
@@ -98,11 +90,13 @@ height:50vh;
 }
 .title-second {
   font-size: 3.4rem;
+  font-size: clamp(1.44rem, 0.7583rem + 3.4087vw, 3.4rem);
   letter-spacing: -0.04em;
   font-weight: 800;
 }
 .text {
-  font-size: 1.44rem;
+  /* font-size: 1.44rem; */
+  font-size:  clamp(1.2rem, 0.896rem + 1.52vw, 2.074rem);
   /* letter-spacing: -0.05em; */
   font-weight: 600;
 }
@@ -187,4 +181,43 @@ height:50vh;
   /* opacity: 0.9; */
   height: auto;
   width: 100%;
+}
+/* // `xxl` applies to x-large devices (large desktops, less than 1400px) */
+@media (max-width: 1399.98px) {
+}
+
+/* // `xl` applies to large devices (desktops, less than 1200px) */
+@media (max-width: 1199.98px) {
+}
+/* // `lg` applies to medium devices (tablets, less than 992px) */
+@media (max-width: 991.98px) {
+
+}
+/* // `md` applies to small devices (landscape phones, less than 768px) */
+@media (max-width: 767.98px) {
+  #head{
+    height: 100vh;
+}
+#blue {
+  position: absolute;
+  padding: 0;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 3;
+
+  background: #121bfc;
+  background: radial-gradient(
+    circle,
+    rgba(18, 27, 252, 0.9) 0%,
+    rgb(0, 3, 94) 100%
+  );
+  /* background-color: #FDFBEC; */
+}
+
+}
+/* // `sm` applies to x-small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+
 }

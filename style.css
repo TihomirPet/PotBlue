@@ -5,14 +5,17 @@
   --text-black-color: #040900;
 }
 
-
 /* ========== Colors ========= */
-.main-color{ color:rgb(18, 27, 252)}
-.second-color{ color:rgb(253, 251, 236)}
-
-section {
-  height: 100vh;
+.main-color {
+  color: rgb(18, 27, 252);
 }
+.second-color {
+  color: rgb(253, 251, 236);
+}
+
+/* section {
+  height: 100vh;
+} */
 /* ========== Letter-space ========= */
 .letter-space-04 {
   letter-spacing: -0.04em;
@@ -28,20 +31,47 @@ section {
   font-weight: 800;
 }
 
-
 /* ========== Fonts-size ========= */
-.font-h1{
-  font-size:8.918rem;
+.font-h1 {
+  /* font-size:8.918rem; */
+  font-size: clamp(2.0738rem, -0.3068rem + 11.9029vw, 8.918rem);
 }
-.font-h2{
-  font-size: 5.161rem;
+.font-h2 {
+  /* font-size: 5.161rem; */
+  /* font-size: clamp(1.44rem, 0.1457rem + 6.4713vw, 5.161rem); */
+  /* font-size: clamp(1.7281rem, 1.6079rem + 0.6011vw, 2.0738rem); */
+  font-size: clamp(2.4881rem, 1.5584rem + 4.6485vw, 5.161rem);
 }
-.font-h3{
-  font-size: 2.074rem;
+.font-h3 {
+  /* font-size: 2.074rem; */
+  /* font-size: clamp(1.2rem, 1.1165rem + 0.4174vw, 1.44rem); */
+  /* font-size: clamp(1.7281rem, 1.6079rem + 0.6011vw, 2.0738rem); */
+  /* font-size: clamp(1.44rem, 1.3398rem + 0.5011vw, 1.7281rem); */
+  font-size:  clamp(1.7281rem, 1.6078rem + 0.6015vw, 2.074rem);
 }
-.font-h4{
+.font-h4 {
   font-size: 1.728rem;
+
+   font-size: clamp(1.44rem, 1.3398rem + 0.5011vw, 1.7281rem);
 }
-.font-h5{
-  font-size:1.44rem;
+.font-h5 {
+  font-size: 1.44rem;
+     font-size: clamp(1.2rem, 1.1165rem + 0.4174vw, 1.44rem);
+ 
+}
+/* // `xxl` applies to x-large devices (large desktops, less than 1400px) */
+@media (max-width: 1399.98px) {
+}
+
+/* // `xl` applies to large devices (desktops, less than 1200px) */
+@media (max-width: 1199.98px) {
+}
+/* // `lg` applies to medium devices (tablets, less than 992px) */
+@media (max-width: 991.98px) {
+}
+/* // `md` applies to small devices (landscape phones, less than 768px) */
+@media (max-width: 767.98px) {
+}
+/* // `sm` applies to x-small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
 }

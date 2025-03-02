@@ -3,6 +3,13 @@
   height: 100vh;
   width: 100vw;
   background-color: var(--second-bg-color);
+  border: 1px solid blueviolet;
+}
+#profile{
+  position: relative;
+    height: 100vh;
+ 
+    border: 1px solid rgb(0, 255, 98);
 }
 .profile-img {
   background-image: url(/images/Petrov_TihomirSB.jpg);
@@ -15,7 +22,7 @@
   height: 60vh;
 }
 .profile-holder {
-  position: absolute;
+  position: relative;
   z-index: 4;
   width: 55vw;
   /* border: 1px solid rgb(18, 27, 252); */
@@ -81,4 +88,54 @@
   background-color: var(--second-bg-color);
   border-radius: 0.9vw;
   border: 1px solid var(--main-bg-color);
+}
+#bright {
+  position: absolute;
+  padding: 0;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 3;
+
+  background:  var(--second-bg-color);
+  background: radial-gradient(
+    circle,
+    rgb(253, 251, 237,0.6),
+   rgb(253, 251, 236,0.2)
+  );
+  
+}
+/* // `xxl` applies to x-large devices (large desktops, less than 1400px) */
+@media (max-width: 1399.98px) {
+}
+
+/* // `xl` applies to large devices (desktops, less than 1200px) */
+@media (max-width: 1199.98px) {
+}
+/* // `lg` applies to medium devices (tablets, less than 992px) */
+@media (max-width: 991.98px) {
+
+}
+/* // `md` applies to small devices (landscape phones, less than 768px) */
+@media (max-width: 767.98px) {
+  #profile{
+    height:200vh;
+}
+  .profile {
+  position: relative;
+  height: auto;
+  width: 100vw;
+  background-color: var(--second-bg-color);
+}
+}
+/* // `sm` applies to x-small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+
+  .profile {
+  position: relative;
+  height: auto;
+  width: 100vw;
+  background-color: var(--second-bg-color);
+}
 }
