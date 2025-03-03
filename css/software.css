@@ -25,8 +25,8 @@
   width: 16vw;
 }
 .software-img-holder {
-  width: 60%;
-  height: 35%;
+  width:8vw;
+  height: 8vw;
   border-radius: 50%;
   border: 1px solid var(--main-bg-color);
   background-color: #ffffff;
@@ -56,14 +56,14 @@
   /* background-color: rgb(252, 252, 252); */
 }
 .software-img-holder {
-  width: 60%;
-  height: 51%;
+   width: 30vw;
+  height: 30vw;
   border-radius: 50%;
   border: 1px solid var(--main-bg-color);
   background-color: #ffffff;
 }
   .software-card {
-    height: 45vh;
+    height: 42vh;
     border-radius: 0.9vw;
     border: 1px solid var(--main-bg-color);
     background-color: var(--second-bg-color);
