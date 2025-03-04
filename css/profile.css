@@ -109,7 +109,16 @@
 }
 /* // `lg` applies to medium devices (tablets, less than 992px) */
 @media (max-width: 991.98px) {
-
+  .profile-holder {
+  position: relative;
+  z-index: 4;
+  width: 100vw;
+  border: 1px solid transparent;
+  border-radius: 0.9vw;
+  background-color: var(--second-bg-color);
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
 }
 /* // `md` applies to small devices (landscape phones, less than 768px) */
 @media (max-width: 767.98px) {

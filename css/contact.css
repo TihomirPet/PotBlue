@@ -45,7 +45,7 @@
   --bs-btn-padding-x: 1rem;
   --bs-btn-padding-y: 0.3rem;
   --bs-btn-font-family: 'Plus Jakarta Sans', serif;
-  --bs-btn-font-size: 1.1rem !important;
+  --bs-btn-font-size: clamp(0.8rem, 1rem + 0.5vw, 1.1rem) !important;
   --bs-btn-font-weight: 700;
   --bs-btn-line-height: 1.5;
   --bs-btn-color: var(--second-bg-color) !important;
