@@ -37,7 +37,8 @@
   /* font-size: clamp(2.98625rem, -0.3068rem + 11.9029vw, 8.918rem); */
   /* font-size: clamp(2.98625rem, 1.9395rem + 2.9077vw, 8.918rem); */
   /* font-size: clamp(2.986rem, 1rem + 5vw, 8.918rem); */
-  font-size: clamp(2.986rem, 1rem + 6vw, 10rem);
+  /* font-size: clamp(2.986rem, 1rem + 6vw, 10rem); */
+  font-size: clamp(3rem, 1.8rem + 5vw, 8rem);
 }
 .font-h2 {
   /* font-size: 5.161rem; */
@@ -47,6 +48,7 @@
   /* font-size: clamp(2.488125rem, 2.0165rem + 1.3102vw, 5.161rem); */
   /* font-size: clamp(2.4rem, 1.8rem + 2vw, 6rem); */
   font-size: clamp(2.4rem, 1.5rem + 1.5vw, 5rem);
+  font-size: clamp(2.4rem, 1.2rem + 3vw, 5.5rem); 
 }
 .font-h3 {
   /* font-size: 2.074rem; */
@@ -56,7 +58,8 @@
   /* font-size:  clamp(1.7281rem, 1.6078rem + 0.6015vw, 2.074rem); */
   /* font-size: clamp(1.728125rem, 1.6671rem + 0.1695vw, 2.074rem); */
   /* font-size: clamp(1.8rem, 1.2rem + 1.2vw, 3.5rem); */
-   font-size: clamp(1.6rem, 1rem + 1vw, 2.5rem);
+  font-size: clamp(1.6rem, 1rem + 1vw, 2.5rem);
+   font-size: clamp(1.6rem, 0.8rem + 2vw, 2.4rem);
 }
 .font-h4 {
   /* font-size: 1.728rem; */
@@ -64,14 +67,20 @@
   /* font-size: clamp(1.44rem, 1.3398rem + 0.5011vw, 1.7281rem); */
   /* font-size: clamp(1.5rem, 1rem + 1vw, 2.8rem); */
   font-size: clamp(1.3rem, 0.9rem + 0.8vw, 2.2rem);
+    font-size: clamp(1.3rem, 0.7rem + 1.2vw, 2rem);
 }
 .font-h5 {
   /* font-size: 1.44rem; */
   /* font-size: clamp(1.2rem, 1.1165rem + 0.4174vw, 1.44rem); */
   font-size: clamp(1.1rem, 0.8rem + 0.6vw, 1.8rem);
+    font-size: clamp(1.1rem, 0.8rem + 0.8vw, 1.7rem);
 }
 p {
   font-size: clamp(1rem, 1.2rem + 0.5vw, 1.5rem);
+    font-size: clamp(1rem, 0.7rem + 0.5vw, 1.4rem); 
+}
+button {
+  font-size: clamp(0.8rem, 1rem + 0.5vw, 1.1rem); /* Kleine Schrift für Buttons */
 }
 /* // `xxl` applies to x-large devices (large desktops, less than 1400px) */
 @media (max-width: 1399.98px) {
