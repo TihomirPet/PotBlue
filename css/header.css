@@ -176,7 +176,7 @@ height:50vh;
 .header-video {
   position: relative;
   height: 100%;
-  width: auto;
+  width: 100%;
 }
 /* // `xxl` applies to x-large devices (large desktops, less than 1400px) */
 @media (max-width: 1399.98px) {

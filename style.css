@@ -1,3 +1,6 @@
+body {
+  overflow-x: hidden;
+}
 :root {
   --main-bg-color: rgb(18, 27, 252);
   --second-bg-color: #fdfbec;
