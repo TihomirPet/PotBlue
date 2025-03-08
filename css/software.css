@@ -10,7 +10,7 @@
 .software-holder {
   position: relative;
   z-index: 4;
-  width: 70vw;
+  width: 80%;
   /* border: 1px solid rgb(15, 35, 0, 1); */
   border-radius: 0.9vw;
   /* background-color: rgb(252, 252, 252); */
@@ -33,10 +33,44 @@
 }
 /* // `xxl` applies to x-large devices (large desktops, less than 1400px) */
 @media (max-width: 1399.98px) {
+    .software-holder {
+  position: relative;
+  z-index: 4;
+  width: 90%;
+  border: 1px solid transparent;
+  border-radius: 0.9vw;
+  /* background-color: rgb(252, 252, 252); */
+}
+  .software-card {
+    height: 100%;
+    border-radius: 0.9vw;
+    border: 1px solid var(--main-bg-color);
+    background-color: var(--second-bg-color);
+    -webkit-box-shadow: 1px 1px 0px 1px rgba(18, 27, 252, 0.97);
+    box-shadow: 1px 1px 0px 1px rgba(18, 27, 252, 0.97);
+    width: 33%;
+  }
 }
 
 /* // `xl` applies to large devices (desktops, less than 1200px) */
 @media (max-width: 1199.98px) {
+  .software-holder {
+  position: relative;
+  z-index: 4;
+  width: 90%;
+  border: 1px solid transparent;
+  border-radius: 0.9vw;
+  /* background-color: rgb(252, 252, 252); */
+}
+  .software-card {
+    height: 100%;
+    border-radius: 0.9vw;
+    border: 1px solid var(--main-bg-color);
+    background-color: var(--second-bg-color);
+    -webkit-box-shadow: 1px 1px 0px 1px rgba(18, 27, 252, 0.97);
+    box-shadow: 1px 1px 0px 1px rgba(18, 27, 252, 0.97);
+    width: 33%;
+  }
 }
 /* // `lg` applies to medium devices (tablets, less than 992px) */
 @media (max-width: 991.98px) {

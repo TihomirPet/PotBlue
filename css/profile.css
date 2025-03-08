@@ -19,13 +19,12 @@
   /* background-position: -7vw 13vh; */
   background-position: center;
   border-radius: 0.9vw;
-
-  height: 60vh;
+  height: auto;
 }
 .profile-holder {
   position: relative;
   z-index: 4;
-  width: 55vw;
+  width: 60%;
   /* border: 1px solid rgb(18, 27, 252); */
   border-radius: 0.9vw;
   background-color: var(--second-bg-color);
@@ -87,8 +86,8 @@
   padding: 0;
   top: 0;
   left: 0;
-  width: 100%;
-  height: 100%;
+  width: 100% !important;
+  height: 100% !important;
   z-index: 3;
 
   background: var(--second-bg-color);
@@ -114,7 +113,9 @@
     /* border: 1px solid rgb(18, 27, 252); */
     border-radius: 0.9vw;
     background-color: var(--second-bg-color);
+    min-height: 80vh; /* Verhindert, dass es kleiner als 80% des Viewports wird */
   }
+
 }
 
 /* // `xl` applies to large devices (desktops, less than 1200px) */
@@ -126,6 +127,7 @@
     background-color: var(--second-bg-color);
     /* border: 1px solid blueviolet; */
   }
+
 }
 /* // `lg` applies to medium devices (tablets, less than 992px) */
 @media (max-width: 991.98px) {
@@ -158,8 +160,6 @@
   }
   .profile-text-holder {
     border-radius: 0.9vw;
-    min-height: 98vh;
-    max-height: 100vh;
   }
 }
 /* // `md` applies to small devices (landscape phones, less than 768px) */

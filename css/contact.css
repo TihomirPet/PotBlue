@@ -100,6 +100,23 @@
 
 /* // `xl` applies to large devices (desktops, less than 1200px) */
 @media (max-width: 1199.98px) {
+    .contact-holder {
+    /* position: absolute; */
+    z-index: 4;
+    width: 100%;
+    /* border: 1px solid rgb(15, 35, 0, 1); */
+    border-radius: 0.9vw;
+    /* background-color: rgb(252, 252, 252); */
+}
+.contact-card {
+    height: 45vh;
+    border-radius: 0.9vw;
+    border: 1px solid var(--main-bg-color);
+    background-color: var(--second-bg-color);
+    /* background-color: #ffffffcc; */
+    -webkit-box-shadow: 1px 1px 0px 1px rgba(18, 27, 252, 0.97);
+    box-shadow: 1px 1px 0px 1px rgba(18, 27, 252, 0.97);
+}
 }
 /* // `lg` applies to medium devices (tablets, less than 992px) */
 @media (max-width: 991.98px) {
