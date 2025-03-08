@@ -1,14 +1,15 @@
-#profile{
+#profile {
   position: relative;
-    height: 100%;
- 
-    /* border: 1px solid rgb(0, 255, 98); */
-}.profile {
+  height: 100%;
+
+  /* border: 1px solid rgb(0, 255, 98); */
+}
+.profile {
   position: relative;
   height: 100%;
   width: 100vw;
   background-color: var(--second-bg-color);
-padding: 15vh 0vw 15vh 0vh;
+  padding: 15vh 0vw 15vh 0vh;
 }
 
 .profile-img {
@@ -61,8 +62,6 @@ padding: 15vh 0vw 15vh 0vh;
   background-color: var(--second-bg-color);
 }
 .profile-text-one {
-
-
   background: rgb(18, 27, 252);
   background: radial-gradient(
     circle,
@@ -92,141 +91,162 @@ padding: 15vh 0vw 15vh 0vh;
   height: 100%;
   z-index: 3;
 
-  background:  var(--second-bg-color);
+  background: var(--second-bg-color);
   background: radial-gradient(
     circle,
-    rgb(253, 251, 237,0.6),
-   rgb(253, 251, 236,0.2)
+    rgb(253, 251, 237, 0.6),
+    rgb(253, 251, 236, 0.2)
   );
-  
 }
 /* // `xxl` applies to x-large devices (large desktops, less than 1400px) */
 @media (max-width: 1399.98px) {
-      .profile {
-  position: relative;
-  height: auto;
-  width: 100vw;
-  background-color: var(--second-bg-color);
-  /* border: 1px solid blueviolet; */
-}
-.profile-holder {
+  .profile {
+    position: relative;
+    height: auto;
+    width: 100vw;
+    background-color: var(--second-bg-color);
+    /* border: 1px solid blueviolet; */
+  }
+  .profile-holder {
     position: relative;
     z-index: 4;
     width: 80vw;
     /* border: 1px solid rgb(18, 27, 252); */
     border-radius: 0.9vw;
     background-color: var(--second-bg-color);
-}
+  }
 }
 
 /* // `xl` applies to large devices (desktops, less than 1200px) */
 @media (max-width: 1199.98px) {
-    .profile {
-  position: relative;
-  height: auto;
-  width: 100vw;
-  background-color: var(--second-bg-color);
-  /* border: 1px solid blueviolet; */
-}
+  .profile {
+    position: relative;
+    height: auto;
+    width: 100vw;
+    background-color: var(--second-bg-color);
+    /* border: 1px solid blueviolet; */
+  }
 }
 /* // `lg` applies to medium devices (tablets, less than 992px) */
 @media (max-width: 991.98px) {
   .profile {
-  position: relative;
-  height: auto;
-  width: 100vw;
-  background-color: var(--second-bg-color);
-  /* border: 1px solid blueviolet; */
-}
+    position: relative;
+    height: auto;
+    width: 100%;
+    background-color: var(--second-bg-color);
+    /* border: 1px solid blueviolet; */
+  }
   .profile-holder {
-  position: relative;
-  z-index: 4;
-  width: 100vw;
-  border: 1px solid transparent;
-  border-radius: 0.9vw;
-  background-color: var(--second-bg-color);
-  -webkit-box-shadow: none;
-  box-shadow: none;
-}
+    position: relative;
+    z-index: 4;
+    width: 100%;
+    border: 1px solid transparent;
+    border-radius: 0.9vw;
+    background-color: var(--second-bg-color);
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    min-height: 80vh; /* Verhindert, dass es kleiner als 80% des Viewports wird */
+  }
+  .profile-img {
+    background-image: url(/images/Petrov_TihomirSB.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    /* background-position: -7vw 13vh; */
+    background-position: center;
+    border-radius: 0.9vw;
+    height: auto;
+  }
+  .profile-text-holder {
+    border-radius: 0.9vw;
+    min-height: 98vh;
+    max-height: 100vh;
+  }
 }
 /* // `md` applies to small devices (landscape phones, less than 768px) */
 @media (max-width: 767.98px) {
   .profile-holder {
-  position: relative;
-  z-index: 4;
-  width: 100vw;
-  border: 1px solid transparent;
-  border-radius: 0.9vw;
-  background-color: var(--second-bg-color);
-  -webkit-box-shadow: none;
-  box-shadow: none;
-}
-.profile-img {
-  background-image: url(/images/Petrov_TihomirSB.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: -7vw 13vh;
-  background-position: center;
-  border-radius: 1.9vw;
-  height: 60vh;
-}
-.profile-text-one {
-  background: rgb(4, 9, 0);
-  background: linear-gradient( 90deg, rgba(4, 9, 0, 1) 0%, rgba(13, 17, 118, 1) 46%, rgba(4, 9, 0, 1) 100% );
-  background: rgb(18, 27, 252);
-  background: radial-gradient( circle, rgba(18, 27, 252, 1) 0%, rgba(4, 9, 0, 1) 100% );
-  border-radius: 1.9vw;
-  color: var(--text-white-color);
-  border: 1px solid var(--main-bg-color);
-}
-.profile-text-two {
-  background-color: var(--second-bg-color);
-  border-radius: 1.9vw;
-  border: 1px solid var(--main-bg-color);
-}
-.profile-text-three {
-  background-color: var(--second-bg-color);
-  border-radius: 1.9vw;
-  border: 1px solid var(--main-bg-color);
-}
-  #profile{
-    height:auto;
-}
+    position: relative;
+    z-index: 4;
+    width: 100vw;
+    border: 1px solid transparent;
+    border-radius: 0.9vw;
+    background-color: var(--second-bg-color);
+    -webkit-box-shadow: none;
+    box-shadow: none;
+  }
+  .profile-img {
+    background-image: url(/images/Petrov_TihomirSB.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: -7vw 13vh;
+    background-position: center;
+    border-radius: 1.9vw;
+    height: 60vh;
+  }
+  .profile-text-one {
+    background: rgb(4, 9, 0);
+    background: linear-gradient(
+      90deg,
+      rgba(4, 9, 0, 1) 0%,
+      rgba(13, 17, 118, 1) 46%,
+      rgba(4, 9, 0, 1) 100%
+    );
+    background: rgb(18, 27, 252);
+    background: radial-gradient(
+      circle,
+      rgba(18, 27, 252, 1) 0%,
+      rgba(4, 9, 0, 1) 100%
+    );
+    border-radius: 1.9vw;
+    color: var(--text-white-color);
+    border: 1px solid var(--main-bg-color);
+  }
+  .profile-text-two {
+    background-color: var(--second-bg-color);
+    border-radius: 1.9vw;
+    border: 1px solid var(--main-bg-color);
+  }
+  .profile-text-three {
+    background-color: var(--second-bg-color);
+    border-radius: 1.9vw;
+    border: 1px solid var(--main-bg-color);
+  }
+  #profile {
+    height: auto;
+  }
   .profile {
-  position: relative;
-  height: auto;
-  width: 100vw;
-  background-color: var(--second-bg-color);
-  padding: 5vh 0vw 5vh 0vw;
-}
-#bright {
-  position: absolute;
-  padding: 0;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100% !important;
-  z-index: 3;
+    position: relative;
+    height: auto;
+    width: 100vw;
+    background-color: var(--second-bg-color);
+    padding: 5vh 0vw 5vh 0vw;
+  }
+  #bright {
+    position: absolute;
+    padding: 0;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100% !important;
+    z-index: 3;
 
-  background:  var(--second-bg-color);
-  background: radial-gradient(
-    circle,
-    rgb(253, 251, 237,0.6),
-   rgb(253, 251, 236,0.2)
-  );
-  
-}
-.profile-between {
-  display: none !important;
-}
+    background: var(--second-bg-color);
+    background: radial-gradient(
+      circle,
+      rgb(253, 251, 237, 0.6),
+      rgb(253, 251, 236, 0.2)
+    );
+  }
+  .profile-between {
+    display: none !important;
+  }
 }
 /* // `sm` applies to x-small devices (portrait phones, less than 576px) */
 @media (max-width: 575.98px) {
-
   .profile {
-  position: relative;
-  height: auto;
-  width: 100vw;
-  background-color: var(--second-bg-color);
-}
+    position: relative;
+    height: auto;
+    width: 100vw;
+    background-color: var(--second-bg-color);
+  }
 }

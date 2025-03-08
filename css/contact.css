@@ -1,11 +1,15 @@
 #contact {
-  height: 100vh;
+  height: 100%;
+  background-color: var(--second-bg-color);
 }
 .contact {
   position: relative;
-  height: 100vh;
+  height: 100%;
   width: 100vw;
   background-color: var(--second-bg-color);
+  overflow: hidden;
+
+  padding: 8vh 0vh 10vh 0vh !important;
 }
 .contact-holder {
   /* position: absolute; */
@@ -99,37 +103,52 @@
 }
 /* // `lg` applies to medium devices (tablets, less than 992px) */
 @media (max-width: 991.98px) {
+  .contact-holder {
+    /* position: absolute; */
+    z-index: 4;
+    width: 100%;
+    /* border: 1px solid rgb(15, 35, 0, 1); */
+    border-radius: 0.9vw;
+    /* background-color: rgb(252, 252, 252); */
+}
+.contact-card {
+    height: 47vh;
+    border-radius: 0.9vw;
+    border: 1px solid var(--main-bg-color);
+    background-color: var(--second-bg-color);
+    /* background-color: #ffffffcc; */
+    -webkit-box-shadow: 1px 1px 0px 1px rgba(18, 27, 252, 0.97);
+    box-shadow: 1px 1px 0px 1px rgba(18, 27, 252, 0.97);
+}
 }
 /* // `md` applies to small devices (landscape phones, less than 768px) */
 @media (max-width: 767.98px) {
   #contact {
-  height: auto;
-}
-.contact {
-  position: relative;
-  height: auto;
-  width: 100vw;
-  background-color: var(--second-bg-color);
-}
-.contact-holder {
-  position: relative;
-  z-index: 4;
-  width:100%;
-  border: 1px solid transparent;
-  border-radius: 0.9vw;
-  /* background-color: rgb(252, 252, 252); */
-}
-.contact-card {
-  height: 23vh;
-  border-radius: 0.9vw;
-  border: 1px solid var(--main-bg-color);
-  /* background-color: var(--second-bg-color); */
-  background-color: #ffffffcc;
-  -webkit-box-shadow: 1px 1px 0px 1px rgba(18, 27, 252, 0.97);
-  box-shadow: 1px 1px 0px 1px rgba(18, 27, 252, 0.97);
-}
-
-
+    height: auto;
+  }
+  .contact {
+    position: relative;
+    height: auto;
+    width: 100vw;
+    background-color: var(--second-bg-color);
+  }
+  .contact-holder {
+    position: relative;
+    z-index: 4;
+    width: 100%;
+    border: 1px solid transparent;
+    border-radius: 0.9vw;
+    /* background-color: rgb(252, 252, 252); */
+  }
+  .contact-card {
+    height: 23vh;
+    border-radius: 0.9vw;
+    border: 1px solid var(--main-bg-color);
+    /* background-color: var(--second-bg-color); */
+    background-color: #ffffffcc;
+    -webkit-box-shadow: 1px 1px 0px 1px rgba(18, 27, 252, 0.97);
+    box-shadow: 1px 1px 0px 1px rgba(18, 27, 252, 0.97);
+  }
 }
 /* // `sm` applies to x-small devices (portrait phones, less than 576px) */
 @media (max-width: 575.98px) {

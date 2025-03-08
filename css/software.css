@@ -1,9 +1,9 @@
 #software {
-  height: 100vh;
+  height: 100%;
 }
 .software {
   position: relative;
-  height: 100vh;
+  height: 100%;
   width: 100vw;
   background-color: var(--second-bg-color);
 }
@@ -40,7 +40,30 @@
 }
 /* // `lg` applies to medium devices (tablets, less than 992px) */
 @media (max-width: 991.98px) {
-
+.software-holder {
+  position: relative;
+  z-index: 4;
+  width: 100%;
+  border: 1px solid transparent;
+  border-radius: 0.9vw;
+  /* background-color: rgb(252, 252, 252); */
+}
+  .software-card {
+    height: 75vh;
+    border-radius: 0.9vw;
+    border: 1px solid var(--main-bg-color);
+    background-color: var(--second-bg-color);
+    -webkit-box-shadow: 1px 1px 0px 1px rgba(18, 27, 252, 0.97);
+    box-shadow: 1px 1px 0px 1px rgba(18, 27, 252, 0.97);
+    width: 35%;
+  }
+  .software-img-holder {
+   width: 13vw;
+  height: 13vw;
+  border-radius: 50%;
+  border: 1px solid var(--main-bg-color);
+  background-color: #ffffff;
+}
 }
 /* // `md` applies to small devices (landscape phones, less than 768px) */
 @media (max-width: 767.98px) {
