@@ -225,7 +225,7 @@
       rgb(18, 27, 252, 0.5) 100%
     );
     backdrop-filter: blur(5px);
-    border-radius: 2.5vw;
+    border-radius: 2.3vw;
     border: 1px solid hsl(0, 0%, 100%, 0.5);
     -webkit-box-shadow: inset 5px 4px 7px -6px #271b00;
     box-shadow: inset 5px 6px 4px -6px #271b00;
@@ -254,7 +254,7 @@
       rgb(18, 27, 252, 0.5) 100%
     );
     backdrop-filter: blur(5px);
-    border-radius: 3vw;
+    border-radius: 3.9vw;
     border: 1px solid hsl(0, 0%, 100%, 0.5);
     -webkit-box-shadow: inset 5px 4px 7px -6px #271b00;
     box-shadow: inset 5px 6px 4px -6px #271b00;
