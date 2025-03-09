@@ -1,0 +1,219 @@
+.project-id {
+  position: relative;
+  height: 100vh;
+}
+.project-id-two {
+  border-left: 1px solid rgb(10, 10, 13, 0.3);
+}
+.project-id-one {
+  height: 100vh;
+  /* border-right: 1px solid rgb(10, 10, 13, 0.3); */
+}
+.project-id-three {
+  height: 100vh;
+  border-left: 1px solid rgb(10, 10, 13, 0.3);
+}
+
+.projects-id-img {
+  width: 100%;
+  border-radius: 8px;
+  height: auto;
+}
+.project-id-top {
+  height: 19vh;
+  border-right: 1px solid rgb(10, 10, 13, 0.3);
+}
+.project-id-bottom {
+  height: 100%;
+  /* border-left: 1px solid rgb(10, 10, 13, 0.3); */
+}
+.project-id-bottom-column{
+  height: 100%; 
+    border-right: 1px solid rgb(10, 10, 13, 0.3);
+}
+
+.project-id-mobile {
+  position: relative;
+  height: auto;
+  /* background-color: var(--main-bg-color); */
+  /* border-top: 1px solid rgb(10, 10, 13, 0.3); */
+}
+.project-id-mobile-one {
+  height: 100%;
+  /* border-right: 1px solid rgba(4, 4, 247, 0.3); */
+}
+.project-id-mobile-two {
+  height: auto;
+  /* border-right: 1px solid rgb(10, 10, 13, 0.3); */
+  border-left: 1px solid rgb(10, 10, 13, 0.3);
+}
+.project-id-mobile-three {
+    border-left: 1px solid rgb(10, 10, 13, 0.3);
+}
+.project-id-mobile-vour {
+  height: auto;
+  border-left: 1px solid rgb(10, 10, 13, 0.3);
+
+   /* border-radius: 0.7vw; */
+}
+.projects-id-mobile-img{
+  height: 68vh;
+
+}
+
+
+.img-hover-zoom-mobile {
+ /* height: 68vh;  */
+ height: auto; /* [1.1] Set it as per your need */
+  overflow: hidden; /* [1.2] Hide the overflowing of child elements */
+     border-radius: 0.69vw;
+     border:1px solid #000000
+}
+
+/* [2] Transition property for smooth transformation of images */
+.img-hover-mobile img {
+ transition: transform 0.5s ease;
+  /* filter: grayscale(90%); */
+   
+}
+
+/* [3] Finally, transforming the image when container gets hovered */
+.img-hover-mobile:hover img {
+  transform: scale(1.05);
+  /* filter: grayscale(0%); */
+}
+.mobile-btn{
+  font-size: 0.9vw !important;
+  border:1px solid rgb(10, 10, 13, 0.5) !important;
+  border-radius: 10vw !important;
+  font-family: 'Light' !important;
+  /* background-color: #c8ff00 !important; */
+}
+.mobile-btn:hover{
+  border:2px solid rgb(10, 10, 13, 0.5) !important;
+  border-radius: 10vw !important;
+  font-family:'Regular' !important;
+}
+/* X-Large devices (large desktops, less than 1400px) */
+@media (max-width: 1399.98px) {
+.mobile-btn{
+  font-size: 1.2vw !important;
+  border:1px solid rgb(10, 10, 13, 0.5) !important;
+  border-radius: 10vw !important;
+}
+}
+/* Large devices (desktops, less than 1200px) */
+@media (max-width: 1199.98px) {
+  .project-id-mobile {
+  position: relative;
+  height: auto;
+  /* background-color: #eeefe8; */
+
+}
+.project-id-one {
+  height: auto;
+  /* border-right: 1px solid rgb(10, 10, 13, 0.3); */
+}
+.project-id-mobile-two {
+  height: auto;
+  border-right: 1px solid rgb(10, 10, 13, 0.3);
+}
+.project-id-mobile-vour {
+  height: auto;
+  border-left: 1px solid rgb(10, 10, 13, 0.3);
+}
+.project-id-bottom {
+  height: 25vh;
+  /* border-right: 1px solid rgb(10, 10, 13, 0.3); */
+}
+.projects-id-mobile-img{
+  height: 90vh;
+  border-radius: 0.9vw;
+}
+.img-hover-zoom-mobile {
+ height: 90vh; /* [1.1] Set it as per your need */
+  overflow: hidden; /* [1.2] Hide the overflowing of child elements */
+}
+}
+/* Medium devices (tablets, less than 992px) */
+@media (max-width: 991.98px) {
+.project-id {
+  position: relative;
+  height: 100vh;
+}
+.project-id-one {
+  height: auto;
+  /* border-right: 1px solid rgb(10, 10, 13, 0.3); */
+}
+.project-id-mobile {
+  position: relative;
+  height: auto;
+  /* background-color: #eeefe8; */
+
+}
+.project-id-mobile-two {
+  height: auto;
+  border-right: 1px solid rgb(10, 10, 13, 0.3);
+}
+.project-id-mobile-vour {
+  height: auto;
+  border-left: 1px solid rgb(10, 10, 13, 0.3);
+}
+.project-id-bottom {
+  height: 25vh;
+  /* border-right: 1px solid rgb(10, 10, 13, 0.3); */
+}
+
+.projects-id-mobile-img{
+  height: 90vh;
+  border-radius: 0.9vw;
+}
+.img-hover-zoom-mobile {
+ height: 90vh; /* [1.1] Set it as per your need */
+  overflow: hidden; /* [1.2] Hide the overflowing of child elements */
+}
+.mobile-btn{
+  font-size: 1.6vw !important;
+  border:1px solid rgb(10, 10, 13, 0.5) !important;
+  border-radius: 10vw !important;
+}
+}
+/* Small devices (landscape phones, less than 768px) */
+@media (max-width: 767.98px) {
+
+}
+/* // X-Small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+  .mobile-btn{
+  font-size: 4vw !important;
+  border:1px solid rgb(10, 10, 13, 0.5) !important;
+  border-radius: 10vw !important;
+}
+  .projects-id-mobile-img{
+  height: 85vh;
+  border-radius: 3vw;
+}
+.img-hover-zoom-mobile {
+ height: 85vh; /* [1.1] Set it as per your need */
+  overflow: hidden; /* [1.2] Hide the overflowing of child elements */
+    border-radius: 3vw;
+}
+  .project-id-mobile {
+  position: relative;
+  height: auto;
+  /* background-color: #eeefe8; */
+  /* border-top: 1px solid rgb(10, 10, 13, 0.3); */
+}
+.project-id-mobile-one {
+  height: 100%;
+  border-right: 1px solid rgb(10, 10, 13, 0.3);
+}
+.project-id-mobile-vour {
+  height: 20vh;
+  border-left: none;
+}
+
+}
+
+/* // XX-Large devices (larger desktops) */
+/* // No media query since the xxl breakpoint has no upper bound on its width */
