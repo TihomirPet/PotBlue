@@ -3,7 +3,7 @@
   height: 100vh;
   background-color: var(--second-bg-color);
 }
-.project-overlay{
+.project-overlay {
   position: relative;
   z-index: 3;
 }
@@ -32,9 +32,9 @@
   height: 100%;
   /* border-left: 1px solid rgb(10, 10, 13, 0.3); */
 }
-.project-id-bottom-column{
-  height: 100%; 
-    /* border-right: 1px solid rgb(10, 10, 13, 0.3); */
+.project-id-bottom-column {
+  height: 100%;
+  /* border-right: 1px solid rgb(10, 10, 13, 0.3); */
 }
 
 .project-id-mobile {
@@ -42,7 +42,7 @@
   height: auto;
   /* background-color: var(--main-bg-color); */
   /* border-top: 1px solid rgb(10, 10, 13, 0.3); */
-   background-color: var(--second-bg-color);
+  background-color: var(--second-bg-color);
 }
 .project-id-mobile-one {
   height: 100%;
@@ -54,33 +54,30 @@
   /* border-left: 1px solid rgb(10, 10, 13, 0.3); */
 }
 .project-id-mobile-three {
-    /* border-left: 1px solid rgb(10, 10, 13, 0.3); */
+  /* border-left: 1px solid rgb(10, 10, 13, 0.3); */
 }
 .project-id-mobile-vour {
   height: auto;
   /* border-left: 1px solid rgb(10, 10, 13, 0.3); */
 
-   /* border-radius: 0.7vw; */
+  /* border-radius: 0.7vw; */
 }
-.projects-id-mobile-img{
+.projects-id-mobile-img {
   height: 68vh;
-
 }
-
 
 .img-hover-zoom-mobile {
- /* height: 68vh;  */
- height: auto; /* [1.1] Set it as per your need */
+  /* height: 68vh;  */
+  height: auto; /* [1.1] Set it as per your need */
   overflow: hidden; /* [1.2] Hide the overflowing of child elements */
-     border-radius: 0.69vw;
-     border:1px solid #000000
+  border-radius: 0.69vw;
+  border: 1px solid #000000;
 }
 
 /* [2] Transition property for smooth transformation of images */
 .img-hover-mobile img {
- transition: transform 0.5s ease;
+  transition: transform 0.5s ease;
   /* filter: grayscale(90%); */
-   
 }
 
 /* [3] Finally, transforming the image when container gets hovered */
@@ -88,138 +85,216 @@
   transform: scale(1.05);
   /* filter: grayscale(0%); */
 }
-.mobile-btn{
+.mobile-btn {
   font-size: 0.9vw !important;
-  border:1px solid rgb(10, 10, 13, 0.5) !important;
+  border: 1px solid rgb(10, 10, 13, 0.5) !important;
   border-radius: 10vw !important;
   font-family: 'Light' !important;
   /* background-color: #c8ff00 !important; */
 }
-.mobile-btn:hover{
-  border:2px solid rgb(10, 10, 13, 0.5) !important;
+.mobile-btn:hover {
+  border: 2px solid rgb(10, 10, 13, 0.5) !important;
   border-radius: 10vw !important;
-  font-family:'Regular' !important;
+  font-family: 'Regular' !important;
+}
+.btn-slider-next {
+  bottom: 0;
+  left: 51%;
+}
+.btn-slider-prev {
+  bottom: 0;
+  right: 51%;
+}
+
+.btn-slider-prev,
+.btn-slider-next {
+  --bs-btn-color: var(--text-white-color) !important;
+  --bs-btn-bg: var(--second-bg-color) !important;
+  --bs-btn-border-color: var(--second-bg-color) !important;
+  --bs-btn-hover-color: var(--main-bg-color) !important;
+  --bs-btn-hover-bg: var(--text-white-color) !important;
+  --bs-btn-hover-border-color: var(--main-bg-color) !important;
+  --bs-btn-focus-shadow-rgb: 49, 132, 253;
+  --bs-btn-active-color: var(--text-white-color) !important;
+  --bs-btn-active-bg: var(--text-white-color) !important;
+  --bs-btn-active-border-color: var(--main-bg-color);
+  --bs-btn-active-shadow: inset 0 3px 5px var(--second-bg-color) !important;
+  --bs-btn-disabled-color: var(--second-bg-color);
+  --bs-btn-disabled-bg: var(--second-bg-color) !important;
+  --bs-btn-disabled-border-color: var(--second-bg-color) !important;
+}
+.btn-slider-prev,
+.btn-slider-next {
+  position: absolute;
+  z-index: 2;
+  --bs-btn-padding-x: 1rem;
+  --bs-btn-padding-y: 0.3rem;
+  --bs-btn-font-family: 'Plus Jakarta Sans', 'sens-serif';
+  --bs-btn-font-size: clamp(0.8rem, 0.9rem + 0.4vw, 1rem) !important;
+  --bs-btn-font-weight: 600;
+  --bs-btn-line-height: 1.5;
+  --bs-btn-color: var(--main-bg-color) !important;
+  --bs-btn-bg: var(--text-white-color) !important;
+  --bs-btn-border-width: var(--bs-border-width);
+  --bs-btn-border-color: var(--main-bg-color) !important;
+  --bs-btn-border-radius: var(--bs-border-radius);
+  --bs-btn-hover-border-color: transparent;
+  --bs-btn-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.15),
+    0 1px 1px rgba(0, 0, 0, 0.075);
+  --bs-btn-disabled-opacity: 0.65;
+  --bs-btn-focus-box-shadow: 0 0 0 0.25rem
+    rgba(var(--bs-btn-focus-shadow-rgb), 0.5);
+  display: inline-block;
+  padding: var(--bs-btn-padding-y) var(--bs-btn-padding-x);
+  font-family: var(--bs-btn-font-family);
+  font-size: var(--bs-btn-font-size);
+  font-weight: var(--bs-btn-font-weight);
+  line-height: var(--bs-btn-line-height);
+  color: var(--bs-btn-color);
+  text-align: center;
+  text-decoration: none;
+  vertical-align: middle;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+  border: var(--bs-btn-border-width) solid var(--bs-btn-border-color);
+  border-radius: 50px !important;
+  background-color: var(--bs-btn-bg);
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
+    border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+
+  width: clamp(5vw, 10em, 30vw) !important;
+}
+
+.btn-slider-next:hover {
+  color: var(--bs-btn-hover-color);
+  background-color: var(--bs-btn-hover-bg);
+  border-color: var(--bs-btn-hover-border-color);
+  width: clamp(7vw, 12em, 30vw) !important;
+}
+.btn-slider-prev:hover {
+  color: var(--bs-btn-hover-color);
+  background-color: var(--bs-btn-hover-bg);
+  border-color: var(--bs-btn-hover-border-color) !important;
+  width: clamp(7vw, 12em, 30vw) !important;
 }
 
 /* X-Large devices (large desktops, less than 1400px) */
 @media (max-width: 1399.98px) {
-.mobile-btn{
-  font-size: 1.2vw !important;
-  /* border:1px solid rgb(10, 10, 13, 0.5) !important; */
-  border-radius: 10vw !important;
-}
+  .mobile-btn {
+    font-size: 1.2vw !important;
+    /* border:1px solid rgb(10, 10, 13, 0.5) !important; */
+    border-radius: 10vw !important;
+  }
 }
 /* Large devices (desktops, less than 1200px) */
 @media (max-width: 1199.98px) {
   .project-id-mobile {
-  position: relative;
-  height: auto;
-  /* background-color: #eeefe8; */
-
-}
-.project-id-one {
-  height: auto;
-  /* border-right: 1px solid rgb(10, 10, 13, 0.3); */
-}
-.project-id-mobile-two {
-  height: auto;
-  /* border-right: 1px solid rgb(10, 10, 13, 0.3); */
-}
-.project-id-mobile-vour {
-  height: auto;
-  /* border-left: 1px solid rgb(10, 10, 13, 0.3); */
-}
-.project-id-bottom {
-  height: 25vh;
-  /* border-right: 1px solid rgb(10, 10, 13, 0.3); */
-}
-.projects-id-mobile-img{
-  height: 90vh;
-  border-radius: 0.9vw;
-}
-.img-hover-zoom-mobile {
- height: auto; /* [1.1] Set it as per your need */
-  overflow: hidden; /* [1.2] Hide the overflowing of child elements */
-}
+    position: relative;
+    height: auto;
+    /* background-color: #eeefe8; */
+  }
+  .project-id-one {
+    height: auto;
+    /* border-right: 1px solid rgb(10, 10, 13, 0.3); */
+  }
+  .project-id-mobile-two {
+    height: auto;
+    /* border-right: 1px solid rgb(10, 10, 13, 0.3); */
+  }
+  .project-id-mobile-vour {
+    height: auto;
+    /* border-left: 1px solid rgb(10, 10, 13, 0.3); */
+  }
+  .project-id-bottom {
+    height: 25vh;
+    /* border-right: 1px solid rgb(10, 10, 13, 0.3); */
+  }
+  .projects-id-mobile-img {
+    height: 90vh;
+    border-radius: 0.9vw;
+  }
+  .img-hover-zoom-mobile {
+    height: auto; /* [1.1] Set it as per your need */
+    overflow: hidden; /* [1.2] Hide the overflowing of child elements */
+  }
 }
 /* Medium devices (tablets, less than 992px) */
 @media (max-width: 991.98px) {
-.project-id {
-  position: relative;
-  height: 100vh;
-}
-.project-id-one {
-  height: auto;
-  /* border-right: 1px solid rgb(10, 10, 13, 0.3); */
-}
-.project-id-mobile {
-  position: relative;
-  height: auto;
-  /* background-color: #eeefe8; */
+  .project-id {
+    position: relative;
+    height: 100vh;
+  }
+  .project-id-one {
+    height: auto;
+    /* border-right: 1px solid rgb(10, 10, 13, 0.3); */
+  }
+  .project-id-mobile {
+    position: relative;
+    height: auto;
+    /* background-color: #eeefe8; */
+  }
+  .project-id-mobile-two {
+    height: auto;
+    /* border-right: 1px solid rgb(10, 10, 13, 0.3); */
+  }
+  .project-id-mobile-vour {
+    height: auto;
+    /* border-left: 1px solid rgb(10, 10, 13, 0.3); */
+  }
+  .project-id-bottom {
+    height: 25vh;
+    /* border-right: 1px solid rgb(10, 10, 13, 0.3); */
+  }
 
-}
-.project-id-mobile-two {
-  height: auto;
-  /* border-right: 1px solid rgb(10, 10, 13, 0.3); */
-}
-.project-id-mobile-vour {
-  height: auto;
-  /* border-left: 1px solid rgb(10, 10, 13, 0.3); */
-}
-.project-id-bottom {
-  height: 25vh;
-  /* border-right: 1px solid rgb(10, 10, 13, 0.3); */
-}
-
-.projects-id-mobile-img{
-  height: 90vh;
-  border-radius: 0.9vw;
-}
-.img-hover-zoom-mobile {
- height: auto; /* [1.1] Set it as per your need */
-  overflow: hidden; /* [1.2] Hide the overflowing of child elements */
-}
-.mobile-btn{
-  font-size: 1.6vw !important;
-  /* border:1px solid rgb(10, 10, 13, 0.5) !important; */
-  border-radius: 10vw !important;
-}
+  .projects-id-mobile-img {
+    height: 90vh;
+    border-radius: 0.9vw;
+  }
+  .img-hover-zoom-mobile {
+    height: auto; /* [1.1] Set it as per your need */
+    overflow: hidden; /* [1.2] Hide the overflowing of child elements */
+  }
+  .mobile-btn {
+    font-size: 1.6vw !important;
+    /* border:1px solid rgb(10, 10, 13, 0.5) !important; */
+    border-radius: 10vw !important;
+  }
 }
 /* Small devices (landscape phones, less than 768px) */
 @media (max-width: 767.98px) {
-
 }
 /* // X-Small devices (portrait phones, less than 576px) */
 @media (max-width: 575.98px) {
-  .mobile-btn{
-  font-size: 4vw !important;
-  /* border:1px solid rgb(10, 10, 13, 0.5) !important; */
-  border-radius: 10vw !important;
-}
-  .projects-id-mobile-img{
-  height: 85vh;
-  border-radius: 3vw;
-}
-.img-hover-zoom-mobile {
- height: 85vh; /* [1.1] Set it as per your need */
-  overflow: hidden; /* [1.2] Hide the overflowing of child elements */
+  .mobile-btn {
+    font-size: 4vw !important;
+    /* border:1px solid rgb(10, 10, 13, 0.5) !important; */
+    border-radius: 10vw !important;
+  }
+  .projects-id-mobile-img {
+    height: 85vh;
     border-radius: 3vw;
-}
+  }
+  .img-hover-zoom-mobile {
+    height: 85vh; /* [1.1] Set it as per your need */
+    overflow: hidden; /* [1.2] Hide the overflowing of child elements */
+    border-radius: 3vw;
+  }
   .project-id-mobile {
-  position: relative;
-  height: auto;
-  /* background-color: #eeefe8; */
-  /* border-top: 1px solid rgb(10, 10, 13, 0.3); */
-}
-.project-id-mobile-one {
-  height: 100%;
-  /* border-right: 1px solid rgb(10, 10, 13, 0.3); */
-}
-.project-id-mobile-vour {
-  height: 20vh;
-  border-left: none;
-}
-
+    position: relative;
+    height: auto;
+    /* background-color: #eeefe8; */
+    /* border-top: 1px solid rgb(10, 10, 13, 0.3); */
+  }
+  .project-id-mobile-one {
+    height: 100%;
+    /* border-right: 1px solid rgb(10, 10, 13, 0.3); */
+  }
+  .project-id-mobile-vour {
+    height: 20vh;
+    border-left: none;
+  }
 }
 
 /* // XX-Large devices (larger desktops) */

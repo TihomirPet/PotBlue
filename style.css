@@ -1,6 +1,6 @@
 body {
   overflow-x: hidden;
-  font-family: "Plus Jakarta Sans", sans-serif !important;
+  font-family: "Plus Jakarta Sans", "sans-serif "!important;
 }
 :root {
   --main-bg-color: rgb(18, 27, 252);

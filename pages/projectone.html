@@ -36,7 +36,7 @@
     <!--======= Navigation end ====================-->
     <div
       id="carouselExampleControls"
-      class="carousel slide"
+      class="carousel slide carousel-fade"
       data-interval="false"
     >
       <div class="carousel-inner">
@@ -552,52 +552,45 @@
           </div>
         </div>
         <!-- ================================== item vour end ===================================================-->
+        <button
+          class="btn-slider-prev d-flex align-items-center justify-content-between"
+          type="button"
+          data-bs-target="#carouselExampleControls"
+          data-bs-slide="prev"
+        >
+          <!-- <span
+                class="carousel-control-prev-icon"
+                aria-hidden="true"
+              ></span> -->
+          <i class="bi bi-arrow-left-circle-fill contact-icon"></i>
+          <span class="">Previous </span>
+        </button>
       </div>
+      <div class="col-6 col-md-4 p-0 nav-slider-holder">
+        <button
+          class="btn-slider-next d-flex align-items-center justify-content-between"
+          type="button"
+          data-bs-target="#carouselExampleControls"
+          data-bs-slide="next"
+        >
+          Next <i class="bi bi-arrow-right-circle-fill contact-icon"></i>
+        </button>
+      </div>
+
       <!-- nav slider -->
-      <div class="container-fluid nav-slider pt-2">
+      <!-- <div class="container-fluid nav-slider pt-2">
         <div class="row">
           <div class="col-md-2 d-none d-md-block"></div>
           <div
             class="col-6 col-md-4 p-0 nav-slider-holder d-flex align-items-center justify-content-end pe-3"
-          >
-            <button
-              class="btn-slider d-flex align-items-center justify-content-between"
-              type="button"
-              data-bs-target="#carouselExampleControls"
-              data-bs-slide="prev"
-            >
-              <!-- <span
-                class="carousel-control-prev-icon"
-                aria-hidden="true"
-              ></span> -->
-              <i class="bi bi-arrow-left-circle-fill contact-icon"></i>
-              <span class="">Previous </span>
-            </button>
-          </div>
-          <div class="col-6 col-md-4 p-0 nav-slider-holder">
-            <!-- <button
-              class="carousel-control-next"
-              type="button"
-              data-bs-target="#carouselExampleControls"
-              data-bs-slide="next"
-            >
-          
-              <span class=""> Next</span>
-            </button> -->
-            <a
-              class="btn-slider d-flex align-items-center justify-content-between"
-              type="button"
-              data-bs-target="#carouselExampleControls"
-              data-bs-slide="next"
-              >Next <i class="bi bi-arrow-right-circle-fill contact-icon"></i
-            ></a>
-          </div>
+          ></div>
 
           <div class="col-md-2 d-none d-md-block"></div>
         </div>
-      </div>
+      </div> -->
     </div>
 
+    <section class="contact-wrapper" id="contact"></section>
     <!-- =====================================Corousel end ========================================== -->
 
     <script
@@ -610,6 +603,7 @@
     <script src="/js/nav.js"></script>
     <script src="/js/fetchId.js"></script>
     <script src="/js/main.js"></script>
+    <script src="/js/contact.js"></script>
     <!-- ************************************************************************************** -->
 
     <!-- ************************************************************************************** -->

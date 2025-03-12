@@ -1,6 +1,7 @@
 #contact {
   height: 100%;
   background-color: var(--second-bg-color);
+
 }
 .contact {
   position: relative;
@@ -8,8 +9,8 @@
   width: 100vw;
   background-color: var(--second-bg-color);
   overflow: hidden;
+  padding: 9vh 0vh 10vh 0vh;
 
-  padding: 8vh 0vh 10vh 0vh !important;
 }
 .contact-holder {
   /* position: absolute; */
