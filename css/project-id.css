@@ -1,9 +1,14 @@
 .project-id {
   position: relative;
   height: 100vh;
+  background-color: var(--second-bg-color);
+}
+.project-overlay{
+  position: relative;
+  z-index: 3;
 }
 .project-id-two {
-  border-left: 1px solid rgb(10, 10, 13, 0.3);
+  /* border-left: 1px solid rgb(10, 10, 13, 0.3); */
 }
 .project-id-one {
   height: 100vh;
@@ -11,7 +16,7 @@
 }
 .project-id-three {
   height: 100vh;
-  border-left: 1px solid rgb(10, 10, 13, 0.3);
+  /* border-left: 1px solid rgb(10, 10, 13, 0.3); */
 }
 
 .projects-id-img {
@@ -21,7 +26,7 @@
 }
 .project-id-top {
   height: 19vh;
-  border-right: 1px solid rgb(10, 10, 13, 0.3);
+  /* border-right: 1px solid rgb(10, 10, 13, 0.3); */
 }
 .project-id-bottom {
   height: 100%;
@@ -29,7 +34,7 @@
 }
 .project-id-bottom-column{
   height: 100%; 
-    border-right: 1px solid rgb(10, 10, 13, 0.3);
+    /* border-right: 1px solid rgb(10, 10, 13, 0.3); */
 }
 
 .project-id-mobile {
@@ -37,6 +42,7 @@
   height: auto;
   /* background-color: var(--main-bg-color); */
   /* border-top: 1px solid rgb(10, 10, 13, 0.3); */
+   background-color: var(--second-bg-color);
 }
 .project-id-mobile-one {
   height: 100%;
@@ -45,14 +51,14 @@
 .project-id-mobile-two {
   height: auto;
   /* border-right: 1px solid rgb(10, 10, 13, 0.3); */
-  border-left: 1px solid rgb(10, 10, 13, 0.3);
+  /* border-left: 1px solid rgb(10, 10, 13, 0.3); */
 }
 .project-id-mobile-three {
-    border-left: 1px solid rgb(10, 10, 13, 0.3);
+    /* border-left: 1px solid rgb(10, 10, 13, 0.3); */
 }
 .project-id-mobile-vour {
   height: auto;
-  border-left: 1px solid rgb(10, 10, 13, 0.3);
+  /* border-left: 1px solid rgb(10, 10, 13, 0.3); */
 
    /* border-radius: 0.7vw; */
 }
@@ -94,6 +100,7 @@
   border-radius: 10vw !important;
   font-family:'Regular' !important;
 }
+
 /* X-Large devices (large desktops, less than 1400px) */
 @media (max-width: 1399.98px) {
 .mobile-btn{

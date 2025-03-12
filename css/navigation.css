@@ -55,29 +55,29 @@
   text-decoration: none;
   /* font-family: 'Semibold'; */
   /* font-size: 0.7vw; */
-  font-size: clamp(0.9125rem, 0.7908rem + 0.1087vw, 0.875rem);
-  font-weight: 500;
+  font-size: clamp(0.9125rem, 0.7908rem + 0.1087vw, 0.875rem) !important;
+  font-weight: 600;
 }
 .nav-link:active,
 .nav-link:visited {
   /* color:rgba(250, 211, 133,1) !important; */
   text-decoration: none;
 
-  font-size: 0.8vw;
+   font-size: clamp(0.9125rem, 0.7908rem + 0.1087vw, 0.875rem) !important;
   border-bottom: none;
 }
 .nav-link:hover {
   color: rgb(253, 251, 236) !important;
   text-decoration: none;
   /* font-family: 'Bold'; */
-  font-size: clamp(0.9125rem, 0.7908rem + 0.1087vw, 0.875rem);
-  font-weight: 800;
+  font-size: clamp(0.9125rem, 0.7908rem + 0.1087vw, 0.875rem) !important;
+  font-weight: 700;
   /* border-bottom: 1px solid rgb(12, 12, 12); */
 }
 .btn-nav-contakt {
   --bs-btn-padding-x: 0.6rem;
   --bs-btn-padding-y: 0.1rem;
-  --bs-btn-font-family: 'Plus Jakarta Sans', serif;
+  --bs-btn-font-family: 'Plus Jakarta Sans',  sans-serif;
   --bs-btn-font-size: clamp(1rem, 1.2rem + 0.5vw, 1.1rem) !important;
   --bs-btn-font-weight: 700;
   --bs-btn-line-height: 1.5;

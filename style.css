@@ -1,5 +1,6 @@
 body {
   overflow-x: hidden;
+  font-family: "Plus Jakarta Sans", sans-serif !important;
 }
 :root {
   --main-bg-color: rgb(18, 27, 252);
@@ -65,6 +66,7 @@ button {
     1.1rem
   ); /* Kleine Schrift für Buttons */
 }
+
 /* // `xxl` applies to x-large devices (large desktops, less than 1400px) */
 @media (max-width: 1399.98px) {
 }
