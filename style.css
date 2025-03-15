@@ -4,8 +4,8 @@ body {
 }
 :root {
   --main-bg-color: rgb(18, 27, 252);
-  --second-bg-color: #fdfbec;
-  --text-white-color: #ffffff;
+  --second-bg-color: rgb(253, 251, 236);
+  --text-white-color: rgb(255, 255, 255);
   --text-black-color: #040900;
 }
 

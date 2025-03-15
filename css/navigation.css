@@ -14,7 +14,8 @@
 .navbar {
   /* background-color: #eeefe8; */
 }
-.navbar-nav {
+
+/* .navbar-nav {
   width: 35vw;
   background: linear-gradient(
     90deg,
@@ -29,7 +30,101 @@
   -webkit-box-shadow: inset 5px 4px 7px -6px #271b00;
   box-shadow: inset 5px 6px 4px -6px #271b00;
 }
-.nav-wrapper {
+.navbar-nav {
+  width: 35vw;
+  background: linear-gradient(
+    90deg,
+    rgb(18, 27, 252, 0.1) 0%,
+    rgb(18, 27, 252, 0.3) 30%,
+    rgb(18, 27, 252, 0.3) 70%,
+    rgb(18, 27, 252, 0.1) 100%
+  );
+  backdrop-filter: blur(5px);
+  border-radius: 10vw;
+  border: 1px solid hsl(0, 0%, 100%, 0.5);
+  -webkit-box-shadow: inset 5px 4px 7px -6px #271b00;
+  box-shadow: inset 5px 6px 4px -6px #271b00;
+} */
+
+.home-page .navbar-nav {
+  width: 35vw;
+  background: linear-gradient(
+    90deg,
+    rgb(18, 27, 252, 0.1) 0%,
+    rgb(18, 27, 252, 0.3) 30%,
+    rgb(18, 27, 252, 0.3) 70%,
+    rgb(18, 27, 252, 0.1) 100%
+  );
+  backdrop-filter: blur(5px);
+  border-radius: 10vw;
+  border: 1px solid hsl(0, 0%, 100%, 0.5);
+  -webkit-box-shadow: inset 5px 4px 7px -6px #271b00;
+  box-shadow: inset 5px 6px 4px -6px #271b00;
+}
+.home-page .nav-link {
+  color: rgb(253, 251, 236) !important;
+  text-decoration: none;
+
+  font-size: clamp(0.9125rem, 0.7908rem + 0.1087vw, 0.875rem) !important;
+  font-weight: 600;
+}
+.home-page .nav-link:active,
+.nav-link:visited {
+  text-decoration: none;
+
+  font-size: clamp(0.9125rem, 0.7908rem + 0.1087vw, 0.875rem) !important;
+  border-bottom: none;
+}
+.home-page .nav-link:hover {
+  color: rgb(253, 251, 236) !important;
+  text-decoration: none;
+
+  font-size: clamp(0.9125rem, 0.7908rem + 0.1087vw, 0.875rem) !important;
+  font-weight: 700;
+}
+
+/* Navigation für projectone.html */
+.project-page .navbar-nav {
+  width: 35vw;
+  background: linear-gradient(
+    90deg,
+    rgb(253, 251, 236, 0.8) 0%,
+    rgb(253, 251, 236) 30%,
+    rgb(253, 251, 236) 70%,
+    rgb(253, 251, 236, 0.8) 100%
+  );
+  backdrop-filter: blur(5px);
+  border-radius: 10vw;
+  border: 1px solid rgb(216, 216, 216);
+  -webkit-box-shadow: inset 5px 4px 7px -6px #271b00;
+  box-shadow: inset 5px 6px 4px -6px #271b00;
+}
+.project-page .nav-link {
+  color: var(--text-black-color) !important;
+  text-decoration: none;
+
+  font-size: clamp(0.9125rem, 0.7908rem + 0.1087vw, 0.875rem) !important;
+  font-weight: 600;
+}
+.project-page .nav-link:active,
+.nav-link:visited {
+  text-decoration: none;
+
+  font-size: clamp(0.9125rem, 0.7908rem + 0.1087vw, 0.875rem) !important;
+  border-bottom: none;
+}
+.project-page .nav-link:hover {
+  color: var(--text-black-color) !important;
+  text-decoration: none;
+
+  font-size: clamp(0.9125rem, 0.7908rem + 0.1087vw, 0.875rem) !important;
+  font-weight: 800;
+}
+.home-nav .nav-wrapper {
+  background: none;
+
+}
+.project-page .nav-wrapper {
   background: none;
 }
 
@@ -49,35 +144,11 @@
   /* border-left: 1px solid rgba(0, 0, 0, 0.3); */
   height: 7vh;
 }
-.nav-link {
-  /* text-transform: uppercase; */
-  color: rgb(253, 251, 236) !important;
-  text-decoration: none;
-  /* font-family: 'Semibold'; */
-  /* font-size: 0.7vw; */
-  font-size: clamp(0.9125rem, 0.7908rem + 0.1087vw, 0.875rem) !important;
-  font-weight: 600;
-}
-.nav-link:active,
-.nav-link:visited {
-  /* color:rgba(250, 211, 133,1) !important; */
-  text-decoration: none;
 
-   font-size: clamp(0.9125rem, 0.7908rem + 0.1087vw, 0.875rem) !important;
-  border-bottom: none;
-}
-.nav-link:hover {
-  color: rgb(253, 251, 236) !important;
-  text-decoration: none;
-  /* font-family: 'Bold'; */
-  font-size: clamp(0.9125rem, 0.7908rem + 0.1087vw, 0.875rem) !important;
-  font-weight: 700;
-  /* border-bottom: 1px solid rgb(12, 12, 12); */
-}
 .btn-nav-contakt {
   --bs-btn-padding-x: 0.6rem;
   --bs-btn-padding-y: 0.1rem;
-  --bs-btn-font-family: 'Plus Jakarta Sans', " sans-serif";
+  --bs-btn-font-family: 'Plus Jakarta Sans', ' sans-serif';
   --bs-btn-font-size: clamp(0.9rem, 1.2rem + 0.5vw, 1rem) !important;
   --bs-btn-font-weight: 700;
   --bs-btn-line-height: 1.5;
@@ -124,25 +195,14 @@
 }
 /* Large devices (desktops, less than 1200px) */
 @media (max-width: 1199.98px) {
-
-.navbar-nav {
+.project-page .navbar-nav {
   width: 50vw;
-  background: linear-gradient(
-    90deg,
-    rgb(18, 27, 252, 0.1) 0%,
-    rgb(18, 27, 252, 0.3) 30%,
-    rgb(18, 27, 252, 0.3) 70%,
-    rgb(18, 27, 252, 0.1) 100%
-  );
-  backdrop-filter: blur(5px);
-  border-radius: 10vw;
-  border: 1px solid hsl(0, 0%, 100%, 0.5);
-  -webkit-box-shadow: inset 5px 4px 7px -6px #271b00;
-  box-shadow: inset 5px 6px 4px -6px #271b00;
+
 }
 }
 /* Medium devices (tablets, less than 992px) */
 @media (max-width: 991.98px) {
+
   .animated-icon1,
   .animated-icon2,
   .animated-icon3 {
@@ -217,7 +277,7 @@
     -o-transform: rotate(-135deg);
     transform: rotate(-135deg);
   }
-  .nav-wrapper {
+  .home-page .nav-wrapper {
     background: linear-gradient(
       90deg,
       rgb(18, 27, 252, 0.7) 0%,
@@ -225,7 +285,21 @@
       rgb(18, 27, 252) 70%,
       rgb(18, 27, 252, 0.5) 100%
     );
-    backdrop-filter: blur(5px);
+    backdrop-filter: blur(10px);
+    border-radius: 2.3vw;
+    border: 1px solid hsl(0, 0%, 100%, 0.5);
+    -webkit-box-shadow: inset 5px 4px 7px -6px #271b00;
+    box-shadow: inset 5px 6px 4px -6px #271b00;
+  }
+  .project-page .nav-wrapper {
+    background: linear-gradient(
+      90deg,
+      rgb(253, 251, 236, 0.8) 0%,
+    rgb(253, 251, 236) 30%,
+    rgb(253, 251, 236) 70%,
+    rgb(253, 251, 236, 0.8) 100%
+    );
+    backdrop-filter: blur(5px) !important;
     border-radius: 2.3vw;
     border: 1px solid hsl(0, 0%, 100%, 0.5);
     -webkit-box-shadow: inset 5px 4px 7px -6px #271b00;
@@ -246,21 +320,20 @@
 }
 /* Small devices (landscape phones, less than 768px) */
 @media (max-width: 767.98px) {
-      .nav-wrapper {
+  .project-page .nav-wrapper {
     background: linear-gradient(
       90deg,
-      rgb(18, 27, 252, 0.7) 0%,
-      rgb(18, 27, 252) 30%,
-      rgb(18, 27, 252) 70%,
-      rgb(18, 27, 252, 0.5) 100%
+      rgb(253, 251, 236, 0.8) 0%,
+    rgb(253, 251, 236) 30%,
+    rgb(253, 251, 236) 70%,
+    rgb(253, 251, 236, 0.8) 100%
     );
-    backdrop-filter: blur(5px);
-    border-radius: 3.9vw;
+    backdrop-filter: blur(5px) !important;
+    border-radius: 2.3vw;
     border: 1px solid hsl(0, 0%, 100%, 0.5);
     -webkit-box-shadow: inset 5px 4px 7px -6px #271b00;
     box-shadow: inset 5px 6px 4px -6px #271b00;
   }
- 
 }
 /* // X-Small devices (portrait phones, less than 576px) */
 @media (max-width: 575.98px) {
