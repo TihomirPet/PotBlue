@@ -4,6 +4,10 @@ body {
 #head {
   height: 100vh;
 }
+.header {
+position: relative;
+  height: 100%;
+}
 .header-holder {
   position: relative;
   height: 100vh;

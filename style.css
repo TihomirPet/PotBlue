@@ -1,7 +1,13 @@
 body {
-  overflow-x: hidden;
+   /* overflow: hidden;
+    height: 100%; */
   font-family: "Plus Jakarta Sans", "sans-serif "!important;
 }
+  /* .main {
+    will-change: transform;
+    position: fixed;
+    width: 100%;
+  } */
 :root {
   --main-bg-color: rgb(18, 27, 252);
   --second-bg-color: rgb(253, 251, 236);
