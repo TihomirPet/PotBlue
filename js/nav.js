@@ -131,6 +131,54 @@ document.addEventListener('navLoaded', () => {
     console.error("Fehler: '.first-button' wurde nicht gefunden!");
   }
 });
+// ###########################################################################################################
+// document.addEventListener('DOMContentLoaded', () => {
+//   // Navigation dynamisch laden
+//   const navigation = document.querySelector('.nav-holder');
+//   if (navigation) {
+//     fetch('/sections/navbar.html')
+//       .then((res) => res.text())
+//       .then((data) => {
+//         navigation.innerHTML = data;
+
+//         // Prüfe, auf welcher Seite wir sind
+//         const isIndex = window.location.pathname.includes('index.html');
+//         const isProjectOne =
+//           window.location.pathname.includes('projectone.html');
+
+//         if (isIndex) {
+//           document.body.classList.add('home-page');
+//         } else if (isProjectOne) {
+//           document.body.classList.add('project-page');
+//         }
+
+//         // Buttons verstecken nach Seitenwahl
+//         const contactBtnIndex = document.querySelector(
+//           '.btn-nav-contakt-index'
+//         );
+//         const contactBtnProject = document.querySelector(
+//           '.btn-nav-contakt-projectone'
+//         );
+
+//         // Verstecke Buttons für index.html
+//         if (isIndex) {
+//           if (contactBtnIndex) contactBtnIndex.style.display = 'inline-block'; // sichtbar
+//           if (contactBtnProject) contactBtnProject.style.display = 'none'; // unsichtbar
+//         }
+
+//         // Verstecke Buttons für projectone.html
+//         if (isProjectOne) {
+//           if (contactBtnIndex) contactBtnIndex.style.display = 'none'; // unsichtbar
+//           if (contactBtnProject)
+//             contactBtnProject.style.display = 'inline-block'; // sichtbar
+//         }
+
+//         // Event auslösen, damit andere Skripte darauf reagieren können
+//         document.dispatchEvent(new Event('navLoaded'));
+//       })
+//       .catch((err) => console.error('Fehler beim Laden der Navigation:', err));
+//   }
+// });
 
 
 
