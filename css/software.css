@@ -31,6 +31,13 @@
   border: 1px solid var(--main-bg-color);
   background-color: #ffffff;
 }
+.software-number{
+  width:3vw;
+  height: 3vw;
+  border-radius: 50%;
+    background-color: #ffffff;
+      border: 1px solid var(--main-bg-color);
+}
 /* // `xxl` applies to x-large devices (large desktops, less than 1400px) */
 @media (max-width: 1399.98px) {
     .software-holder {
@@ -98,6 +105,13 @@
   border: 1px solid var(--main-bg-color);
   background-color: #ffffff;
 }
+.software-number{
+  width:6vw;
+  height: 6vw;
+  border-radius: 50%;
+    background-color: #ffffff;
+      border: 1px solid var(--main-bg-color);
+}
 }
 /* // `md` applies to small devices (landscape phones, less than 768px) */
 @media (max-width: 767.98px) {
@@ -120,7 +134,7 @@
   background-color: #ffffff;
 }
   .software-card {
-    height: 42vh;
+    height: 44vh;
     border-radius: 0.9vw;
     border: 1px solid var(--main-bg-color);
     background-color: var(--second-bg-color);
@@ -134,6 +148,13 @@
   height: auto;
   width: 100vw;
   background-color: var(--second-bg-color);
+}
+.software-number{
+  width:10vw;
+  height: 10vw;
+  border-radius: 50%;
+    background-color: #ffffff;
+      border: 1px solid var(--main-bg-color);
 }
 }
 /* // `sm` applies to x-small devices (portrait phones, less than 576px) */
