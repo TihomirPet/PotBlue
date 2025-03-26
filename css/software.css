@@ -135,7 +135,7 @@
 }
   .software-card {
     height: 44vh;
-    border-radius: 0.9vw;
+    border-radius: 1.9vw;
     border: 1px solid var(--main-bg-color);
     background-color: var(--second-bg-color);
     -webkit-box-shadow: 1px 1px 0px 1px rgba(18, 27, 252, 0.97);
