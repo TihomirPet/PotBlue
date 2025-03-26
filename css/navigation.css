@@ -56,13 +56,13 @@ position: absolute;
   transition: var(--bs-navbar-toggler-transition);
 }
 .home-page .navbar-nav {
-  width: 35vw;
+  width: 35vw !important;
   background: linear-gradient(
     90deg,
     rgb(18, 27, 252) 0%,
     rgb(18, 27, 252, 0.9) 30%,
     rgb(18, 27, 252, 0.9) 70%,
-    rgb(18, 27, 252) 100%
+    rgb(18, 27, 252) 100% 
   );
   backdrop-filter: blur(5px);
   border-radius: 10vw;
@@ -94,6 +94,7 @@ position: absolute;
 
 /* Navigation für projectone.html */
 .project-page .navbar-nav {
+
   width: 35vw;
   background: linear-gradient(
     90deg,
