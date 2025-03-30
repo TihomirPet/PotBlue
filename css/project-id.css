@@ -127,8 +127,8 @@
 .btn-slider-next {
   position: absolute;
   z-index: 2;
-  --bs-btn-padding-x: 1rem;
-  --bs-btn-padding-y: 0.3rem;
+  --bs-btn-padding-x: 0.6rem;
+  --bs-btn-padding-y: 0rem !important;
   --bs-btn-font-family: 'Plus Jakarta Sans', 'sens-serif';
   --bs-btn-font-size: clamp(0.8rem, 0.9rem + 0.4vw, 1rem) !important;
   --bs-btn-font-weight: 600;
@@ -164,22 +164,24 @@
   transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
     border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 
-  width: clamp(5vw, 10em, 30vw) !important;
+  width: clamp(1.3vw, 3.7em, 30vw) !important;
 }
 
 .btn-slider-next:hover {
   color: var(--bs-btn-hover-color);
   background-color: var(--bs-btn-hover-bg);
   border-color: var(--bs-btn-hover-border-color);
-  width: clamp(7vw, 12em, 30vw) !important;
+  width: clamp(5vw, 5em, 30vw) !important;
 }
 .btn-slider-prev:hover {
   color: var(--bs-btn-hover-color);
   background-color: var(--bs-btn-hover-bg);
   border-color: var(--bs-btn-hover-border-color) !important;
-  width: clamp(7vw, 12em, 30vw) !important;
+  width: clamp(5vw, 5em, 30vw) !important;
 }
-
+.slider-icon {
+  font-size: 2.3rem;
+}
 /* X-Large devices (large desktops, less than 1400px) */
 @media (max-width: 1399.98px) {
   .mobile-btn {
