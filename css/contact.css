@@ -24,7 +24,7 @@
   height: 32vh;
   border-radius: 0.9vw;
   border: 1px solid var(--main-bg-color);
-  background-color: var(--second-bg-color);
+  background-color: var(--text-white-color);
   /* background-color: #ffffffcc; */
   -webkit-box-shadow: 1px 1px 0px 1px rgba(18, 27, 252, 0.97);
   box-shadow: 1px 1px 0px 1px rgba(18, 27, 252, 0.97);
@@ -35,7 +35,7 @@
   --bs-btn-bg: var(--second-bg-color) !important;
   --bs-btn-border-color: var(--main-bg-color) !important;
   --bs-btn-hover-color: var(--main-bg-color) !important;
-  --bs-btn-hover-bg: var(--text-white-color) !important;
+  --bs-btn-hover-bg: var( --second-bg-color) !important;
   --bs-btn-hover-border-color: var(--main-bg-color) !important;
   --bs-btn-focus-shadow-rgb: 49, 132, 253;
   --bs-btn-active-color: var(--text-white-color) !important;
@@ -90,6 +90,7 @@
   color: var(--bs-btn-hover-color);
   background-color: var(--bs-btn-hover-bg);
   border-color: var(--bs-btn-hover-border-color);
+   --bs-btn-font-weight: 800;
 }
 
 .contact-icon {
