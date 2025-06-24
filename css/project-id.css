@@ -410,6 +410,40 @@
 }
 /* // X-Small devices (portrait phones, less than 576px) */
 @media (max-width: 575.98px) {
+  .button-holder-three {
+  
+    width:100%;
+    border-bottom: 1px solid black;
+  }
+  .button-holder-two {
+    background-color: rgb(86, 0, 199);
+    width: 100%;
+  }
+  .button-holder-one {
+    background-color: #ff730f;
+    width: 66vw;
+  }
+  .btn-contact-header {
+    background-color: rgb(86, 0, 199);
+    width: 45vw;
+    border-radius: 4vw;
+    padding: 0.5% 0% 1% 0%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+  }
+  .project-id-mobile {
+    position: relative;
+    height: auto;
+    padding: 0 0 5vh 0;
+      padding-right: 0px;
+      padding-left: 0px;
+    background-color: var(--main-bg-color);
+
+    background-color: var(--second-bg-color);
+  }
   .bg-violett {
     background-color: rgb(86, 0, 199);
     border-radius: 1.3vw;
