@@ -1,3 +1,6 @@
+.img-one-mobile {
+  height: 40vh;
+}
 .button-holder-one {
   background-color: #ff730f;
   width: 10vw;
@@ -327,9 +330,40 @@
 }
 /* Large devices (desktops, less than 1200px) */
 @media (max-width: 1199.98px) {
+
+  .img-three-mobile {
+    height: 60vh;
+  }
+  .img-two-mobile {
+    height: 40vh;
+  }
+  .button-holder-three {
+    /* background-color: rgb(86, 0, 199); */
+    width: 80vw;
+    border-bottom: 1px solid black;
+}
+  .button-holder-two {
+    background-color: rgb(86, 0, 199);
+    width: 80vw;
+}
+  .button-holder-one {
+    background-color: #ff730f;
+    width: 22vw;
+  }
+  .btn-contact-header {
+    background-color: rgb(86, 0, 199);
+    width: 13vw;
+    border-radius: 4vw;
+    padding: 0.5% 0% 1% 0%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+  }
   .project-id {
     position: relative;
-    height: auto;
+    ;
     /* background-color: #eeefe8; */
   }
   .project-id-one {
@@ -349,16 +383,57 @@
     /* border-right: 1px solid rgb(10, 10, 13, 0.3); */
   }
   .projects-id-mobile-img {
-    height: 90vh;
+    height: 45vh;
     border-radius: 0.9vw;
-  }
-  .img-hover-zoom-mobile {
-    height: auto; /* [1.1] Set it as per your need */
-    overflow: hidden; /* [1.2] Hide the overflowing of child elements */
-  }
+}
+.img-hover-zoom-mobile {
+
+
+  height: auto; /* [1.1] Set it as per your need */
+  overflow: hidden; /* [1.2] Hide the overflowing of child elements */
+  border-radius: 1.36vw;
+  border: 5px solid #000000;
+}
 }
 /* Medium devices (tablets, less than 992px) */
 @media (max-width: 991.98px) {
+  .button-holder-three {
+    /* background-color: rgb(86, 0, 199); */
+    width: 80vw;
+    border-bottom: 1px solid black;
+  }
+  .button-holder-two {
+    background-color: rgb(86, 0, 199);
+    width: 80vw;
+  }
+  .btn-contact-header {
+    background-color: rgb(86, 0, 199);
+    width: 18vw;
+    border-radius: 4vw;
+    padding: 0.5% 0% 1% 0%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+  }
+  .button-holder-one {
+    background-color: #ff730f;
+    width: 40vw;
+  }
+  .img-one-mobile {
+    height: 60vh;
+  }
+  .img-two-mobile {
+    height: 40vh;
+  }
+  .img-hover-zoom-mobile {
+    /* height: 68vh; */
+    height: auto;
+    overflow: hidden;
+    border-radius: 1.7vw;
+    border: 5px solid #000000;
+  }
   .project-id {
     position: relative;
     height: 100vh;
@@ -386,8 +461,8 @@
   }
 
   .projects-id-mobile-img {
-    height: 90vh;
-    border-radius: 0.9vw;
+    height: 34vh;
+    border-radius: 0.1vw;
   }
   .img-hover-zoom-mobile {
     height: auto; /* [1.1] Set it as per your need */
@@ -401,18 +476,25 @@
 }
 /* Small devices (landscape phones, less than 768px) */
 @media (max-width: 767.98px) {
+  .img-one-mobile {
+    height: 44vh;
+}
+  .img-three-mobile {
+    height: 100%;
+  }
+  .img-two-mobile {
+    height: 30vh;
+  }
   .project-id {
     position: relative;
     height: auto;
     /* background-color: #eeefe8; */
   }
-
 }
 /* // X-Small devices (portrait phones, less than 576px) */
 @media (max-width: 575.98px) {
   .button-holder-three {
-  
-    width:100%;
+    width: 100%;
     border-bottom: 1px solid black;
   }
   .button-holder-two {
@@ -438,8 +520,8 @@
     position: relative;
     height: auto;
     padding: 0 0 5vh 0;
-      padding-right: 0px;
-      padding-left: 0px;
+    padding-right: 0px;
+    padding-left: 0px;
     background-color: var(--main-bg-color);
 
     background-color: var(--second-bg-color);
@@ -449,7 +531,7 @@
     border-radius: 1.3vw;
   }
   .bg-orange {
-    background-color:#ff730f;
+    background-color: #ff730f;
     border-radius: 1.3vw;
   }
   .mobile-btn {
