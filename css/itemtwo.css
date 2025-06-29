@@ -1,0 +1,25 @@
+:root {
+  --main-color: rgb(#e35d3d);
+}
+
+.nous-main {
+  color: #e35d3d;
+}
+.nous-round {
+  height: auto;
+  width: 50vw;
+}
+.header-nous-holder {
+  border: 1px solid rgb(10, 10, 10);
+  border-radius: 0.6vw;
+  padding: 9rem 5rem 12rem 5rem !important;
+}
+.nous-mobile {
+  height: auto;
+  width: 14vw;
+}
+.nous-img-goals {
+  height: auto;
+  width: 15vw;
+  border-radius: 0.6vw;
+}
