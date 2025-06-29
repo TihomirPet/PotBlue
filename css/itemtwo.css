@@ -23,3 +23,27 @@
   width: 15vw;
   border-radius: 0.6vw;
 }
+.side-map-abaut {
+  border: 2px solid #970045;
+
+  border-radius: 0.7vw;
+  width: 100% !important;
+  padding: 2% 3% 0 3% !important;
+  background-color: rgb(255, 255, 255);
+}
+.side-map-services {
+  border: 2px solid #2E3B48;
+
+  border-radius: 0.7vw;
+  width: 100% !important;
+  padding: 2% 3% 0 3% !important;
+  background-color: rgb(255, 255, 255);
+}
+.side-map-nouus {
+  border: 1px solid #757575;
+
+  border-radius: 0.7vw;
+  width: 100% !important;
+  padding: 2% 3% 0 3% !important;
+  background-color: rgb(255, 255, 255);
+}
