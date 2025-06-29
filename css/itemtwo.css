@@ -3,7 +3,22 @@
 }
 
 .nous-main {
-  color: #e35d3d;
+  color: #970045;
+}
+.nous-second {
+  color: #2E3B48;
+}
+.bg-nous-main {
+  border-radius: 0.6vw;
+ background-color: #970045;
+}
+.bg-nous-second {
+  border-radius: 0.6vw;
+  background-color: #2E3B48;
+}
+.bg-nous-third{
+  border-radius: 0.6vw;
+  background-color: #FCF3EA;
 }
 .nous-round {
   height: auto;
