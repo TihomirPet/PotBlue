@@ -6,19 +6,19 @@
   color: #970045;
 }
 .nous-second {
-  color: #2E3B48;
+  color: #2e3b48;
 }
 .bg-nous-main {
   border-radius: 0.6vw;
- background-color: #970045;
+  background-color: #970045;
 }
 .bg-nous-second {
   border-radius: 0.6vw;
-  background-color: #2E3B48;
+  background-color: #2e3b48;
 }
-.bg-nous-third{
+.bg-nous-third {
   border-radius: 0.6vw;
-  background-color: #FCF3EA;
+  background-color: #fcf3ea;
 }
 .nous-round {
   height: auto;
@@ -47,7 +47,7 @@
   background-color: rgb(255, 255, 255);
 }
 .side-map-services {
-  border: 2px solid #2E3B48;
+  border: 2px solid #2e3b48;
 
   border-radius: 0.7vw;
   width: 100% !important;
@@ -62,14 +62,10 @@
   padding: 2% 3% 0 3% !important;
   background-color: rgb(255, 255, 255);
 }
-.layout-nous{
+.layout-nous {
   border-radius: 0.6vw;
   border: 1px solid rgb(3, 3, 3);
 }
-
-
-
-
 
 /* // `xxl` applies to x-large devices (large desktops, less than 1400px) */
 @media (max-width: 1399.98px) {
@@ -85,9 +81,19 @@
 @media (max-width: 767.98px) {
 }
 /* // `sm` applies to x-small devices (portrait phones, less than 576px) */
-@media (max-width: 575.98px) {.header-nous-holder {
-  border: 1px solid rgb(10, 10, 10);
-  border-radius: 2vw;
-  padding: 3rem 1rem 3rem 1rem !important;
-}
+@media (max-width: 575.98px) {
+  .nous-img-goals {
+    height: auto;
+    width: 70vw;
+    border-radius: 4.6vw;
+  }
+  .nous-mobile {
+    height: auto;
+    width: 70vw;
+  }
+  .header-nous-holder {
+    border: 1px solid rgb(10, 10, 10);
+    border-radius: 2vw;
+    padding: 3rem 1rem 3rem 1rem !important;
+  }
 }
