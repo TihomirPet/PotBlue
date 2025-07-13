@@ -76,9 +76,28 @@
 }
 /* // `lg` applies to medium devices (tablets, less than 992px) */
 @media (max-width: 991.98px) {
+  .nous-img-goals {
+    height: auto;
+    width: 20vw;
+    border-radius: 0.6vw;
+}
+  .nous-mobile {
+    height: auto;
+    width: 20vw;
+}
+  .header-nous-holder {
+    border: 1px solid rgb(10, 10, 10);
+    border-radius: 0.6vw;
+    padding: 4rem 1rem 4rem 1rem !important;
+  }
 }
 /* // `md` applies to small devices (landscape phones, less than 768px) */
 @media (max-width: 767.98px) {
+  .header-nous-holder {
+    border: 1px solid rgb(10, 10, 10);
+    border-radius: 0.6vw;
+    padding: 3rem 1rem 3rem 1rem !important;
+  }
 }
 /* // `sm` applies to x-small devices (portrait phones, less than 576px) */
 @media (max-width: 575.98px) {
