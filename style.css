@@ -13,9 +13,15 @@ body {
   --second-bg-color: rgb(253, 251, 236);
   --text-white-color: rgb(255, 255, 255);
   --text-black-color: #040900;
+  --bg-table-one:  #5600c7 !important;
+  --bg-table-vinture:  #34C9B5 !important;
 }
 
 /* ========== Colors ========= */
+
+
+
+
 .main-color {
   color: rgb(18, 27, 252);
 }
