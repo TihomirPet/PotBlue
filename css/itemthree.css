@@ -14,3 +14,47 @@
   padding: 2% 3% 0 3% !important;
   background-color: rgb(255, 255, 255);
 }
+.bg-medium-turquoise{
+  background-color: #34C9B5;
+  border-radius: 0.9vw;
+}
+.bg-ivory{
+  background-color: #FFF8E6;
+    border-radius: 0.9vw;
+}
+.bg-flame-red{
+  background-color: #E34D32;
+    border-radius: 0.9vw;
+}
+.vinture-button{
+  border: 1px solid rgb(0, 0, 0);
+  height: 2vh;
+  width: 50%;
+  border-radius: 0.9vw;
+}
+.vinture-wireframe-col{
+  height: 50vh;
+  border: 1px solid rgb(0, 0, 0);
+}
+.vinture-chair{
+  border: 1px solid black;
+  width: 70%;
+  height: 50%;
+  border-radius: 50%;
+}
+.vinture-chair-mobile{
+  border: 1px solid black;
+  width: 95%;
+  height: 42%;
+  border-radius: 50%;
+}
+.vinture-chair-two{
+  border: 1px solid black;
+  width: 80%;
+  height: 70%;
+  border-radius: 45%;
+}
+.vinture-frame{
+  border: 4px solid rgb(0, 0, 0);
+  border-radius: 0.9vw;
+}

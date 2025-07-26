@@ -1,7 +1,7 @@
 body {
    /* overflow: hidden;
     height: 100%; */
-  font-family: "Plus Jakarta Sans", "sans-serif "!important;
+  font-family: "Plus Jakarta Sans", "sans-serif ", "Yesteryear", !important;
 }
   /* .main {
     will-change: transform;
@@ -40,6 +40,9 @@ body {
   letter-spacing: -0.05em;
 }
 /* ========== Fonts ========= */
+.semi-bold {
+  font-weight: 600;
+}
 .bold {
   font-weight: 700;
 }
@@ -70,6 +73,11 @@ body {
 p {
   /* font-size: clamp(1rem, 1.2rem + 0.5vw, 1.5rem); */
   font-size: clamp(1rem, 0.7rem + 0.4vw, 1.4rem) ;
+}
+.font-yesteryear{
+  font-family: "Yesteryear", cursive !important;
+
+
 }
 button {
   font-size: clamp(
