@@ -33,8 +33,8 @@
   border-radius: 0.9vw;
 }
 .vinture-wireframe-col {
-  height: 50vh;
-  border: 1px solid rgb(0, 0, 0);
+  height:54vh;
+  /* border: 1px solid rgb(0, 0, 0); */
 }
 .vinture-chair {
   border: 1px solid black;
@@ -55,15 +55,15 @@
   border-radius: 45%;
 }
 .vinture-frame {
-  height: 50vh;
+  height: 54vh;
   border: 4px solid rgb(0, 0, 0);
   border-radius: 0.9vw;
 }
-.vinture-img-frame{
-   border: 2px solid rgb(0, 0, 0);
+.vinture-img-frame {
+  border: 2px solid rgb(0, 0, 0);
   border-radius: 0.9vw;
 }
-.design-features-img{
+.design-features-img {
   width: 90%;
 }
 
@@ -73,27 +73,71 @@
 
 /* // `xl` applies to large devices (desktops, less than 1200px) */
 @media (max-width: 1199.98px) {
+    .design-features-img {
+    width: 100%;
+  }
+    .vinture-chair-two {
+    border: 1px solid black;
+    width: 80%;
+    height: 50%;
+    border-radius: 45%;
+}
+  .vinture-chair {
+    border: 1px solid black;
+    width: 70%;
+    height: 35%;
+    border-radius: 50%;
+}
+  .vinture-wireframe-col {
+    height: 79vh;
+    border: 1px solid rgb(0, 0, 0);
+}
+  .vinture-frame {
+    height: 80vh;
+    border: 4px solid rgb(0, 0, 0);
+    border-radius: 0.9vw;
+  }
 }
 /* // `lg` applies to medium devices (tablets, less than 992px) */
 @media (max-width: 991.98px) {
+  .vinture-chair-two {
+    border: 1px solid black;
+    width: 80%;
+    height: 50%;
+    border-radius: 45%;
+}
+  .vinture-chair {
+    border: 1px solid black;
+    width: 70%;
+    height: 35%;
+    border-radius: 50%;
+}
+  .vinture-wireframe-col {
+    height: 65vh;
+    border: 1px solid rgb(0, 0, 0);
+}
+  .vinture-frame {
+    height: 65vh;
+    border: 4px solid rgb(0, 0, 0);
+    border-radius: 0.9vw;
+  }
 }
 /* // `md` applies to small devices (landscape phones, less than 768px) */
 @media (max-width: 767.98px) {
   .vinture-frame {
-  height: 90vh;
-  border: 4px solid rgb(0, 0, 0);
-  border-radius: 0.9vw;
-}
+    height: 90vh;
+    border: 4px solid rgb(0, 0, 0);
+    border-radius: 0.9vw;
+  }
 }
 /* // `sm` applies to x-small devices (portrait phones, less than 576px) */
 @media (max-width: 575.98px) {
- .vinture-frame {
+  .vinture-frame {
     height: 70vh;
     border: 4px solid rgb(0, 0, 0);
     border-radius: 8.9vw;
-  
-}
-.design-features-img{
-  width: 100%;
-}
+  }
+  .design-features-img {
+    width: 100%;
+  }
 }
