@@ -1,5 +1,6 @@
 body {
   font-family: 'Plus Jakarta Sans', serif;
+  background-color: black;
 }
 #head {
   height: 100vh;
@@ -56,7 +57,7 @@ height:50vh;
   /* overflow: hidden; */
 }
 
-#blue {
+/* #blue {
   position: absolute;
   padding: 0;
   top: 0;
@@ -70,6 +71,26 @@ height:50vh;
     circle,
     rgba(18, 27, 252, 0.9) 0%,
     rgb(0, 3, 94) 100%
+  );
+
+} */
+#blue {
+  position: absolute;
+  padding: 0;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 3;
+
+  background:#8DC745;
+  background: radial-gradient(
+    circle,
+    rgba(141,199, 69,0.95) 0%,
+    /* rgba(141,199, 69) 30%, */
+    rgba(141,199, 69) 100%,
+  
+    /* rgb(49, 85, 5) 100% */
   );
   /* background-color: #FDFBEC; */
 }
@@ -89,12 +110,17 @@ height:50vh;
   /* font-size: 8.986rem; */
   letter-spacing: -0.05em;
   font-weight: 800;
+  /* color: #200049; */
 }
 .title-second {
   font-size: 3.4rem;
   font-size: clamp(1.9rem, 0.7583rem + 3.4087vw, 3.4rem);
   letter-spacing: -0.04em;
   font-weight: 800;
+    color: #200049;
+}
+.title-third{
+    color: #200049;
 }
 .text {
   /* font-size: 1.44rem; */
