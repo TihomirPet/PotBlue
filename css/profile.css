@@ -8,7 +8,15 @@
   position: relative;
   height: 100%;
   width: 100vw;
-  background-color: var(--second-bg-color);
+
+  background: rgb(141, 199, 69);
+  background: radial-gradient(
+    circle,
+    rgba(141, 199, 69, 1) 0%,
+    rgba(141, 199, 69, 0.8) 8%,
+    rgb(0, 0, 0) 35%,
+    rgb(0, 0, 0) 100%
+  );
   padding: 15vh 0vw 15vh 0vh;
 }
 
@@ -19,15 +27,17 @@
   /* background-position: -7vw 13vh; */
   background-position: center;
   border-radius: 0.9vw;
-  height: auto;
+  height: 60vh;
+  width: 22vw;
+  border: 1px solid rgb(141, 199, 69, 0.5);
 }
 .profile-holder {
   position: relative;
   z-index: 4;
-  width: 60%;
+
   /* border: 1px solid rgb(18, 27, 252); */
   border-radius: 0.9vw;
-  background-color: var(--second-bg-color);
+  /* background-color: var(--second-bg-color); */
   /* -webkit-box-shadow: 1px 1px 0px 1px rgba(18, 27, 252, 0.97);
   box-shadow: 1px 1px 0px 1px rgba(18, 27, 252, 0.97); */
 }
@@ -40,47 +50,31 @@
 /* .profile-text {
   font-weight: 700 !important;
 } */
-.profile-between {
-  width: 0.7vw;
-  background: rgb(4, 9, 0);
 
-  /* border: 1px solid red; */
-}
-.profile-between-top {
-  height: 6%;
-  width: 100%;
-  border-bottom-left-radius: 0.3vw;
-  border-bottom-right-radius: 0.3vw;
-  background-color: var(--second-bg-color);
-}
-.profile-between-bottom {
-  border-top-left-radius: 0.3vw;
-  border-top-right-radius: 0.3vw;
-  height: 94%;
-  width: 100%;
-  background-color: var(--second-bg-color);
-}
 .profile-text-one {
-  background: rgb(18, 27, 252);
-  background: radial-gradient(
-    circle,
-    rgba(18, 27, 252, 1) 0%,
-    rgba(4, 9, 0, 1) 100%
-  );
+  background-color: rgba(0, 0, 0, 0.05);
   border-radius: 0.9vw;
-  color: var(--text-white-color);
-  /* border: 1px solid var(--main-bg-color); */
+  color: var(--second-bg-color);
+  /* border: 1px solid var(--second-bg-color); */
+  border: 1px solid rgb(158, 204, 168);
+  backdrop-filter: blur(30px);
+  /* -webkit-box-shadow: inset 5px 4px 7px -6px #5a5a5a; */
+  box-shadow: inset 5px 6px 4px -6px #5a5a5a;
 }
 .profile-text-two {
-  background-color: var(--second-bg-color);
+   background-color: rgba(0, 0, 0, 0.05);
   border-radius: 0.9vw;
-  border: 1px solid var(--main-bg-color);
+  color: var(--second-bg-color);
+  /* border: 1px solid var(--second-bg-color); */
+  border: 1px solid rgb(158, 204, 168);
+  backdrop-filter: blur(30px);
+  -webkit-box-shadow: inset 5px 4px 7px -6px #5a5a5a;
+  box-shadow: inset 5px 6px 4px -6px #5a5a5a;
 }
-.profile-text-three {
-  background-color: var(--second-bg-color);
-  border-radius: 0.9vw;
-  border: 1px solid var(--main-bg-color);
+.profile-text-holder-two {
+  margin-top: 40vh;
 }
+
 #bright {
   position: absolute;
   padding: 0;
@@ -112,10 +106,9 @@
     width: 80vw;
     /* border: 1px solid rgb(18, 27, 252); */
     border-radius: 0.9vw;
-    background-color: var(--second-bg-color);
+    /* background-color: var(--second-bg-color); */
     min-height: 80vh; /* Verhindert, dass es kleiner als 80% des Viewports wird */
   }
-
 }
 
 /* // `xl` applies to large devices (desktops, less than 1200px) */
@@ -127,7 +120,6 @@
     background-color: var(--second-bg-color);
     /* border: 1px solid blueviolet; */
   }
-
 }
 /* // `lg` applies to medium devices (tablets, less than 992px) */
 @media (max-width: 991.98px) {
@@ -144,7 +136,7 @@
     width: 100%;
     border: 1px solid transparent;
     border-radius: 0.9vw;
-    background-color: var(--second-bg-color);
+    /* background-color: var(--second-bg-color); */
     -webkit-box-shadow: none;
     box-shadow: none;
     min-height: 80vh; /* Verhindert, dass es kleiner als 80% des Viewports wird */
@@ -170,7 +162,7 @@
     width: 100vw;
     border: 1px solid transparent;
     border-radius: 0.9vw;
-    background-color: var(--second-bg-color);
+    /* background-color: var(--second-bg-color); */
     -webkit-box-shadow: none;
     box-shadow: none;
   }
