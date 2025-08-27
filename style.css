@@ -28,6 +28,9 @@ body {
 .main-color {
   color: rgb(18, 27, 252);
 }
+.main-color {
+  color:#200049;
+}
 .second-color {
   color: rgb(253, 251, 236);
 }
