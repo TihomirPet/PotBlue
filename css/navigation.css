@@ -89,7 +89,7 @@ position: absolute;
   text-decoration: none;
 
   font-size: clamp(0.9125rem, 0.7908rem + 0.1087vw, 0.875rem) !important;
-  font-weight: 700;
+  font-weight: 800;
 }
 
 /* Navigation für projectone.html */
@@ -180,7 +180,7 @@ position: absolute;
   --bs-btn-font-weight: 700;
   --bs-btn-line-height: 1.5;
   --bs-btn-color: var(--second-bg-color) !important;
-  --bs-btn-bg: rgb(18, 27, 252, 0.6) !important;
+  --bs-btn-bg:var(--header-bg-color)!important;
   --bs-btn-border-width: var(--bs-border-width);
   --bs-btn-border-color: rgb(253, 251, 236, 0.6);
   --bs-btn-border-radius: var(--bs-border-radius);
@@ -276,10 +276,10 @@ position: absolute;
     width: 35vw;
     background: linear-gradient(
       90deg,
-      rgb(18, 27, 252, 0.1) 0%,
-      rgb(18, 27, 252, 0.3) 30%,
-      rgb(18, 27, 252, 0.3) 70%,
-      rgb(18, 27, 252, 0.1) 100%
+      rgb(141, 199, 69, 0.1) 0%,
+      rgb(141, 199, 69, 0.3) 30%,
+      rgb(141, 199, 69, 0.3) 70%,
+      rgb(141, 199, 69, 0.1) 100%
     );
     backdrop-filter: blur(5px);
     border-radius: 10vw;
@@ -366,10 +366,10 @@ position: absolute;
   .home-page .nav-wrapper {
     background: linear-gradient(
       90deg,
-      rgb(18, 27, 252, 0.7) 0%,
-      rgb(18, 27, 252) 30%,
-      rgb(18, 27, 252) 70%,
-      rgb(18, 27, 252, 0.5) 100%
+      rgb(141, 199, 69, 0.7) 0%,
+      rgb(141, 199, 69) 30%,
+      rgb(141, 199, 69) 70%,
+      rgb(141, 199, 69, 0.5) 100%
     );
     backdrop-filter: blur(10px);
     border-radius: 2.3vw;

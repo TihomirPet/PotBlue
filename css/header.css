@@ -6,7 +6,7 @@ body {
   height: 100vh;
 }
 .header {
-position: relative;
+  position: relative;
   height: 100%;
 }
 .header-holder {
@@ -83,14 +83,11 @@ height:50vh;
   height: 100%;
   z-index: 3;
 
-  background:#8DC745;
+  background: #8dc745;
   background: radial-gradient(
     circle,
-    rgba(141,199, 69,0.95) 0%,
-    /* rgba(141,199, 69) 30%, */
-    rgba(141,199, 69) 100%,
-  
-    /* rgb(49, 85, 5) 100% */
+    rgba(141, 199, 69, 0.95) 0%,
+    rgba(141, 199, 69) 100%
   );
   /* background-color: #FDFBEC; */
 }
@@ -117,10 +114,10 @@ height:50vh;
   font-size: clamp(1.9rem, 0.7583rem + 3.4087vw, 3.4rem);
   letter-spacing: -0.04em;
   font-weight: 800;
-    color: #200049;
+  color: var(--third-bg-color);
 }
-.title-third{
-    color: #200049;
+.title-third {
+  color: var(--third-bg-color);
 }
 .text {
   /* font-size: 1.44rem; */
@@ -131,12 +128,12 @@ height:50vh;
 }
 
 .btn-contact-header {
-  --bs-btn-color: var(--text-white-color) !important;
+  --bs-btn-color: var(--third-bg-color) !important;
   --bs-btn-bg: var(--second-bg-color) !important;
   --bs-btn-border-color: var(--second-bg-color) !important;
-  --bs-btn-hover-color: var(--main-bg-color) !important;
+  --bs-btn-hover-color: var(--third-bg-color) !important;
   --bs-btn-hover-bg: var(--second-bg-color) !important;
-  --bs-btn-hover-border-color: var(--main-bg-color);
+  --bs-btn-hover-border-color: var(--third-bg-color) !important;
   --bs-btn-focus-shadow-rgb: 49, 132, 253;
   --bs-btn-active-color: var(--text-white-color) !important;
   --bs-btn-active-bg: var(--text-white-color) !important;
@@ -153,8 +150,8 @@ height:50vh;
   --bs-btn-font-size: clamp(1rem, 1.2rem + 0.5vw, 1.8rem) !important;
   --bs-btn-font-weight: 700;
   --bs-btn-line-height: 1.5;
-  --bs-btn-color: var(--second-bg-color) !important;
-  --bs-btn-bg: rgb(18, 27, 252, 0.4) !important;
+  --bs-btn-color: var(--third-bg-color) !important;
+  --bs-btn-bg: var(--header-bg-color) !important;
   --bs-btn-border-width: var(--bs-border-width);
   --bs-btn-border-color: transparent;
   --bs-btn-border-radius: var(--bs-border-radius);
@@ -170,7 +167,7 @@ height:50vh;
   font-size: var(--bs-btn-font-size);
   font-weight: var(--bs-btn-font-weight);
   line-height: var(--bs-btn-line-height);
-  color: var(--bs-btn-color);
+  color: var(--third-bg-color);
   text-align: center;
   text-decoration: none;
   vertical-align: middle;
@@ -247,11 +244,11 @@ height:50vh;
     height: 100%;
     z-index: 3;
 
-    background: #121bfc;
+    background: #8dc745;
     background: radial-gradient(
       circle,
-      rgba(18, 27, 252, 0.9) 0%,
-      rgb(0, 3, 94) 100%
+      rgba(141, 199, 69, 0.95) 0%,
+      rgba(141, 199, 69) 100%
     );
     /* background-color: #FDFBEC; */
   }
