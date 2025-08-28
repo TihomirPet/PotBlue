@@ -17,7 +17,7 @@
     rgb(0, 0, 0) 35%,
     rgb(0, 0, 0) 100%
   );
-  padding: 15vh 0vw 15vh 0vh;
+  padding: 15vh 0vw 15vh 0vw;
 }
 
 .profile-img {
@@ -30,7 +30,7 @@
   height: 60vh;
   width: 22vw;
   border: 1px solid rgb(141, 199, 69, 0.5);
-    -webkit-box-shadow: inset 5px 4px 7px -6px #5a5a5a;
+  -webkit-box-shadow: inset 5px 4px 7px -6px #5a5a5a;
   box-shadow: inset 5px 6px 4px -6px #5a5a5a;
 }
 .profile-holder {
@@ -92,7 +92,7 @@
   .profile-holder {
     position: relative;
     z-index: 4;
-    width: 80vw;
+    width: 100%;
     /* border: 1px solid rgb(18, 27, 252); */
     border-radius: 0.9vw;
     /* background-color: var(--second-bg-color); */
@@ -102,6 +102,9 @@
 
 /* // `xl` applies to large devices (desktops, less than 1200px) */
 @media (max-width: 1199.98px) {
+  .profile-text-holder-two {
+    margin-top: 0vh;
+}
   .profile {
     position: relative;
     height: auto;
@@ -112,6 +115,7 @@
 }
 /* // `lg` applies to medium devices (tablets, less than 992px) */
 @media (max-width: 991.98px) {
+ 
   .profile {
     position: relative;
     height: auto;
@@ -130,21 +134,28 @@
     box-shadow: none;
     min-height: 80vh; /* Verhindert, dass es kleiner als 80% des Viewports wird */
   }
-  .profile-img {
-    background-image: url(/images/Petrov_TihomirSB.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    /* background-position: -7vw 13vh; */
-    background-position: center;
-    border-radius: 0.9vw;
-    height: auto;
-  }
-  .profile-text-holder {
-    border-radius: 0.9vw;
-  }
+.profile-img {
+  background-image: url(/images/Petrov_TihomirSB.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  /* background-position: -7vw 13vh; */
+  background-position: center;
+  border-radius: 0.9vw;
+  height: 90vh;
+  width: 48vw;
+  border: 1px solid rgb(141, 199, 69, 0.5);
+  -webkit-box-shadow: inset 5px 4px 7px -6px #5a5a5a;
+  box-shadow: inset 5px 6px 4px -6px #5a5a5a;
+}
+ .profile-text-holder-two {
+  margin-top: 10vh;
+}
 }
 /* // `md` applies to small devices (landscape phones, less than 768px) */
 @media (max-width: 767.98px) {
+  .profile-text-holder-two {
+  margin-top: 4vh;
+}
   .profile-holder {
     position: relative;
     z-index: 4;
@@ -163,35 +174,27 @@
     background-position: center;
     border-radius: 1.9vw;
     height: 60vh;
+    width: 92%;
   }
   .profile-text-one {
-    background: rgb(4, 9, 0);
-    background: linear-gradient(
-      90deg,
-      rgba(4, 9, 0, 1) 0%,
-      rgba(13, 17, 118, 1) 46%,
-      rgba(4, 9, 0, 1) 100%
-    );
-    background: rgb(18, 27, 252);
-    background: radial-gradient(
-      circle,
-      rgba(18, 27, 252, 1) 0%,
-      rgba(4, 9, 0, 1) 100%
-    );
+    background-color: rgba(0, 0, 0, 0.05);
     border-radius: 1.9vw;
-    color: var(--text-white-color);
-    border: 1px solid var(--main-bg-color);
+    color: var(--second-bg-color);
+    border: 1px solid rgba(141, 199, 69, 0.5);
+    backdrop-filter: blur(30px);
+    -webkit-box-shadow: inset 5px 4px 7px -6px #5a5a5a;
+    box-shadow: inset 5px 6px 4px -6px #5a5a5a;
   }
   .profile-text-two {
-    background-color: var(--second-bg-color);
+    background-color: rgba(0, 0, 0, 0.05);
     border-radius: 1.9vw;
-    border: 1px solid var(--main-bg-color);
+    color: var(--second-bg-color);
+    border: 1px solid rgba(141, 199, 69, 0.5);
+    backdrop-filter: blur(30px);
+    -webkit-box-shadow: inset 5px 4px 7px -6px #5a5a5a;
+    box-shadow: inset 5px 6px 4px -6px #5a5a5a;
   }
-  .profile-text-three {
-    background-color: var(--second-bg-color);
-    border-radius: 1.9vw;
-    border: 1px solid var(--main-bg-color);
-  }
+
   #profile {
     height: auto;
   }
