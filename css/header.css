@@ -57,7 +57,7 @@ height:50vh;
   /* overflow: hidden; */
 }
 
-/* #blue {
+#purple {
   position: absolute;
   padding: 0;
   top: 0;
@@ -66,21 +66,21 @@ height:50vh;
   height: 100%;
   z-index: 3;
 
-  background: #121bfc;
+  background: rgb(32, 0, 73);
   background: radial-gradient(
     circle,
-    rgba(18, 27, 252, 0.9) 0%,
-    rgb(0, 3, 94) 100%
+    rgba(32, 0, 73) 0%,
+    rgb(32, 0, 73) 100%
   );
 
-} */
+}
 #blue {
   position: absolute;
   padding: 0;
   top: 0;
   left: 0;
-  width: 100%;
-  height: 100%;
+  width: 100% !important;
+  height: 100% !important;
   z-index: 3;
 
   background: #8dc745;

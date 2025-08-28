@@ -30,42 +30,31 @@
   height: 60vh;
   width: 22vw;
   border: 1px solid rgb(141, 199, 69, 0.5);
+    -webkit-box-shadow: inset 5px 4px 7px -6px #5a5a5a;
+  box-shadow: inset 5px 6px 4px -6px #5a5a5a;
 }
 .profile-holder {
   position: relative;
   z-index: 4;
-
-  /* border: 1px solid rgb(18, 27, 252); */
   border-radius: 0.9vw;
-  /* background-color: var(--second-bg-color); */
-  /* -webkit-box-shadow: 1px 1px 0px 1px rgba(18, 27, 252, 0.97);
-  box-shadow: 1px 1px 0px 1px rgba(18, 27, 252, 0.97); */
 }
 .profile-text-holder {
-  /* border: 1px solid var(--main-bg-color); */
-  /* color: var(--main-bg-color); */
   border-radius: 0.9vw;
-  /* background-color: var(--second-bg-color); */
 }
-/* .profile-text {
-  font-weight: 700 !important;
-} */
 
 .profile-text-one {
   background-color: rgba(0, 0, 0, 0.05);
   border-radius: 0.9vw;
   color: var(--second-bg-color);
-  /* border: 1px solid var(--second-bg-color); */
-   border: 1px solid rgba(141, 199, 69, 0.5);
+  border: 1px solid rgba(141, 199, 69, 0.5);
   backdrop-filter: blur(30px);
-  /* -webkit-box-shadow: inset 5px 4px 7px -6px #5a5a5a; */
+  -webkit-box-shadow: inset 5px 4px 7px -6px #5a5a5a;
   box-shadow: inset 5px 6px 4px -6px #5a5a5a;
 }
 .profile-text-two {
-   background-color: rgba(0, 0, 0, 0.05);
+  background-color: rgba(0, 0, 0, 0.05);
   border-radius: 0.9vw;
   color: var(--second-bg-color);
-  /* border: 1px solid var(--second-bg-color); */
   border: 1px solid rgba(141, 199, 69, 0.5);
   backdrop-filter: blur(30px);
   -webkit-box-shadow: inset 5px 4px 7px -6px #5a5a5a;

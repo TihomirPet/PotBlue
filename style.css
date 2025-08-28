@@ -1,6 +1,6 @@
 body {
-   /* overflow: hidden;
-    height: 100%; */
+   overflow-x: hidden;
+   
   font-family: "Plus Jakarta Sans", "sans-serif ", "Yesteryear", !important;
 }
   /* .main {
@@ -13,7 +13,7 @@ body {
   --main-bg-color: #14A0B0;
   --header-bg-color: rgba(141, 199, 69);
   --second-bg-color: rgb(253, 251, 236);
-  --third-bg-color: #200049;
+  --third-bg-color: rgb(32, 0, 73);
   --text-white-color: rgb(255, 255, 255);
   --text-black-color: #040900;
   --bg-table-one:  #5600c7 !important;
@@ -33,6 +33,9 @@ body {
 }
 .second-color {
   color: rgb(253, 251, 236);
+}
+.third-color {
+  color: #200049;
 }
 
 /* section {

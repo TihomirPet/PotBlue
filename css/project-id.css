@@ -259,6 +259,7 @@
   display: flex;
   align-items: center;
   justify-content: start;
+  margin-bottom: 2rem;
 }
 
 .btn-slider-next {
@@ -305,6 +306,7 @@
   display: flex;
   align-items: center;
   justify-content: end;
+  margin-bottom: 2rem;
 }
 
 .btn-slider-next:hover {
@@ -333,7 +335,6 @@
 }
 /* Large devices (desktops, less than 1200px) */
 @media (max-width: 1199.98px) {
-
   .img-three-mobile {
     height: 60vh;
   }
@@ -344,11 +345,11 @@
     /* background-color: rgb(86, 0, 199); */
     width: 80vw;
     border-bottom: 1px solid black;
-}
+  }
   .button-holder-two {
     background-color: rgb(86, 0, 199);
     width: 80vw;
-}
+  }
   .button-holder-one {
     background-color: #ff730f;
     width: 22vw;
@@ -366,7 +367,6 @@
   }
   .project-id {
     position: relative;
-    ;
     /* background-color: #eeefe8; */
   }
   .project-id-one {
@@ -388,15 +388,13 @@
   .projects-id-mobile-img {
     height: 45vh;
     border-radius: 0.9vw;
-}
-.img-hover-zoom-mobile {
-
-
-  height: auto; /* [1.1] Set it as per your need */
-  overflow: hidden; /* [1.2] Hide the overflowing of child elements */
-  border-radius: 1.36vw;
-  border: 5px solid #000000;
-}
+  }
+  .img-hover-zoom-mobile {
+    height: auto; /* [1.1] Set it as per your need */
+    overflow: hidden; /* [1.2] Hide the overflowing of child elements */
+    border-radius: 1.36vw;
+    border: 5px solid #000000;
+  }
 }
 /* Medium devices (tablets, less than 992px) */
 @media (max-width: 991.98px) {
@@ -481,7 +479,7 @@
 @media (max-width: 767.98px) {
   .img-one-mobile {
     height: 44vh;
-}
+  }
   .img-three-mobile {
     height: 100%;
   }
