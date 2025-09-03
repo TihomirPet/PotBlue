@@ -19,23 +19,22 @@ document.addEventListener('DOMContentLoaded', () => {
     { selector: '.carousel-item', url: '/sections/itemone.html' },
     { selector: '.carousel-item-two', url: '/sections/itemtwo.html' },
     { selector: '.carousel-item-three', url: '/sections/itemthree.html' },
-    // Füge hier weitere Komponenten hinzu
   ];
 
-  componentsToLoad.forEach(({ selector, url }) => {
+  const loadPromises = componentsToLoad.map(({ selector, url }) => {
     const container = document.querySelector(selector);
-    if (!container) return;
-
-    fetch(url)
+    if (!container) return Promise.resolve();
+    return fetch(url)
       .then((res) => {
-        if (!res.ok) {
-          throw new Error(`HTTP-Fehler! Status: ${res.status}`);
-        }
+        if (!res.ok) throw new Error(`HTTP-Fehler! Status: ${res.status}`);
         return res.text();
       })
-      .then((data) => {
-        container.innerHTML = data;
-      })
+      .then((data) => (container.innerHTML = data))
       .catch((err) => console.error(`Fehler beim Laden von ${url}:`, err));
   });
+
+  Promise.all(loadPromises).then(() => {
+    document.dispatchEvent(new Event('componentsLoaded'));
+  });
 });
+

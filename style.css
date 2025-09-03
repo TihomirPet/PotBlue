@@ -1,35 +1,56 @@
 body {
-   overflow-x: hidden;
-   
-  font-family: "Plus Jakarta Sans", "sans-serif ", "Yesteryear", !important;
+  overflow-x: hidden;
+
+  font-family: 'Plus Jakarta Sans', 'sans-serif ', 'Yesteryear' !important;
 }
-  /* .main {
-    will-change: transform;
-    position: fixed;
-    width: 100%;
-  } */
+
 :root {
   /* --main-bg-color: rgb(18, 27, 252); */
-  --main-bg-color: #14A0B0;
+  --main-bg-color: #14a0b0;
   --header-bg-color: rgba(141, 199, 69);
   --second-bg-color: rgb(253, 251, 236);
   --third-bg-color: rgb(32, 0, 73);
   --text-white-color: rgb(255, 255, 255);
   --text-black-color: #040900;
-  --bg-table-one:  #5600c7 !important;
-  --bg-table-vinture:  #34C9B5 !important;
+  --bg-table-one: #5600c7 !important;
+  --bg-table-vinture: #34c9b5 !important;
+}
+
+
+     /* h1, h2, p, div.btn{
+      margin-bottom: 1rem;
+    } */
+main {
+  overflow-y: auto;
+  scroll-behavior: smooth; /* native smooth scroll */
+}
+/* Basis-Stil für alle float-Elemente */
+.float {
+  opacity: 0;               /* Start unsichtbar */
+  transform: translateY(30px); /* Startposition für Stagger */
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+/* Wird beim Scroll sichtbar + Stagger */
+.float.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Optional: für sofort sichtbare Schlüsseltexte */
+.float.always-visible {
+  opacity: 1 !important;
+  transform: translateY(0) !important;
+  transition: none !important;
 }
 
 /* ========== Colors ========= */
-
-
-
 
 .main-color {
   color: rgb(18, 27, 252);
 }
 .main-color {
-  color:#200049;
+  color: #200049;
 }
 .second-color {
   color: rgb(253, 251, 236);
@@ -81,12 +102,10 @@ body {
 }
 p {
   /* font-size: clamp(1rem, 1.2rem + 0.5vw, 1.5rem); */
-  font-size: clamp(1rem, 0.7rem + 0.4vw, 1.4rem) ;
+  font-size: clamp(1rem, 0.7rem + 0.4vw, 1.4rem);
 }
-.font-yesteryear{
-  font-family: "Yesteryear", cursive !important;
-
-
+.font-yesteryear {
+  font-family: 'Yesteryear', cursive !important;
 }
 button {
   font-size: clamp(
