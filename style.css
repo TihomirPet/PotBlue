@@ -84,7 +84,7 @@ main {
 
 /* ========== Fonts-size ========= */
 .font-h1 {
-  font-size: clamp(3rem, 1.8rem + 6vw, 9rem);
+  font-size: clamp(3rem, 1.8rem + 6vw, 10rem);
 }
 .font-h2 {
   /* font-size: clamp(2.4rem, 1.5rem + 1.5vw, 5rem); */
