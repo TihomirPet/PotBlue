@@ -4,6 +4,10 @@
 .img-two-mobile {
   height: 40vh;
 }
+  .img-three-mobile {
+    height: 30%;
+    width: 100%;
+  }
 .button-holder-one {
   background-color: #ff730f;
   width: 10vw;
@@ -525,9 +529,10 @@
 .img-one-mobile {
   height: 44vh;
 }
-.img-three-mobile {
-  height: 100%;
-}
+  .img-three-mobile {
+    height: 100%;
+    width: 39vw;
+  }
 .img-two-mobile {
   height: 30vh;
 }
@@ -736,6 +741,10 @@
   .project-id-mobile-vour {
     height: 20vh;
     border-left: none;
+  }
+    .img-three-mobile {
+    height: 100%;
+    width: 100%;
   }
 }
 
