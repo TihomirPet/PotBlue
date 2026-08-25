@@ -1,15 +1,50 @@
 body {
   overflow-x: hidden;
 
-  font-family: 'Plus Jakarta Sans', 'sans-serif ', 'Yesteryear' !important;
+  font-family: 'Montserrat', 'sans-serif ', 'Yesteryear' !important;
   /* font-family: 'Syne', 'sans-serif ', 'Yesteryear' !important; */
 
 }
 
+@font-face {
+  font-family: 'MontserratRegular';
+  src: url('/fonts/Montserrat-Regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'MontserratMedium';
+  src: url('/fonts/Montserrat-Medium.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'MontserratSemiBold';
+  src: url('/fonts/Montserrat-SemiBold.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'MontserratBold';
+  src: url('/fonts/Montserrat-Bold.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'MontserratExtraBold';
+  src: url('/fonts/Montserrat-ExtraBold.ttf') format('truetype');
+}
+
+/*  font face rock-3d*/
+@font-face {
+  font-family: 'Rock3D';
+  src: url('/fonts/Rock3D-Regular.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'PlusJakartaExtraBold';
+  src: url('/fonts/PlusJakartaSans-ExtraBold.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'PlusJakartaRegular';
+  src: url('/fonts/PlusJakartaSans-Regular.ttf') format('truetype');
+}
 :root {
   /* --main-bg-color: rgb(18, 27, 252); */
   --main-bg-color: #14a0b0;
-  --header-bg-color: rgba(141, 199, 69);
+  --header-bg-color: #68C331;
   --second-bg-color: rgb(253, 251, 236);
   --third-bg-color: rgb(32, 0, 73);
   --text-white-color: rgb(255, 255, 255);
@@ -71,20 +106,39 @@ main {
 .letter-space-05 {
   letter-spacing: -0.05em;
 }
+/* ============ line height ======== */
+.line-height-title {
+  line-height: 0.92;
+}
 /* ========== Fonts ========= */
-.semi-bold {
-  font-weight: 600;
+
+.Thin {
+  font-family: 'Thin';
 }
-.bold {
-  font-weight: 700;
+.Light {
+  font-family: 'Light';
 }
-.extra-bold {
-  font-weight: 800;
+.Regular {
+  font-family: 'MontserratRegular';
+}
+.Medium {
+  font-family: 'MontserratMedium';
+}
+.Semibold {
+  font-family: 'MontserratSemiBold';
+}
+.Bold {
+  font-family: 'MontserratBold';
+}
+
+.ExtraBold {
+  font-family: 'MontserratExtraBold';
 }
 
 /* ========== Fonts-size ========= */
 .font-h1 {
   font-size: clamp(3rem, 1.8rem + 6vw, 10rem);
+  font-size: clamp(4rem, 14vw, 13rem);
 }
 .font-h2 {
   /* font-size: clamp(2.4rem, 1.5rem + 1.5vw, 5rem); */
@@ -105,6 +159,7 @@ main {
 p {
   /* font-size: clamp(1rem, 1.2rem + 0.5vw, 1.5rem); */
   font-size: clamp(1rem, 0.7rem + 0.4vw, 1.4rem);
+  /* font-size:1rem; */
 }
 .font-yesteryear {
   font-family: 'Yesteryear', cursive !important;
