@@ -95,6 +95,9 @@ main {
 .third-color {
   color: #200049;
 }
+.text-content-color{
+   color: rgba(0, 0, 0, 0.45);
+}
 
 /* section {
   height: 100vh;
@@ -159,7 +162,7 @@ main {
 p {
   /* font-size: clamp(1rem, 1.2rem + 0.5vw, 1.5rem); */
   font-size: clamp(1rem, 0.7rem + 0.4vw, 1.4rem);
-  /* font-size:1rem; */
+  font-size:1rem;
 }
 .font-yesteryear {
   font-family: 'Yesteryear', cursive !important;
