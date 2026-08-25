@@ -111,12 +111,14 @@ height:50vh;
   font-weight: 500;
   color: var(--header-bg-color);
 }
-.scroll-text{  font-size: 0.75rem;
+.scroll-text {
+  font-size: 0.75rem;
   /* font-size: clamp(1.9rem, 0.7583rem + 3.4087vw, 3.4rem); */
   letter-spacing: 0.25em;
   line-height: calc(1 / 0.75);
-  font-weight: 500;
-   color: rgba(0, 0, 0, 0.45);}
+  /* font-weight: 100; */
+  color: rgba(0, 0, 0, 0.45);
+}
 .line-heading {
   display: flex;
   align-items: center;
@@ -146,10 +148,10 @@ height:50vh;
   margin-top: 10px; /* Abstand zum Text */
 }
 .line.vertical {
-  width: 1px;       /* Dicke der vertikalen Linie */
-  height: 3rem;     /* Länge der vertikalen Linie nach unten */
+  width: 1px; /* Dicke der vertikalen Linie */
+  height: 3rem; /* Länge der vertikalen Linie nach unten */
   margin-top: 10px; /* Abstand zum Text */
-  background-color:  rgba(0, 0, 0, 0.45);
+  background-color: rgba(0, 0, 0, 0.45);
 }
 .title-third {
   color: var(--third-bg-color);
@@ -161,7 +163,7 @@ height:50vh;
 
   font-weight: 600;
 }
-.bi-arrow-up-short{
+.bi-arrow-up-short {
   transform: rotate(40deg);
 }
 
@@ -190,16 +192,16 @@ height:50vh;
 
 /* Button 1: Projekte */
 .btn-projects {
-  background-color: #68C331;
+  background-color: #68c331;
   color: rgb(255, 255, 255);
-  border-color: #68C331;
+  border-color: #68c331;
   width: clamp(6rem, 20em, 9vw);
   letter-spacing: 0.04em;
 }
 
 .btn-projects:hover {
   width: calc(clamp(6rem, 20em, 9vw) + 1.5rem);
-  background-color: #68C331;
+  background-color: #68c331;
   color: rgb(255, 255, 255);
 }
 
@@ -216,8 +218,6 @@ height:50vh;
   background-color: #333333;
   color: #ffffff;
 }
-
-
 
 .header-icon {
   font-size: 1.4rem;
