@@ -111,6 +111,12 @@ height:50vh;
   font-weight: 500;
   color: var(--header-bg-color);
 }
+.scroll-text{  font-size: 0.75rem;
+  /* font-size: clamp(1.9rem, 0.7583rem + 3.4087vw, 3.4rem); */
+  letter-spacing: 0.25em;
+  line-height: calc(1 / 0.75);
+  font-weight: 500;
+   color: rgba(0, 0, 0, 0.45);}
 .line-heading {
   display: flex;
   align-items: center;
@@ -138,6 +144,12 @@ height:50vh;
   height: 1px; /* Dicke der Unterlinie */
   width: 5rem; /* Länge der Unterlinie */
   margin-top: 10px; /* Abstand zum Text */
+}
+.line.vertical {
+  width: 1px;       /* Dicke der vertikalen Linie */
+  height: 3rem;     /* Länge der vertikalen Linie nach unten */
+  margin-top: 10px; /* Abstand zum Text */
+  background-color:  rgba(0, 0, 0, 0.45);
 }
 .title-third {
   color: var(--third-bg-color);
