@@ -85,6 +85,22 @@ height:50vh;
     rgba(141, 199, 69) 100%
   ); */
 }
+#transparent {
+  position: absolute;
+  padding: 0;
+  top: 0;
+  left: 0;
+  width: 100% !important;
+  height: 100% !important;
+  z-index: 3;
+
+  background: transparent;
+  /* background: radial-gradient(
+    circle,
+    rgba(141, 199, 69, 0.95) 0%,
+    rgba(141, 199, 69) 100%
+  ); */
+}
 
 .text-overlay {
   position: absolute;
