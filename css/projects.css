@@ -6,16 +6,18 @@
 }
 .projects-one {
   height: auto;
+    padding: 12vh 0 12vh 0;
 }
 
-.projects-img-holder {
+/* .projects-img-holder {
   width: 100%;
 }
 .projects-img-one {
   height: auto;
-}
 
-.projects-contact-two {
+} */
+
+/* .projects-contact-two {
   height: auto;
 }
 
@@ -38,7 +40,7 @@
 }
 .projects-title {
   color: #ffffff;
-}
+} */
 /* Der Container: feste Größe oder responsive per aspect-ratio */
 .project-card {
   position: relative;
