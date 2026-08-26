@@ -69,7 +69,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
         ctx.clearRect(0, 0, w, h);
 
-        ctx.strokeStyle = 'rgba(231, 231, 231, 0.7)';
+        ctx.strokeStyle = 'rgba(131, 131, 131, 0.1)';
         ctx.lineWidth = 1;
 
         // Alle Linien in einem Pfad -> ein einziger stroke()-Aufruf

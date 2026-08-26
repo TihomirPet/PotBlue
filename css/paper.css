@@ -1,0 +1,18 @@
+#paper {
+  position: relative;
+  height: auto;
+  background-color: #1f1f1f;
+  padding: 0 0 30vh 0;
+}
+.paper-holder {
+  background-image: url(/images/paper-top-n.png);
+  height: 30vh;
+  width: 100%;
+  background-size: cover;
+ 
+
+}
+.skils-holder{
+  border: 1px solid  rgb(253, 251, 236,0.4);
+  border-radius: 1.6rem;
+}
