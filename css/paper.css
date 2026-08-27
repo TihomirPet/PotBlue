@@ -3,11 +3,30 @@
   height: auto;
   background-color: #1f1f1f;
   padding: 0 0 30vh 0;
-   /* background-image: url(/images/Abstrakter-Tuschepinselstrich.png);
-background-position: center;
-background-size: contain;
-background-repeat: no-repeat; */
+  
+   background-image: url(/images/Tuschepinselstrich.png);
+background-position: bottom;
+background-size: 60vw;
+background-repeat: no-repeat;
+ /* background-image: linear-gradient(rgba(31,31,31,0.4), rgba(31,31,31,0.2)),
+                     url(/images/Tuschepinselstrich.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat; */
+
 }
+/* #paper::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image: url(/images/Tuschepinselstrich.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  opacity: 0.4; 
+  pointer-events: none;
+  z-index: 0;
+} */
 .paper-holder {
   background-image: url(/images/paper-top-n.png);
   height: 30vh;
@@ -19,4 +38,5 @@ background-repeat: no-repeat; */
 .skils-holder{
   border: 1px solid  rgb(253, 251, 236,0.4);
   border-radius: 1.6rem;
+  background-color: #1f1f1f;
 }
