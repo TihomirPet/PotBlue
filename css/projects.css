@@ -1,7 +1,7 @@
 .projects {
   position: relative;
   height: auto;
-
+padding: 0 0 20vh 0;
   background: var(--second-bg-color);
 }
 .projects-one {

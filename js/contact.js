@@ -14,102 +14,161 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 });
 
-// document.addEventListener('contactLoaded', () => {
-//   console.log(' `contact.html` ist geladen!');
+// Guard gegen Mehrfach-Initialisierung: falls `contactLoaded` mehrmals
+// feuert (z.B. bei Navigation zwischen Unterseiten, erneutes Nachladen
+// von contact.html), soll der komplette Setup-Block trotzdem nur EINMAL
+// laufen. Sonst stapeln sich resize-/wheel-Listener und IntersectionObserver
+// bei jedem erneuten Laden -> ruckeliges/instabiles Verhalten.
+let alreadyInitialized = false;
 
-//   // Prüfen, ob ein Canvas existiert
-//   const canvases = document.querySelectorAll('.noiseCanvas');
+document.addEventListener('contactLoaded', () => {
+  console.log('`contact.html` ist geladen!');
 
-//   if (canvases.length === 0) {
-//     console.error('⚠ Fehler: Kein `.noiseCanvas`-Element gefunden!');
-//     return;
-//   }
+  if (alreadyInitialized) {
+    console.log(
+      'Setup bereits initialisiert - überspringe erneute Initialisierung.',
+    );
+    return;
+  }
+  alreadyInitialized = true;
 
-//   console.log(` ${canvases.length} Canvas-Element(e) gefunden!`);
+  // Prüfen, ob ein Canvas existiert
+  const canvases = document.querySelectorAll('.noiseCanvas');
 
-//   // Noise-Effekt starten
-//   canvases.forEach((canvas) => {
-//   const ctx = canvas.getContext('2d');
+  if (canvases.length === 0) {
+    console.error('⚠ Fehler: Kein `.noiseCanvas`-Element gefunden!');
+    return;
+  }
 
-//   let mouseX = -500,
-//     mouseY = -500,
-//     mouseMoved = false;
+  console.log(`${canvases.length} Canvas-Element(e) gefunden!`);
 
-//   function resize() {
-//     canvas.width = window.innerWidth * window.devicePixelRatio;
-//     canvas.height = window.innerHeight * window.devicePixelRatio;
-//     canvas.style.width = window.innerWidth + 'px';
-//     canvas.style.height = window.innerHeight + 'px';
-//   }
+  // --- Hilfsfunktion: Alle dynamischen Inhalte geladen ---
+  function waitForComponents() {
+    return new Promise((resolve) => {
+      const check = () => {
+        const dynamicSections = document.querySelectorAll(
+          'section, #projects, .carousel-item, .carousel-item-two, .carousel-item-three',
+        );
+        if (dynamicSections.length > 0) {
+          resolve(dynamicSections);
+        } else {
+          setTimeout(check, 50);
+        }
+      };
+      check();
+    });
+  }
 
-//   function drawGrid(ctx, cellSize = 200) {
-//     const w = ctx.canvas.width;
-//     const h = ctx.canvas.height;
+  waitForComponents().then((sections) => {
+    const main = document.querySelector('main') || document.documentElement;
 
-//     //  Hintergrundrauschen erzeugen
-//     const iData = ctx.createImageData(w, h);
-//     const buffer32 = new Uint32Array(iData.data.buffer);
-//     const len = buffer32.length;
+    // -------------------- Floating / Stagger --------------------
+    const observer = new IntersectionObserver(
+      (entries, obs) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            const floatEls = entry.target.querySelectorAll('.float');
+            floatEls.forEach((el, i) => {
+              el.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+              el.style.transitionDelay = `${i * 0.2}s`;
+              el.classList.add('visible');
+            });
+            obs.unobserve(entry.target);
+          }
+        });
+      },
+      { threshold: 0.2 },
+    );
 
-//     for (let i = 0; i < len; i +=7) {
-//       // Verändert nur jedes 7. Pixel (sanfteres Rauschen)
-//       if (Math.random() < 0.3) buffer32[i] = 0xa5a5a5a5; // Hellgraues Rauschen
-//     }
+    sections.forEach((sec) => observer.observe(sec));
 
-//     ctx.putImageData(iData, 0, 0);
+    // -------------------- Grid Canvas (statisch, ohne Rauschen) --------------------
+    // Wird nur einmal gezeichnet (und bei Resize neu) - kein Animation-Loop.
+    const gridCanvases = document.querySelectorAll('.noiseCanvas');
+    gridCanvases.forEach((canvas) => {
+      const ctx = canvas.getContext('2d');
 
-//     //  Rasterlinien zeichnen
-//     ctx.strokeStyle = 'rgba(253, 251, 236, 0.3)'; // Weiße Linien mit Transparenz
-//     ctx.lineWidth = 1;
+      // 50 = gewünschte Zellgröße in CSS-Pixeln (optische Größe).
+      const CELL_SIZE_CSS_PX = 50;
 
-//     for (let x = 0; x < w; x += cellSize) {
-//       ctx.beginPath();
-//       ctx.moveTo(x, 0);
-//       ctx.lineTo(x, h);
-//       ctx.stroke();
-//     }
+      function resizeCanvas() {
+        canvas.width = window.innerWidth * window.devicePixelRatio;
+        canvas.height = window.innerHeight * window.devicePixelRatio;
+        canvas.style.width = window.innerWidth + 'px';
+        canvas.style.height = window.innerHeight + 'px';
 
-//     for (let y = 0; y < h; y += cellSize) {
-//       ctx.beginPath();
-//       ctx.moveTo(0, y);
-//       ctx.lineTo(w, y);
-//       ctx.stroke();
-//     }
+        drawGrid();
+      }
 
-//     //  Maus-Hover Effekt (Rauschen verschwindet)
-//     if (mouseMoved) {
-//       const gradient = ctx.createRadialGradient(
-//         mouseX,
-//         mouseY,
-//         0,
-//         mouseX,
-//         mouseY,
-//         250
-//       );
-//       gradient.addColorStop(0, 'rgba(255, 255, 255, 1)'); // Voll sichtbar
-//       gradient.addColorStop(1, 'rgba(255, 255, 255, 0)'); // Transparent
+      function drawGrid() {
+        const w = canvas.width;
+        const h = canvas.height;
+        const cellSize = CELL_SIZE_CSS_PX * window.devicePixelRatio;
 
-//       ctx.globalCompositeOperation = 'destination-out';
-//       ctx.beginPath();
-//       ctx.arc(mouseX, mouseY, 200, 0, Math.PI * 2);
-//       ctx.fillStyle = gradient;
-//       ctx.fill();
-//       ctx.globalCompositeOperation = 'source-over';
-//     }
+        ctx.clearRect(0, 0, w, h);
 
-//     setTimeout(() => requestAnimationFrame(() => drawGrid(ctx, cellSize)), 80);
-//   }
+        ctx.strokeStyle = 'rgba(131, 131, 131, 0.1)';
+        ctx.lineWidth = 1;
 
-//   resize();
-//   window.addEventListener('resize', resize);
-//   window.addEventListener('mousemove', (e) => {
-//     mouseX = e.clientX * window.devicePixelRatio;
-//     mouseY = e.clientY * window.devicePixelRatio;
-//     mouseMoved = true;
-//   });
+        // Alle Linien in einem Pfad -> ein einziger stroke()-Aufruf
+        ctx.beginPath();
 
-//   drawGrid(ctx, 200);
-//   });
-// });
+        for (let x = 0; x < w; x += cellSize) {
+          ctx.moveTo(x, 0);
+          ctx.lineTo(x, h);
+        }
+
+        for (let y = 0; y < h; y += cellSize) {
+          ctx.moveTo(0, y);
+          ctx.lineTo(w, y);
+        }
+
+        ctx.stroke();
+      }
+
+      resizeCanvas();
+      window.addEventListener('resize', resizeCanvas);
+    });
+
+    // -------------------- Smooth Scroll mit Easing --------------------
+    let isScrolling = false;
+    let targetScroll = main.scrollTop;
+    let currentScroll = main.scrollTop;
+
+    function easeOutQuad(t) {
+      return t * (2 - t); // klassisches ease-out
+    }
+
+    function animateScroll() {
+      const diff = targetScroll - currentScroll;
+      currentScroll += diff * easeOutQuad(0.08); // 0.08 = sanfter Faktor
+      main.scrollTop = currentScroll;
+
+      if (Math.abs(diff) > 0.5) {
+        requestAnimationFrame(animateScroll);
+      } else {
+        main.scrollTop = targetScroll;
+        isScrolling = false;
+      }
+    }
+
+    main.addEventListener('wheel', (e) => {
+      if (isScrolling) return;
+      isScrolling = true;
+
+      const scrollPos = main.scrollTop + window.innerHeight / 2;
+      let current = 0;
+      sections.forEach((sec, i) => {
+        if (sec.offsetTop <= scrollPos) current = i;
+      });
+
+      let next = current + (e.deltaY > 0 ? 1 : -1);
+      next = Math.max(0, Math.min(sections.length - 1, next));
+
+      targetScroll = sections[next].offsetTop;
+      animateScroll();
+    });
+  }); // Ende waitForComponents
+});
 
 // #################################################################################################

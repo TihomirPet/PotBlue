@@ -11,12 +11,10 @@
   padding: 9vh 0vh 10vh 0vh;
 }
 .contact-holder {
-  /* position: absolute; */
+width: 100%;
   z-index: 4;
-  width: 70vw;
-  /* border: 1px solid rgb(15, 35, 0, 1); */
-  border-radius: 0.9vw;
-  /* background-color: rgb(252, 252, 252); */
+
+
 }
 .contact-card {
   height: 32vh;
