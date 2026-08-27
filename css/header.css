@@ -67,6 +67,7 @@ height:50vh;
   z-index: 3;
 
   background: var(--header-bg-color);
+  background: #1f1f1f;
 }
 #blue {
   position: absolute;
@@ -218,9 +219,9 @@ height:50vh;
 
 /* Button 1: Projekte */
 .btn-projects {
-  background-color: #68c331;
+  background-color: var(--header-bg-color);
   color: rgb(255, 255, 255);
-  border-color: #68c331;
+  border-color: var(--header-bg-color);
   width: clamp(6rem, 20em, 9vw);
   letter-spacing: 0.04em;
 }

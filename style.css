@@ -3,7 +3,6 @@ body {
 
   font-family: 'Montserrat', 'sans-serif ', 'Yesteryear' !important;
   /* font-family: 'Syne', 'sans-serif ', 'Yesteryear' !important; */
-
 }
 
 @font-face {
@@ -44,17 +43,17 @@ body {
 :root {
   /* --main-bg-color: rgb(18, 27, 252); */
   --main-bg-color: #14a0b0;
-  --header-bg-color: #68C331;
-  --second-bg-color: rgb(253, 251, 236);
+  --header-bg-color: #68c331;
+  /* --header-bg-color: #FF6F2B; */
+  --second-bg-color: #fdfbec;
   --third-bg-color: rgb(32, 0, 73);
   --text-white-color: rgb(255, 255, 255);
-  --text-black-color: #040900;
+  --text-black-color: rgb(4, 9, 0);
   --bg-table-one: #5600c7 !important;
   --bg-table-vinture: #34c9b5 !important;
 }
 
-
-     /* h1, h2, p, div.btn{
+/* h1, h2, p, div.btn{
       margin-bottom: 1rem;
     } */
 main {
@@ -63,9 +62,11 @@ main {
 }
 /* Basis-Stil für alle float-Elemente */
 .float {
-  opacity: 0;               /* Start unsichtbar */
+  opacity: 0; /* Start unsichtbar */
   transform: translateY(30px); /* Startposition für Stagger */
-  transition: opacity 0.6s ease, transform 0.6s ease;
+  transition:
+    opacity 0.6s ease,
+    transform 0.6s ease;
 }
 
 /* Wird beim Scroll sichtbar + Stagger */
@@ -95,8 +96,11 @@ main {
 .third-color {
   color: #200049;
 }
-.text-content-color{
-   color: rgba(0, 0, 0, 0.45);
+.text-white-colour {
+  color: rgb(255, 255, 255);
+}
+.text-content-color {
+  color: rgba(0, 0, 0, 0.45);
 }
 
 /* section {
@@ -162,7 +166,7 @@ main {
 p {
   /* font-size: clamp(1rem, 1.2rem + 0.5vw, 1.5rem); */
   font-size: clamp(1rem, 0.7rem + 0.4vw, 1.4rem);
-  font-size:1rem;
+  font-size: 1rem;
 }
 .font-yesteryear {
   font-family: 'Yesteryear', cursive !important;

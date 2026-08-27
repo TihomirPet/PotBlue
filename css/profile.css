@@ -1,14 +1,14 @@
 #profile {
   position: relative;
   height: 100%;
-
+background-color: var(--second-bg-color);
   /* border: 1px solid rgb(0, 255, 98); */
 }
 .profile {
   position: relative;
   height: 100%;
   width: 100vw;
-/* background-image: url(/images/Oil-Painting.jpg);
+/* background-image: url(/images/Abstrakter-Tuschepinselstrich.png);
 background-position: center;
 background-size: cover;
 background-repeat: no-repeat; */

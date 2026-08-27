@@ -1,33 +1,107 @@
 #contact {
-  height: 100%;
-  background-color: var(--second-bg-color);
+  height: 100vh;
+  background-color: #1f1f1f;
 }
 .contact {
+  /* background-image: url(/images/Abstrakter\ Tuschepinselstrich.png);
+background-size: cover;
+background-position: center;
+background-repeat: no-repeat; */
+
   position: relative;
   height: 100%;
   width: 100vw;
-  background-color: var(--second-bg-color);
+  /* background-color: var(--second-bg-color); */
   overflow: hidden;
   /* padding: 9vh 0vh 10vh 0vh; */
 }
-.contact-holder {
-
-height: 100%;
+.contact-text-top {
   z-index: 4;
-
-
+  border-bottom: 1px solid rgba(209, 209, 209, 0.2);
 }
-.contact-card {
-  height: 32vh;
-  border-radius: 0.9vw;
-  border: 1px solid var(--main-bg-color);
-  background-color: var(--text-white-color);
-  /* background-color: #ffffffcc; */
-  /* -webkit-box-shadow: 1px 1px 0px 1px rgb(32, 0, 73,0.79);
-  box-shadow: 1px 1px 0px 1px rgb(32, 0, 73,0.79); */
+.contact-text-bottom {
+  z-index: 4;
+  border-top: 1px solid rgba(209, 209, 209, 0.2);
+}
+.contact-holder {
+  height: 100%;
+  z-index: 4;
+  padding: 2vh 0 2vh 0;
+}
+.btn-custom-contact {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.75rem;
+  padding: 0.8rem 1rem;
+
+  /* font-size: clamp(1rem, 1.2rem + 0.5vw, 1.8rem); */
+  font-weight: 700;
+  line-height: 1.5;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  user-select: none;
+  border: 2px solid transparent;
+  border-radius: 50px;
+  transition:
+    transform 0.35s cubic-bezier(0.25, 0.8, 0.25, 1),
+    background-color 0.3s ease-in-out,
+    color 0.3s ease-in-out,
+    border-color 0.3s ease-in-out;
 }
 
+/* Button 1: Projekte */
+.btn-message {
+  background-color: var(--text-black-color);
+  color: var(--header-bg-color);
+  border-color: #68c331;
+  width: clamp(10rem, 20em, 11vw);
+  letter-spacing: 0.04em;
+}
 
+.btn-message:hover {
+  /* Fix: Hover-Formel benutzte vorher 10vw statt 20vw -> Button
+     schrumpfte beim Hover statt zu wachsen. Jetzt gleicher vw-Wert
+     wie in der Basis-Breite, plus 1.5rem Zuwachs. */
+  width: calc(clamp(10rem, 20em, 11vw) + 1.5rem);
+  background-color: var(--text-black-color);
+  color: var(--header-bg-color);
+}
+
+.btn-secondary-custom-contact {
+  background-color: var(--header-bg-color);
+  color: var(--text-black-color);
+  border-color: #333333;
+  width: clamp(10rem, 15em, 10vw);
+  letter-spacing: 0.04em;
+}
+
+.btn-secondary-custom-contact:hover {
+  /* Fix: Hover-Formel benutzte vorher 7vw statt 10vw -> gleiches Problem. */
+  width: calc(clamp(10rem, 15em, 10vw) + 1.5rem);
+  background-color: var(--header-bg-color);
+  color: #333333;
+}
+.contact-text-corner-bold {
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: rgb(255, 255, 255, 0.6);
+}
+.contact-text-corner-regular {
+  font-size: 0.75rem;
+  font-weight: 200;
+}
+.bi-dot {
+  font-size: 1.5rem;
+}
+.contact-text-round {
+  width: 6vw;
+  font-size: 0.68rem;
+  border: 1px solid   rgb(255, 255, 255 ,0.7);
+  font-weight: 600;
+  border-radius: 0.5rem;
+}
 
 .contact-icon {
   font-size: 1.6rem;
@@ -41,17 +115,6 @@ height: 100%;
   .contact-holder {
     /* position: absolute; */
     z-index: 4;
-    width: 100%;
-    /* border: 1px solid rgb(15, 35, 0, 1); */
-    border-radius: 0.9vw;
-    /* background-color: rgb(252, 252, 252); */
-  }
-  .contact-card {
-    height: 45vh;
-    border-radius: 0.9vw;
-    border: 1px solid var(--main-bg-color);
-    background-color: var(--second-bg-color);
-    /* background-color: #ffffffcc; */
   }
 }
 /* // `lg` applies to medium devices (tablets, less than 992px) */
@@ -59,17 +122,6 @@ height: 100%;
   .contact-holder {
     /* position: absolute; */
     z-index: 4;
-    width: 100%;
-    /* border: 1px solid rgb(15, 35, 0, 1); */
-    border-radius: 0.9vw;
-    /* background-color: rgb(252, 252, 252); */
-  }
-  .contact-card {
-    height: 47vh;
-    border-radius: 0.9vw;
-    border: 1px solid var(--main-bg-color);
-    background-color: var(--second-bg-color);
-    /* background-color: #ffffffcc; */
   }
 }
 /* // `md` applies to small devices (landscape phones, less than 768px) */
@@ -86,17 +138,6 @@ height: 100%;
   .contact-holder {
     position: relative;
     z-index: 4;
-    width: 100%;
-    border: 1px solid transparent;
-    border-radius: 0.9vw;
-    /* background-color: rgb(252, 252, 252); */
-  }
-  .contact-card {
-    height: 23vh;
-    border-radius: 0.9vw;
-    /* border: 1px solid var(--main-bg-color); */
-    /* background-color: var(--second-bg-color); */
-    background-color: #ffffffcc;
   }
 }
 /* // `sm` applies to x-small devices (portrait phones, less than 576px) */
