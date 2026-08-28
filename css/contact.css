@@ -118,10 +118,22 @@ font-size: clamp(0.875rem, 0.8222rem + 0.2222vw, 1rem);
 
 /* // `xl` applies to large devices (desktops, less than 1200px) */
 @media (max-width: 1199.98px) {
+  #contact {
+  height: 103vh;
+  background-color: #1f1f1f;
+}
   .contact-holder {
     /* position: absolute; */
     z-index: 4;
   }
+  .btn-custom-contact {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.75rem;
+    padding: 0.5rem 1rem;
+ 
+}
 }
 /* // `lg` applies to medium devices (tablets, less than 992px) */
 @media (max-width: 991.98px) {
