@@ -56,10 +56,10 @@ body {
 /* h1, h2, p, div.btn{
       margin-bottom: 1rem;
     } */
-main {
+/* main {
   overflow-y: auto;
-  scroll-behavior: smooth; /* native smooth scroll */
-}
+  scroll-behavior: smooth; 
+} */
 /* Basis-Stil für alle float-Elemente */
 .float {
   opacity: 0; /* Start unsichtbar */
@@ -144,9 +144,9 @@ main {
 
 /* ========== Fonts-size ========= */
 .font-h1 {
-  font-size: clamp(3rem, 1.8rem + 6vw, 10rem);
+  /* font-size: clamp(3rem, 1.8rem + 6vw, 10rem); */
   font-size: clamp(4.8rem, 14vw, 13rem);
-  font-size: clamp(5.16rem, 1.9176rem + 13.6522vw, 12.8394rem);
+  /* font-size: clamp(5.16rem, 1.9176rem + 13.6522vw, 12.8394rem); */
 }
 .font-h2 {
   /* font-size: clamp(2.4rem, 1.5rem + 1.5vw, 5rem); */

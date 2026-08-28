@@ -99,13 +99,20 @@ background-repeat: no-repeat; */
     box-shadow: none;
     min-height: 80vh; /* Verhindert, dass es kleiner als 80% des Viewports wird */
   }
+   .profile-img{
+    width: 83%;
+  }
+  .profile-text-content {
+  width: 39vw !important;
+}
 
 }
 /* // `md` applies to small devices (landscape phones, less than 768px) */
 @media (max-width: 767.98px) {
-  .profile-text-holder-two {
-  margin-top: 4vh;
-}
+
+  .profile-img{
+    width: 50%;
+  }
   .profile-holder {
     position: relative;
     z-index: 4;
