@@ -201,7 +201,7 @@ height:50vh;
   gap: 0.75rem;
   padding: 0.7rem 1rem;
 
-  /* font-size: clamp(1rem, 1.2rem + 0.5vw, 1.8rem); */
+font-size: clamp(0.875rem, 0.8222rem + 0.2222vw, 1rem);
   font-weight: 700;
   line-height: 1.5;
   text-align: center;
@@ -222,7 +222,7 @@ height:50vh;
   background-color: var(--header-bg-color);
   color: rgb(255, 255, 255);
   border-color: var(--header-bg-color);
-  width: clamp(6rem, 20em, 9vw);
+  width: clamp(9rem, 20em, 9vw);
   letter-spacing: 0.04em;
 }
 
@@ -236,7 +236,7 @@ height:50vh;
   background-color: #ffffff;
   color: #333333;
   border-color: #333333;
-  width: clamp(6rem, 15em, 7vw);
+  width: clamp(7rem, 15em, 7vw);
   letter-spacing: 0.04em;
 }
 
@@ -293,23 +293,7 @@ height:50vh;
     width: auto;
     left: -110vw;
   }
-  #blue {
-    position: absolute;
-    padding: 0;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: 3;
 
-    background: #8dc745;
-    background: radial-gradient(
-      circle,
-      rgba(141, 199, 69, 0.95) 0%,
-      rgba(141, 199, 69) 100%
-    );
-    /* background-color: #FDFBEC; */
-  }
 }
 /* // `sm` applies to x-small devices (portrait phones, less than 576px) */
 @media (max-width: 575.98px) {
