@@ -3,10 +3,10 @@
   background-color: #1f1f1f;
 }
 .contact {
-   background-image: url(/images/Geschwungener-Pinselstrich.png);
-background-position: bottom right;
-background-size: 50vw;
-background-repeat: no-repeat;
+  background-image: url(/images/Geschwungener-Pinselstrich.png);
+  background-position: bottom right;
+  background-size: 50vw;
+  background-repeat: no-repeat;
 
   position: relative;
   height: 100%;
@@ -14,6 +14,9 @@ background-repeat: no-repeat;
   /* background-color: var(--second-bg-color); */
   overflow: hidden;
   /* padding: 9vh 0vh 10vh 0vh; */
+}
+.contact-img {
+  width: 69%;
 }
 .contact-text-top {
   z-index: 4;
@@ -35,7 +38,7 @@ background-repeat: no-repeat;
   gap: 0.75rem;
   padding: 0.8rem 1rem;
 
-  /* font-size: clamp(1rem, 1.2rem + 0.5vw, 1.8rem); */
+font-size: clamp(0.875rem, 0.8222rem + 0.2222vw, 1rem);
   font-weight: 700;
   line-height: 1.5;
   text-align: center;
@@ -56,7 +59,7 @@ background-repeat: no-repeat;
   background-color: var(--text-black-color);
   color: var(--header-bg-color);
   border-color: #68c331;
-  width: clamp(10rem, 20em, 11vw);
+  width: clamp(12rem, 20em, 11vw);
   letter-spacing: 0.04em;
 }
 
@@ -87,20 +90,23 @@ background-repeat: no-repeat;
   font-size: 0.75rem;
   font-weight: 600;
   color: rgb(255, 255, 255, 0.6);
+  font-size: clamp(0.625rem, 0.5722rem + 0.2222vw, 0.75rem);
 }
 .contact-text-corner-regular {
   font-size: 0.75rem;
   font-weight: 200;
+  font-size: clamp(0.625rem, 0.5722rem + 0.2222vw, 0.75rem);
 }
 .bi-dot {
   font-size: 1.5rem;
 }
 .contact-text-round {
-  width: 6vw;
-  font-size: 0.68rem;
-  border: 1px solid   rgb(255, 255, 255 ,0.7);
+  width: clamp(7rem, 6.7368rem + 0.0658vw, 8rem);
+
+  border: 1px solid rgb(255, 255, 255, 0.7);
   font-weight: 600;
   border-radius: 0.5rem;
+  font-size: clamp(0.625rem, 0.5722rem + 0.2222vw, 0.75rem);
 }
 
 .contact-icon {
@@ -133,13 +139,30 @@ background-repeat: no-repeat;
     position: relative;
     height: auto;
     width: 100vw;
-    background-color: var(--second-bg-color);
-  }
-  .contact-holder {
-    position: relative;
-    z-index: 4;
   }
 }
 /* // `sm` applies to x-small devices (portrait phones, less than 576px) */
 @media (max-width: 575.98px) {
+  .btn-custom-contact {
+    gap: 0.75rem;
+    padding: 0.5rem 0.7rem;
+  }
+  .contact-holder {
+    height: 100%;
+    z-index: 4;
+    padding: 2vh 0 6vh 0;
+  }
+  .contact {
+  background-image: url(/images/Geschwungener-Pinselstrich.png);
+background-position: right -1em bottom 8vh;
+  background-size: 110vw;
+  background-repeat: no-repeat;
+
+  position: relative;
+  height: 100%;
+  width: 100vw;
+  /* background-color: var(--second-bg-color); */
+  overflow: hidden;
+  /* padding: 9vh 0vh 10vh 0vh; */
+}
 }
