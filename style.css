@@ -162,7 +162,8 @@ main {
 }
 .font-h5 {
   /* font-size: clamp(1.1rem, 0.8rem + 0.6vw, 1.8rem); */
-  font-size: clamp(1.1rem, 0.8rem + 0.7vw, 1.7rem);
+  /* font-size: clamp(1.1rem, 0.8rem + 0.7vw, 1.7rem); */
+   font-size:clamp(1.2rem, 0.977rem + 0.9389vw, 1.7281rem);
 }
 p {
   /* font-size: clamp(1rem, 1.2rem + 0.5vw, 1.5rem); */

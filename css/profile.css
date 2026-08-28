@@ -128,25 +128,7 @@ background-repeat: no-repeat; */
     background-color: var(--second-bg-color);
     padding: 5vh 0vw 5vh 0vw;
   }
-  #bright {
-    position: absolute;
-    padding: 0;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100% !important;
-    z-index: 3;
 
-    background: var(--second-bg-color);
-    background: radial-gradient(
-      circle,
-      rgb(253, 251, 237, 0.6),
-      rgb(253, 251, 236, 0.2)
-    );
-  }
-  .profile-between {
-    display: none !important;
-  }
 }
 /* // `sm` applies to x-small devices (portrait phones, less than 576px) */
 @media (max-width: 575.98px) {
@@ -156,4 +138,10 @@ background-repeat: no-repeat; */
     width: 100vw;
     background-color: var(--second-bg-color);
   }
+  .profile-img{
+    width: 90%;
+  }
+  .profile-text-content{
+  width: 80vw !important;
+}
 }

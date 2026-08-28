@@ -39,4 +39,47 @@ background-repeat: no-repeat;
   border: 1px solid  rgb(253, 251, 236,0.4);
   border-radius: 1.6rem;
   background-color: #1f1f1f;
+font-size: clamp(0.75rem, 0.337rem + 1.7389vw, 1.7281rem);
+}
+/* // `xxl` applies to x-large devices (large desktops, less than 1400px) */
+@media (max-width: 1399.98px) {
+
+}
+
+/* // `xl` applies to large devices (desktops, less than 1200px) */
+@media (max-width: 1199.98px) {
+
+
+}
+/* // `lg` applies to medium devices (tablets, less than 992px) */
+@media (max-width: 991.98px) {
+ 
+
+
+}
+/* // `md` applies to small devices (landscape phones, less than 768px) */
+@media (max-width: 767.98px) {
+ 
+
+}
+/* // `sm` applies to x-small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+  #paper {
+  position: relative;
+  height: auto;
+  background-color: #1f1f1f;
+  padding: 0 0 30vh 0;
+  
+   background-image: url(/images/Tuschepinselstrich-orange.png);
+background-position: right 3em bottom 10vh;
+background-size: 80vw;
+background-repeat: no-repeat;
+ /* background-image: linear-gradient(rgba(31,31,31,0.4), rgba(31,31,31,0.2)),
+                     url(/images/Tuschepinselstrich.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat; */
+
+}
+
 }
