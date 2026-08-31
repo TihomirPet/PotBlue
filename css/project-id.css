@@ -191,7 +191,9 @@
 
 /* // X-Small devices (portrait phones, less than 576px) */
 @media (max-width: 575.98px) {
- 
+ .project-id--text-content {
+  width: 100%;
+}
 }
 
 /* // XX-Large devices (larger desktops) */
