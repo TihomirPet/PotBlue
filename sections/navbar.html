@@ -1,89 +1,22 @@
-<div class="row nav-test" id="nav_bar">
-  <div class="col-1 d-none d-md-block d-lg-none"></div>
-  <div class="col-2 nav-one d-none d-lg-block"></div>
-  <div class="col-md-9 col-lg-8 d-flex p-0 nav-two">
-    <nav class="navbar navbar-expand-lg w-100 p-3 px-md-1">
-      <div
-        class="container-fluid d-flex justify-content-between nav-wrapper w-100 p-1 p-lg-0"
-      >
-        <!-- <a class=" btn-nav-contakt" href="#" role="button">Link</a> -->
-        <a
-          class="btn-nav-contakt-index d-lg-none"
-          href="index.html#contact"
-          role="button"
-          >Kontakt
-
-          <i class="bi bi-arrow-right-circle-fill nav-icon"></i>
-        </a>
-        <a
-          class="btn-nav-contakt-projectone d-lg-none"
-          href="projectone.html#contact"
-          role="button"
-          >Kontakt
-
-          <i class="bi bi-arrow-right-circle-fill nav-icon"></i>
-        </a>
-        <button
-          class="navbar-toggler first-button"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarNavDropdown"
-          aria-controls="navbarNavDropdown"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <div class="animated-icon1">
-            <span></span><span></span><span></span>
-          </div>
-        </button>
-        <div
-          class="collapse navbar-collapse ps-3 d-lg-flex align-items-center justify-content-center"
-          id="navbarNavDropdown"
-        >
-          <ul
-            class="navbar-nav d-flex align-items-lg-center justify-content-around navTest"
-          >
-            <li class="nav-item">
-              <a
-                class="nav-link active"
-                aria-current="page"
-                href="/index.html#01"
-                >Home</a
-              >
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="/index.html#projects">Projekte</a>
-            </li>
-
-            <li class="nav-item">
-              <a class="nav-link" href="/index.html#profile">Profil</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="/index.html#software">Programe</a>
-            </li>
-            <li class="nav-item nav-contact-index">
-              <a class="nav-link" href="index.html#contact">Kontakt</a>
-            </li>
-            <li class="nav-item nav-contact-projectone">
-              <a class="nav-link" href="projectone.html#contact">Kontakt</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
+<nav class="navbar">
+  <div class="navbar-top">
+    <span class="brand"><h4 class="font-h6 ExtraBold">TP </h4></span>
+    <button class="menu-toggle" id="menuToggle" aria-expanded="false" aria-controls="menuPanel">
+      <span>Menu</span>
+      <span class="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </span>
+    </button>
   </div>
-  <div class="col-2 d-flex align-items-center nav-three d-none d-lg-block">
-    <div
-      class="w-100 d-flex align-items-center justify-content-center mt-md-2 mt-xl-3"
-    >
-      <!-- <a class="phone" href="tel:+491639136818">
-        <img src="/img/phone.png" class="phone-img" />
-        <img src="/img/phon_R.png" class="phone-img" />
-      </a>
-      <a class="email ms-3" href="mailto:tihomirpetrov@web.de">
-        <img src="/img/envelop.png" class="email-img" />
-        <img src="/img/envelop-O.png" class="email-img" />
-      </a> -->
-    </div>
+ 
+  <div class="menu-panel" id="menuPanel">
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#profil">Profil</a></li>
+      <li><a href="#projekte">Projekte</a></li>
+      <li><a href="#kontakt">Kontakt</a></li>
+    </ul>
   </div>
-</div>
+</nav>
