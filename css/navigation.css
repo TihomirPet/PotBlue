@@ -1,7 +1,7 @@
 
 .nav-holder {
   position: absolute;
-  /* position: fixed; */
+  position: fixed;
   top: 0;
   left: 0;
   z-index: 7;
@@ -82,7 +82,7 @@ font-weight: 800;
 .menu-panel {
   position: absolute;
   top: 7px;
-  right: calc(6.9% + 8px);
+  right: calc(8% + 8px);
   left: auto;
   height: 75%;
   background: var(--bg);
