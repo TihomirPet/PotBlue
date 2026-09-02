@@ -1,8 +1,6 @@
 body {
   overflow-x: hidden;
-
-  font-family: 'Montserrat', 'sans-serif ', 'Yesteryear' !important;
-  /* font-family: 'Syne', 'sans-serif ', 'Yesteryear' !important; */
+  font-family: 'MontserratRegular', sans-serif;
 }
 
 @font-face {
@@ -131,7 +129,8 @@ body {
 .Medium {
   font-family: 'MontserratMedium';
 }
-.Semibold {
+.Semibold,
+.semi-bold {
   font-family: 'MontserratSemiBold';
 }
 .Bold {
