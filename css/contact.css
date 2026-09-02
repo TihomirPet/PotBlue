@@ -1,3 +1,7 @@
+body {
+  overflow-x: hidden;
+  font-family: 'MontserratRegular', sans-serif;
+}
 #contact {
   height: 100vh;
   background-color: #1f1f1f;
@@ -101,7 +105,7 @@ font-size: clamp(0.875rem, 0.8222rem + 0.2222vw, 1rem);
   font-size: 1.5rem;
 }
 .contact-text-round {
-  width: clamp(7rem, 6.7368rem + 0.0658vw, 8rem);
+  width: clamp(7.9rem, 6.7368rem + 0.0658vw, 8rem);
 
   border: 1px solid rgb(255, 255, 255, 0.7);
   font-weight: 600;
