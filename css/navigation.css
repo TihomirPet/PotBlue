@@ -20,7 +20,7 @@
    nicht mehr eine volle Leiste. */
 .navbar {
   position: relative;
-    /* position: fixed; */
+
   display: inline-block;
   display: flex;
 
