@@ -16,10 +16,10 @@
 
 document.addEventListener('DOMContentLoaded', () => {
   const componentsToLoad = [
-    { selector: '.carousel-item', url: '/sections/itemone.html' },
-    { selector: '.carousel-item-two', url: '/sections/itemtwo.html' },
-    { selector: '.carousel-item-three', url: '/sections/itemthree.html' },
-    { selector: '.carousel-item-four', url: '/sections/itemfour.html' },
+    { selector: '#div1', url: '/sections/itemone.html' },
+    { selector: '#div2', url: '/sections/itemtwo.html' },
+    { selector: '#div3', url: '/sections/itemthree.html' },
+    { selector: '#div4', url: '/sections/itemfour.html' },
   ];
 
   const loadPromises = componentsToLoad.map(({ selector, url }) => {

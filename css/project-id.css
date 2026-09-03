@@ -154,13 +154,14 @@
   margin-bottom: 2rem;
 }
 
+
 .btn-slider-next:hover {
   color: var(--bs-btn-hover-color);
-  background-color: none !important;
   border-color: var(--bs-btn-hover-border-color);
   width: clamp(6vw, 6em, 30vw) !important;
   justify-content: end;
 }
+
 .btn-slider-prev:hover {
   color: var(--bs-btn-hover-color);
   background-color: var(--bs-btn-hover-bg);

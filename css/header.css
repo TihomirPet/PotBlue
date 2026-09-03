@@ -23,10 +23,10 @@ body {
   background-color: var(--main-bg-color);
   background-size: cover;
 }
-:root {
+/* :root {
   --cursorX: 50vw;
   --cursorY: 30vh;
-}
+} */
 
 /* .torch{
 height:50vh;
@@ -57,60 +57,27 @@ height:50vh;
   /* overflow: hidden; */
 }
 
-#green {
+.noiseCanvas {
   position: absolute;
   padding: 0;
   top: 0;
   left: 0;
-  width: 100%;
-  height: 100%;
+  width: 100% !important;
+  height: 100% !important;
   z-index: 3;
+}
 
-  background: var(--header-bg-color);
+#green {
   background: #1f1f1f;
 }
 #blue {
-  position: absolute;
-  padding: 0;
-  top: 0;
-  left: 0;
-  width: 100% !important;
-  height: 100% !important;
-  z-index: 3;
-
   background: var(--second-bg-color);
-  /* background: radial-gradient(
-    circle,
-    rgba(141, 199, 69, 0.95) 0%,
-    rgba(141, 199, 69) 100%
-  ); */
 }
 #blue-transparent {
-  position: absolute;
-  padding: 0;
-  top: 0;
-  left: 0;
-  width: 100% !important;
-  height: 100% !important;
-  z-index: 3;
-
   background: rgb(253, 251, 236);
 }
 #transparent {
-  position: absolute;
-  padding: 0;
-  top: 0;
-  left: 0;
-  width: 100% !important;
-  height: 100% !important;
-  z-index: 3;
-
   background: transparent;
-  /* background: radial-gradient(
-    circle,
-    rgba(141, 199, 69, 0.95) 0%,
-    rgba(141, 199, 69) 100%
-  ); */
 }
 
 .text-overlay {
