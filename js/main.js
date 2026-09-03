@@ -38,6 +38,10 @@ document.addEventListener('DOMContentLoaded', () => {
     );
 
     sections.forEach((sec) => observer.observe(sec));
+    floatEls.forEach((el, i) => {
+      el.style.transitionDelay = `${i * 0.12}s`;
+      el.classList.add('visible');
+    });
 
     // -------------------- Grid Canvas (statisch, ohne Rauschen) --------------------
     // Hinweis: Es darf nur EINE Stelle im Projekt geben, die .noiseCanvas
