@@ -1,7 +1,3 @@
-body {
-  overflow-x: hidden;
-  font-family: 'MontserratRegular', sans-serif;
-}
 #contact {
   height: 100vh;
   background-color: #1f1f1f;
@@ -11,13 +7,10 @@ body {
   background-position: bottom right;
   background-size: 50vw;
   background-repeat: no-repeat;
-
   position: relative;
   height: 100%;
   width: 100vw;
-  /* background-color: var(--second-bg-color); */
   overflow: hidden;
-  /* padding: 9vh 0vh 10vh 0vh; */
 }
 .contact-img {
   width: 69%;
@@ -41,8 +34,7 @@ body {
   justify-content: center;
   gap: 0.75rem;
   padding: 0.8rem 1rem;
-
-font-size: clamp(0.875rem, 0.8222rem + 0.2222vw, 1rem);
+  font-size: clamp(0.875rem, 0.8222rem + 0.2222vw, 1rem);
   font-weight: 700;
   line-height: 1.5;
   text-align: center;
@@ -58,7 +50,6 @@ font-size: clamp(0.875rem, 0.8222rem + 0.2222vw, 1rem);
     border-color 0.3s ease-in-out;
 }
 
-/* Button 1: Projekte */
 .btn-message {
   background-color: var(--text-black-color);
   color: var(--header-bg-color);
@@ -68,9 +59,6 @@ font-size: clamp(0.875rem, 0.8222rem + 0.2222vw, 1rem);
 }
 
 .btn-message:hover {
-  /* Fix: Hover-Formel benutzte vorher 10vw statt 20vw -> Button
-     schrumpfte beim Hover statt zu wachsen. Jetzt gleicher vw-Wert
-     wie in der Basis-Breite, plus 1.5rem Zuwachs. */
   width: calc(clamp(10rem, 20em, 11vw) + 1.5rem);
   background-color: var(--text-black-color);
   color: var(--header-bg-color);
@@ -85,19 +73,16 @@ font-size: clamp(0.875rem, 0.8222rem + 0.2222vw, 1rem);
 }
 
 .btn-secondary-custom-contact:hover {
-  /* Fix: Hover-Formel benutzte vorher 7vw statt 10vw -> gleiches Problem. */
   width: calc(clamp(10rem, 15em, 10vw) + 1.5rem);
   background-color: var(--header-bg-color);
   color: #333333;
 }
 .contact-text-corner-bold {
-  font-size: 0.75rem;
   font-weight: 600;
   color: rgb(255, 255, 255, 0.6);
   font-size: clamp(0.625rem, 0.5722rem + 0.2222vw, 0.75rem);
 }
 .contact-text-corner-regular {
-  font-size: 0.75rem;
   font-weight: 200;
   font-size: clamp(0.625rem, 0.5722rem + 0.2222vw, 0.75rem);
 }
@@ -106,7 +91,6 @@ font-size: clamp(0.875rem, 0.8222rem + 0.2222vw, 1rem);
 }
 .contact-text-round {
   width: clamp(7.9rem, 6.7368rem + 0.0658vw, 8rem);
-
   border: 1px solid rgb(255, 255, 255, 0.7);
   font-weight: 600;
   border-radius: 0.5rem;
@@ -116,90 +100,34 @@ font-size: clamp(0.875rem, 0.8222rem + 0.2222vw, 1rem);
 .contact-icon {
   font-size: 1.6rem;
 }
-/* // `xxl` applies to x-large devices (large desktops, less than 1400px) */
-@media (max-width: 1399.98px) {
-}
 
-/* // `xl` applies to large devices (desktops, less than 1200px) */
 @media (max-width: 1199.98px) {
   #contact {
-  height: 103vh;
-  background-color: #1f1f1f;
-}
-  .contact-holder {
-    /* position: absolute; */
-    z-index: 4;
+    height: 103vh;
   }
   .btn-custom-contact {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    gap: 0.75rem;
     padding: 0.5rem 1rem;
- 
+  }
 }
-}
-/* // `lg` applies to medium devices (tablets, less than 992px) */
+
 @media (max-width: 991.98px) {
   #contact {
-  height: 108vh;
-  background-color: #1f1f1f;
-}
-  .contact-holder {
-    /* position: absolute; */
-    z-index: 4;
+    height: 108vh;
   }
- 
   .contact {
-  background-image: url(/images/Geschwungener-Pinselstrich.png);
-  background-position: bottom 10vh right 2vw;
-  background-size: 50vw;
-  background-repeat: no-repeat;
+    background-position: bottom 10vh right 2vw;
+  }
+}
 
-  position: relative;
-  height: 100%;
-  width: 100vw;
-  /* background-color: var(--second-bg-color); */
-  overflow: hidden;
-  /* padding: 9vh 0vh 10vh 0vh; */
-}
-.contact-img {
-  width: 69%;
-}
-.btn-custom-contact {
-  
-  gap: 0.75rem;
-  padding: 0.5rem 1rem;
-
-}
-}
-/* // `md` applies to small devices (landscape phones, less than 768px) */
-@media (max-width: 767.98px) {
-
- 
-}
-/* // `sm` applies to x-small devices (portrait phones, less than 576px) */
 @media (max-width: 575.98px) {
   .btn-custom-contact {
-    gap: 0.75rem;
     padding: 0.5rem 0.7rem;
   }
   .contact-holder {
-    height: 100%;
-    z-index: 4;
     padding: 2vh 0 6vh 0;
   }
   .contact {
-  background-image: url(/images/Geschwungener-Pinselstrich.png);
-background-position: right -1em bottom 8vh;
-  background-size: 110vw;
-  background-repeat: no-repeat;
-
-  position: relative;
-  height: 100%;
-  width: 100vw;
-  /* background-color: var(--second-bg-color); */
-  overflow: hidden;
-  /* padding: 9vh 0vh 10vh 0vh; */
-}
+    background-position: right -1em bottom 8vh;
+    background-size: 110vw;
+  }
 }
