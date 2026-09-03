@@ -20,14 +20,16 @@ document.addEventListener('DOMContentLoaded', () => {
     const main = document.querySelector('main') || document.documentElement;
 
     // -------------------- Floating / Stagger --------------------
+    // Läuft für JEDE beobachtete Section einzeln, sobald sie in den
+    // Sichtbereich kommt -> deckt sowohl "beim Laden" (Hero ist sofort
+    // sichtbar) als auch "beim Scrollen" (weitere Sections) ab.
     const observer = new IntersectionObserver(
       (entries, obs) => {
         entries.forEach((entry) => {
           if (entry.isIntersecting) {
             const floatEls = entry.target.querySelectorAll('.float');
             floatEls.forEach((el, i) => {
-              el.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
-              el.style.transitionDelay = `${i * 0.2}s`;
+              el.style.transitionDelay = `${i * 0.12}s`;
               el.classList.add('visible');
             });
             obs.unobserve(entry.target);
@@ -38,23 +40,11 @@ document.addEventListener('DOMContentLoaded', () => {
     );
 
     sections.forEach((sec) => observer.observe(sec));
-    floatEls.forEach((el, i) => {
-      el.style.transitionDelay = `${i * 0.12}s`;
-      el.classList.add('visible');
-    });
 
     // -------------------- Grid Canvas (statisch, ohne Rauschen) --------------------
-    // Hinweis: Es darf nur EINE Stelle im Projekt geben, die .noiseCanvas
-    // animiert/zeichnet. Vorher gab es hier UND in einer separaten Datei
-    // je eine eigene requestAnimationFrame-Schleife auf denselben Canvas-
-    // Elementen -> zwei konkurrierende Loops = Flackern/Zittern.
-    // Diese Version zeichnet das Gitter nur einmal (und bei Resize neu),
-    // läuft also nicht mehr als Animation-Loop.
     const canvases = document.querySelectorAll('.noiseCanvas');
     canvases.forEach((canvas) => {
       const ctx = canvas.getContext('2d');
-
-      // 50 = gewünschte Zellgröße in CSS-Pixeln (optische Größe).
       const CELL_SIZE_CSS_PX = 50;
 
       function resizeCanvas() {
@@ -62,7 +52,6 @@ document.addEventListener('DOMContentLoaded', () => {
         canvas.height = window.innerHeight * window.devicePixelRatio;
         canvas.style.width = window.innerWidth + 'px';
         canvas.style.height = window.innerHeight + 'px';
-
         drawGrid();
       }
 
@@ -72,23 +61,18 @@ document.addEventListener('DOMContentLoaded', () => {
         const cellSize = CELL_SIZE_CSS_PX * window.devicePixelRatio;
 
         ctx.clearRect(0, 0, w, h);
-
         ctx.strokeStyle = 'rgba(131, 131, 131, 0.1)';
         ctx.lineWidth = 1;
-
-        // Alle Linien in einem Pfad -> ein einziger stroke()-Aufruf
         ctx.beginPath();
 
         for (let x = 0; x < w; x += cellSize) {
           ctx.moveTo(x, 0);
           ctx.lineTo(x, h);
         }
-
         for (let y = 0; y < h; y += cellSize) {
           ctx.moveTo(0, y);
           ctx.lineTo(w, y);
         }
-
         ctx.stroke();
       }
 
@@ -96,25 +80,34 @@ document.addEventListener('DOMContentLoaded', () => {
       window.addEventListener('resize', resizeCanvas);
     });
 
-    // -------------------- Smooth Scroll mit Easing --------------------
+    // -------------------- Smooth Scroll mit echtem Zeit-Easing --------------------
+    // Statt einer Lerp-Annäherung (die am Ende "hängen bleibt" und dann
+    // hart zum Ziel springt), läuft die Bewegung über eine feste Dauer
+    // mit sanftem Start/Ende -> kein abrupter Stopp mehr.
     let isScrolling = false;
+    let scrollStartTime = null;
+    let scrollStartPos = main.scrollTop;
     let targetScroll = main.scrollTop;
-    let currentScroll = main.scrollTop;
 
-    function easeOutQuad(t) {
-      return t * (2 - t); // klassisches ease-out
+    const SCROLL_DURATION = 900; // ms – Gesamtdauer einer Section-Bewegung
+
+    function easeInOutCubic(t) {
+      return t < 0.5 ? 4 * t * t * t : 1 - Math.pow(-2 * t + 2, 3) / 2;
     }
 
-    function animateScroll() {
-      const diff = targetScroll - currentScroll;
-      currentScroll += diff * easeOutQuad(0.08); // 0.08 = sanfter Faktor
-      main.scrollTop = currentScroll;
+    function animateScroll(timestamp) {
+      if (scrollStartTime === null) scrollStartTime = timestamp;
+      const elapsed = timestamp - scrollStartTime;
+      const progress = Math.min(elapsed / SCROLL_DURATION, 1);
+      const eased = easeInOutCubic(progress);
 
-      if (Math.abs(diff) > 0.5) {
+      main.scrollTop = scrollStartPos + (targetScroll - scrollStartPos) * eased;
+
+      if (progress < 1) {
         requestAnimationFrame(animateScroll);
       } else {
-        main.scrollTop = targetScroll;
         isScrolling = false;
+        scrollStartTime = null;
       }
     }
 
@@ -131,8 +124,10 @@ document.addEventListener('DOMContentLoaded', () => {
       let next = current + (e.deltaY > 0 ? 1 : -1);
       next = Math.max(0, Math.min(sections.length - 1, next));
 
+      scrollStartPos = main.scrollTop;
       targetScroll = sections[next].offsetTop;
-      animateScroll();
+      scrollStartTime = null;
+      requestAnimationFrame(animateScroll);
     });
   }); // Ende waitForComponents
 }); // Ende DOMContentLoaded
