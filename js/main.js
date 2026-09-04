@@ -16,34 +16,17 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
-  waitForComponents().then((sections) => {
-    const main = document.querySelector('main') || document.documentElement;
-
-    // -------------------- Floating / Stagger --------------------
-    // Läuft für JEDE beobachtete Section einzeln, sobald sie in den
-    // Sichtbereich kommt -> deckt sowohl "beim Laden" (Hero ist sofort
-    // sichtbar) als auch "beim Scrollen" (weitere Sections) ab.
-    const observer = new IntersectionObserver(
-      (entries, obs) => {
-        entries.forEach((entry) => {
-          if (entry.isIntersecting) {
-            const floatEls = entry.target.querySelectorAll('.float');
-            floatEls.forEach((el, i) => {
-              el.style.transitionDelay = `${i * 0.12}s`;
-              el.classList.add('visible');
-            });
-            obs.unobserve(entry.target);
-          }
-        });
-      },
-      { threshold: 0.2 },
+  // -------------------- Grid Canvas (statisch, ohne Rauschen) --------------------
+  // In eigene Funktion ausgelagert, damit sie sowohl beim initialen Laden
+  // als auch nachträglich (z. B. nach dynamischem Nachladen von contact.html)
+  // erneut aufgerufen werden kann, ohne bereits initialisierte Canvases
+  // doppelt zu verarbeiten.
+  function initGridCanvases(root = document) {
+    const canvases = root.querySelectorAll(
+      '.noiseCanvas:not([data-grid-initialized])',
     );
-
-    sections.forEach((sec) => observer.observe(sec));
-
-    // -------------------- Grid Canvas (statisch, ohne Rauschen) --------------------
-    const canvases = document.querySelectorAll('.noiseCanvas');
     canvases.forEach((canvas) => {
+      canvas.dataset.gridInitialized = 'true';
       const ctx = canvas.getContext('2d');
       const CELL_SIZE_CSS_PX = 50;
 
@@ -79,6 +62,38 @@ document.addEventListener('DOMContentLoaded', () => {
       resizeCanvas();
       window.addEventListener('resize', resizeCanvas);
     });
+  }
+
+  // Für Canvases, die schon beim initialen Laden im DOM stehen
+  initGridCanvases();
+
+  // Für Canvases, die erst per fetch nachgeladen werden (z. B. contact.html)
+  document.addEventListener('contactLoaded', () => initGridCanvases());
+
+  waitForComponents().then((sections) => {
+    const main = document.querySelector('main') || document.documentElement;
+
+    // -------------------- Floating / Stagger --------------------
+    // Läuft für JEDE beobachtete Section einzeln, sobald sie in den
+    // Sichtbereich kommt -> deckt sowohl "beim Laden" (Hero ist sofort
+    // sichtbar) als auch "beim Scrollen" (weitere Sections) ab.
+    const observer = new IntersectionObserver(
+      (entries, obs) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            const floatEls = entry.target.querySelectorAll('.float');
+            floatEls.forEach((el, i) => {
+              el.style.transitionDelay = `${i * 0.12}s`;
+              el.classList.add('visible');
+            });
+            obs.unobserve(entry.target);
+          }
+        });
+      },
+      { threshold: 0.2 },
+    );
+
+    sections.forEach((sec) => observer.observe(sec));
 
     // -------------------- Smooth Scroll mit echtem Zeit-Easing --------------------
     // Statt einer Lerp-Annäherung (die am Ende "hängen bleibt" und dann
