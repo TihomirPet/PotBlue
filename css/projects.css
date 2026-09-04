@@ -124,8 +124,8 @@
   .project-card__mobile-btn {
     display: inline-block;
     position: absolute;
-    left: 50%;
-    bottom: 25px;
+    left: 45%;
+    bottom: 100px;
     transform: translateX(-50%);
     z-index: 4;
     padding: 7px 15px;
@@ -135,7 +135,8 @@
     font-size: 0.8rem;
     border-radius: 30px;
     text-decoration: none;
-    border: 1px solid var(--text-black-color);
+    border: 1px solid rgb(175, 175, 175);
+    transform: rotate(-8deg);
   }
 }
 
