@@ -31,10 +31,14 @@ document.addEventListener('DOMContentLoaded', () => {
       const CELL_SIZE_CSS_PX = 50;
 
       function resizeCanvas() {
-        canvas.width = window.innerWidth * window.devicePixelRatio;
-        canvas.height = window.innerHeight * window.devicePixelRatio;
-        canvas.style.width = window.innerWidth + 'px';
-        canvas.style.height = window.innerHeight + 'px';
+        const container = canvas.parentElement;
+        const width = container.clientWidth;
+        const height = container.scrollHeight;
+
+        canvas.width = width * window.devicePixelRatio;
+        canvas.height = height * window.devicePixelRatio;
+        canvas.style.width = width + 'px';
+        canvas.style.height = height + 'px';
         drawGrid();
       }
 
@@ -60,7 +64,8 @@ document.addEventListener('DOMContentLoaded', () => {
       }
 
       resizeCanvas();
-      window.addEventListener('resize', resizeCanvas);
+     const resizeObserver = new ResizeObserver(() => resizeCanvas());
+     resizeObserver.observe(canvas.parentElement);
     });
   }
 

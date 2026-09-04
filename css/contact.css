@@ -3,7 +3,7 @@
   background-color: #1f1f1f;
 }
 .contact {
-  background-image: url(/images/Geschwungener-Pinselstrich.png);
+  background-image: url(/images/Geschwungener-Pinselstrich-blue.png);
   background-position: bottom right;
   background-size: 50vw;
   background-repeat: no-repeat;
@@ -52,8 +52,8 @@
 
 .btn-message {
   background-color: var(--text-black-color);
-  color: var(--header-bg-color);
-  border-color: #68c331;
+  color: var(--text-white-color);
+  border-color: var(--text-white-color);
   width: clamp(12rem, 20em, 11vw);
   letter-spacing: 0.04em;
 }
@@ -61,11 +61,11 @@
 .btn-message:hover {
   width: calc(clamp(10rem, 20em, 11vw) + 1.5rem);
   background-color: var(--text-black-color);
-  color: var(--header-bg-color);
+  color: var(--text-white-color);
 }
 
 .btn-secondary-custom-contact {
-  background-color: var(--header-bg-color);
+  background-color: var(--text-white-color);
   color: var(--text-black-color);
   border-color: #333333;
   width: clamp(10rem, 15em, 10vw);
@@ -74,7 +74,7 @@
 
 .btn-secondary-custom-contact:hover {
   width: calc(clamp(10rem, 15em, 10vw) + 1.5rem);
-  background-color: var(--header-bg-color);
+  background-color: var(--text-white-color);
   color: #333333;
 }
 .contact-text-corner-bold {
